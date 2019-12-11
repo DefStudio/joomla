@@ -1,0 +1,220 @@
+/***********************************************************************************************/
+/* IceMegaMenu */
+/***********************************************************************************************/
+
+@media only screen and (min-width: 979px)  {
+	.nav-collapse.collapse {
+		overflow: visible!important;
+	}
+}
+
+
+
+.icemegamenu {
+	
+	> ul {
+		height: 60px!important;
+		background:none;
+		border-radius: 0;
+	
+		> li {
+			margin-right:0;
+			border-radius:0;
+			
+			a.iceMenuTitle {
+				padding: 0 8px!important;
+				height: 60px!important;
+				
+				span.icemega_title {
+					font-family: "Open Sans" , Arial, Helvetica, sans-serif;
+					text-shadow: none;
+					color:#fff;
+					padding-top: 4px;
+					display: block;
+					font-size: 18px;
+					text-shadow: 1px 1px 1px darken(@bg_primary,20%);
+				}
+				
+				span.icemega_desc {
+					color:#999!important;
+					color:rgba(255,255,255,.5)!important;
+					padding-top:3px;
+					font-style:normal;
+				}
+				
+				span.icemega_nosubtitle {
+					padding-top: 13px!important;
+				}
+			
+			}
+			
+			&:hover .iceMenuTitle {
+				background:lighten(@bg_primary,10%);
+			}
+			
+			/* active */
+			&.active {
+				background:none;
+				
+				> a.iceMenuTitle { 
+					background:lighten(@bg_primary,10%);
+					
+					span.icemega_title {
+						color:#fff!important;
+					}
+				}
+			}
+			
+		}
+	}
+}
+
+/* First level dropdown */
+.icemegamenu ul.icesubMenu {
+	background:lighten(@bg_primary,10%);
+	border-radius: 0;
+	border:none!important;
+	padding:0;
+	margin-top:0;
+	top: 90px;
+	left:0;
+	
+	ul {
+		margin:0;
+		padding:0;
+	
+		li {
+			
+			a.iceMenuTitle {
+				margin:0 12px;
+				padding: 0!important;
+				height: auto!important;
+				background: none;
+				border-bottom:1px dotted rgba(255,255,255,.15)!important;
+				
+				span.icemega_title {
+					font-size: 14px;
+					padding: 0!important;
+					color:#fff;
+				}
+				
+				span.icemega_desc {
+					
+				}
+	
+			}
+			
+			&:last-child > a {
+				border-bottom:none!important;			
+			}
+			
+			/* hover */
+			&:hover > a.iceMenuTitle {
+				background:lighten(@bg_primary,18%);
+				padding-left: 10px!important;
+			}
+			
+			/* parent */
+			&.parent {
+				background: url(../images/icemegamenu_arrow.png) no-repeat 97% 48%;
+			}
+								
+			/* active */
+			&.active {
+				
+				> a.iceMenuTitle {
+					background:lighten(@bg_primary,18%);
+					padding-left: 10px!important;
+				
+					> span.icemega_title {
+						color:#fff!important;
+					}
+				}
+			
+			}
+			
+		}	
+	}
+}
+
+#icemegamenu > li:hover > ul.icesubMenu {
+	top:60px;
+}
+
+/* when there is no space on the right for the dropdown to appear */
+#icemegamenu .ice_righttoleft {
+	left: auto!important;
+	right:100%;
+}
+
+
+/* Second level dropdown */
+.icemegamenu ul.icesubMenu ul.icesubMenu {
+	left: 100%;
+	margin-left:23px;
+	top:0;
+	.rotate(10deg);
+}
+
+ul.icesubMenu ul > li:hover > ul {
+	left: 100%!important;
+	margin-left: -13px!important;
+	.rotate(0deg)!important;
+}
+
+
+
+/* Module inside dropdown */
+.icesubMenu .icemega_cover_module {
+	padding: 10px 15px;
+	color: #ccc;
+	color: rgba(255,255,255,.75);
+	
+	span.iceModuleTile {
+		font-family: "Open Sans" , Arial, Helvetica, sans-serif;;
+		font-size:18px;
+		text-shadow:none;
+		color: #fff;
+		text-shadow: none;
+		display:block;
+		margin:0 0 12px;	
+	}
+	
+	a {
+		color: #fff;
+	}
+	
+	form#login-form .input-small {
+		width:90%;
+		border-radius:0 4px 4px 0;
+	}
+	
+	form#login-form button {
+		.icebtn;
+		background:lighten(@bg_primary,15%);
+		color:#fff;
+		text-shadow:1px 1px 1px darken(@bg_primary,12%);
+		
+		&:hover {
+				background:lighten(@bg_primary,25%);
+				color:#fff;
+			}
+	}
+	
+}
+
+
+@media (min-width: 979px) {
+	body.ipad {
+		ul.icesubMenu {
+			display:none;
+		}
+		#icemegamenu > li:hover > ul.icesubMenu {
+			display:block;
+		}
+		.icemegamenu > ul > li  a.iceMenuTitle > span.icemega_title {
+			display: block;
+			cursor:pointer;
+		}
+	}
+}

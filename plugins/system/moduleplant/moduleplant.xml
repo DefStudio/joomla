@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6.0" type="plugin" group="system" method="upgrade" client="site">
+	<name>System - Module Plant</name>
+	<author>J-Plant</author>
+	<creationDate>30 June 2013</creationDate>
+	<copyright>Copyright (C) 2010 J-Plant. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>support@j-plant.com</authorEmail>
+	<authorUrl>www.j-plant.com</authorUrl>	
+	<version>1.2.2</version>
+	<description>MODULE_PLANT</description>
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/plugins/system/moduleplant/moduleplant/fields">
+				<field type="list" name="mode" default="content" label="L_MODE" description="D_MODE">
+					<option value="content">L_ARTICLES</option>
+					<option value="any">L_ANY</option>
+				</field>
+				<field type="text" name="secret" size="20" default="" label="L_SECRET" description="D_SECRET" />
+				<field name="headerModParams" type="header" default="H_MODPARAMS" label="" description="" />
+					<field type="list" name="mod_showtitle" default="" label="L_SHOWTITLE" description="D_SHOWTITLE">
+						<option value="">L_MODSTYLE_DEFAULT</option>
+						<option value="0">L_NO</option>
+						<option value="1">L_YES</option>
+					</field>
+				<field name="headerStyle" type="header" default="H_STYLES" label="" description="" />
+					<field type="list" name="style" default="none" label="L_MODSTYLE" description="D_MODSTYLE">
+						<option value="none">L_MODSTYLE_NONE</option>
+						<option value="table">L_MODSTYLE_TABLE</option>
+						<option value="horz">L_MODSTYLE_HORZ</option>
+						<option value="xhtml">L_MODSTYLE_XHTML</option>
+						<option value="rounded">L_MODSTYLE_ROUNDED</option>
+					</field>
+			</fieldset>
+		</fields>
+	</config>
+	<languages>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_moduleplant.ini</language>
+		<language tag="en-GB">language/en-GB/en-GB.plg_system_moduleplant.sys.ini</language>
+	</languages>
+	<files>
+		<filename plugin="moduleplant">moduleplant.php</filename>
+		<filename>moduleplant.xml</filename>
+ 		<folder>moduleplant</folder>
+	</files>
+</extension>

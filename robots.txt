@@ -1,0 +1,10 @@
+User-agent: Yandex
+Disallow: /administrator/
+Disallow: /cache/
+Host: https://bestnetentcasinos.info
+Sitemap: https://bestnetentcasinos.info/index.php?option=com_xmap&view=xml&tmpl=component&id=1
+
+User-agent: *
+Disallow: /administrator/
+Disallow: /cache/
+Sitemap: https://bestnetentcasinos.info/index.php?option=com_xmap&view=xml&tmpl=component&id=1

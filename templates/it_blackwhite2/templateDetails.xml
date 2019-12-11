@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 2.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/2.5/template-install.dtd">
+<extension version="3.0" type="template" client="site">
+	<name>it_blackwhite2</name>
+	<version>1.0</version>
+	<creationDate>November 2013</creationDate>
+	<author>IceTheme</author>
+	<authorEmail>info@icetheme.com</authorEmail>
+	<copyright>Copyright (C) 2008 - 2013 IceTheme.com</copyright>
+	<license>IceTheme Joomla Club Members Usage Only</license>
+	<description>An almost Premium ready quality Joomla Theme. Responsive, built-in bootstrap framework and featuring all our Ice modules, IT BlackWhite 2 is your next ideal choice. Plus it’s Free.<![CDATA[<p> <a href="http://www.icetheme.com"> IceTheme.com </a> | <a href="http://demo.icetheme.com/?template=it_blackwhite2"> View Demo </a> | <a href="http://www.icetheme.com/forums"> Get Support </a>				
+	]]>
+	</description>
+	
+	<files>
+		<filename>component.php</filename>
+		<filename>offline.php</filename>
+		<filename>error.php</filename>
+		<filename>soon.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>index.php</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_preview.png</filename>
+		<filename>template_thumbnail.png</filename>
+		<folder>css</folder>
+		<folder>less</folder>
+		<folder>html</folder>
+		<folder>images</folder>
+		<folder>js</folder>
+		<folder>bootstrap</folder>
+		<folder>icetools</folder>
+	</files>
+	
+	<positions>
+		<position>login</position>
+		<position>language</position>
+		<position>search</position>
+		<position>topmenu</position>
+		<position>mainmenu</position>
+		<position>iceslideshow</position>
+		<position>promo</position>
+		<position>breadcrumbs</position>
+		<position>sidebar</position>
+		<position>icecarousel</position>
+		<position>footer</position>
+		<position>footermenu</position>
+		<position>copyrightmenu</position>
+		<position>banner</position>
+	</positions>
+	
+	<languages folder="language">
+		<language tag="en-GB">en-GB/en-GB.tpl_it_blackwhite2.ini</language>
+		<language tag="en-GB">en-GB/en-GB.tpl_it_blackwhite2.sys.ini</language>
+	</languages>
+	
+	<config>
+		
+		<fields name="params"  addfieldpath="templates/it_therestaurant2/icetools/elements">
+		
+			<!-- General-->	
+			<fieldset name="basic" label="General">
+					
+				<field name="responsive_template" type="radio"  class="btn-group" default="1" label="Enabled Responsive?"  description="If you Enable this parameter you will have a Responsive template , which will fit in every screen resolution. Such as smartphone and tablets. (Yes is recommended)" filter="int">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="logo" type="media" default="" label="Site Logo" description="Select your website logo image from your computer and chose it as the default logo." />
+			
+				<field 
+					name="sidebar_position" 
+					type="list" 
+					default="right" 
+					label="Sidebar Position"  
+					description="Chose if you want to show sidebar to left or right.">
+						<option value="left">Left</option>
+						<option value="right">Right</option>
+				</field>	
+				
+				<field 
+					name="sidebar_span" 
+					type="list" 
+					default="normal" 
+					label="Sidebar Width"  
+					description="The width of the main sidebar. Normal is recommended">
+						<option value="normal">Normal</option>
+						<option value="narrow">Narrow</option>
+				</field>		
+				
+				
+				<field 
+					name="homepage_content" 
+					type="radio"  
+					class="btn-group" 
+					default="0" 
+					label="Hide Frontpage content?" 
+					description="Would you like to hide the content (Joomla content) on the frontpage? Enable this feature only if you plan to use only modules on the frontpage"
+					filter="int">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+				</field>	
+				
+				<field name="equal_columns" type="hidden"  class="btn-group" default="0" label="Enable Equal Columns?"  description="Would you like to enable the Equal height columns to have the same height for all the columns?" filter="int">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+				</field>		
+				
+					
+				<field name="icelogo" type="hidden" default="1" class="btn-group" label="IceTheme Logo"  description="Choose whether you want to keep the IceTheme logo or not. (Not obligatory)" filter="int">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+				</field>	
+			
+			
+				<field name="go2top" type="radio"  class="btn-group" default="1" label="Go To Top Link"  description="Would you like to enable a scrolling image on the bottom right of your website so that you members can scroll to top easily?" filter="int">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>			
+				
+				
+			</fieldset>
+			
+			
+			<!--  Social Parameters \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  -->	
+		
+			<fieldset name="social" label="Social">
+			
+				 <field name="social_icons" type="radio" default="1"  class="btn-group" label="Social Icons"  description="Chose if you want to show the social icons box" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="" type="spacer" default="" label="" description="" />
+								
+				 <field name="social_icon_facebook" type="radio" default="1"  class="btn-group" label="Show Facebook Icon?"  description="Wwheter to show or not the Facebok icon (on the sidebar)" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="social_icon_facebook_user" type="text" default="icetheme" label="Facebook Fan Page Username" description="Enter here your Facebook Fan Page Username"/>
+				
+				<field name="" type="spacer" default="" label="" description="" />
+
+				 <field name="social_icon_twitter" type="radio" default="1"  class="btn-group" label="Show Twitter Icon?"  description="Whether to show or not the Facebook icon (on the sidebar)" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="social_icon_twitter_user" type="text" default="icetheme" label="Twitter Username" description="Enter here your Twitter Username"/>
+				
+				<field name="" type="spacer" default="" label="" description="" />
+
+				 <field name="social_icon_youtube" type="radio" default="1"  class="btn-group" label="Show Youtube Icon?"  description="Whether to show or not the Youtube icon (on the sidebar)" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="social_icon_youtube_user" type="text" default="icetheme" label="Youtube Username" description="Enter Your Youtube Username"/>
+				
+				<field name="" type="spacer" default="" label="" description="" />
+
+				 <field name="social_icon_google" type="radio" default="1"  class="btn-group" label="Show Google+ Icon?"  description="Whether to show or not the Google+ icon (on the sidebar)" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="social_icon_google_user" type="text" default="100704767234040291585" label="Google ID" description="Enter Your Google ID"/>
+				
+				<field name="" type="spacer" default="" label="" description="" />
+
+				 <field name="social_icon_linkedin" type="radio" default="1"  class="btn-group" label="Show Linkedin Icon?"  description="Whether to show or not the Linkedin icon (on the sidebar)" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="social_icon_linkedin_user" type="text" default="icetheme" label="Linkedin Username" description="Enter Your Linkedin Company Name"/>
+				
+				<field name="" type="spacer" default="" label="" description="" />
+				
+				 <field name="social_icon_rss" type="radio" default="1"  class="btn-group" label="Show RSS Feed Icon?"  description="Whether to show or not the RSS Feed icon (on the sidebar)" filter="int">
+                    <option value="0">No</option>
+                    <option value="1">Yes</option>
+                </field>
+				
+				<field name="social_icon_rss_link" type="text" default="http://feeds.feedburner.com/icetheme" label="RSS Feed URL" description="Enter here your RSS Feed URL"/>				
+	
+			</fieldset>
+			
+			<!-- End Social Parameters \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\  -->
+			
+			
+			<!-- Custom CSS -->	
+			<fieldset name="customcss" label="Custom CSS">
+			
+				 <field
+				 name="custom_css_code"
+				 label="Custom CSS"
+				 description="You may enter here your Custom CSS code to overwrite the default CSS that we have added on the template. Also you may paste here CSS codes that our support team may have given to you."
+				 type="editor"
+				 editor="codemirror"
+				 buttons="no"
+				 required="false" 
+				 filter="raw"
+				 rows="300"
+				 cols="80"
+				 default=""
+				 />
+			 
+			</fieldset>
+			
+			
+			<!-- Coming Soon Page -->
+			<fieldset name="comingsoon" label="Coming Soon Page">
+				
+				 <field name="comingsoon_enable" type="radio" default="0"  class="btn-group" label="Enable Coming Soon Page?"  description="This will put the site temporarily offline and display a message to your visitors telling when the site will be ready online" filter="int">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="" type="spacer" default="" label="" description="" />	
+				
+				<field name="comingsoon_h2" type="text" default="Our Website is Coming Soon!" label="Page Heading" description="Enter the main heading for your Coming Soon page"/>
+				
+				<field name="comingsoon_p" type="textarea" default="" label="Page Descrption" description="Enter some description for your website"/>
+				
+				<field name="" type="spacer" default="" label="" description="" />	
+				
+				 <field name="comingsoon_count" type="radio" default="1" class="btn-group" label="Enable Countdown?"  description="Would you like to enable the animated jQuery countdown?. If set to yes enter the correct time below" filter="int">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="comingsoon_count_time" type="text" default="31 December 2013 12:00:00" class="btn-group" label="Countdown time"  description="Enter here the correct time format when your website will be online. E.g '31 December 2013 12:00:00'" filter="">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				
+				<field name="" type="spacer" default="" label="" description="" />	
+				
+				  <field name="comingsoon_newsletter" label="Newsletter Code" description="Enter here your Newsletter code provided by the Newsleter company" 
+				  type="editor"
+				 editor="codemirror"
+				 buttons="no"
+				 required="false" 
+				 filter="raw"
+				 rows="200"
+				 cols="80"
+				  default=""
+				 />
+				
+				<field name="" type="spacer" default="" label="" description="" />	
+				
+				<field name="comingsoon_social" label="Social Media" description="Enter here your HTML code to generate the Social Icons" 
+					  type="editor"
+					 editor="codemirror"
+					 buttons="no"
+					 required="false" 
+					 filter="raw"
+					 rows="300"
+					 cols="80"
+					  default=""
+					 />
+				
+			</fieldset>	
+		
+		</fields>
+			
+	</config>
+	
+</extension>

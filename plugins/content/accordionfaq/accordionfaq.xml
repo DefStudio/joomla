@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension
+	type="plugin"
+	version="3.0"
+	group="content"
+	method="upgrade">
+	<name>PLG_CONTENT_ACCORDIONFAQ</name>
+	<author>Ken Lowther</author>
+	<creationDate>Aug 2013</creationDate>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>admin@joomlanook.com</authorEmail>
+	<authorUrl>http://www.joomlanook.com</authorUrl>
+	<version>3.0.5</version>
+	<description>PLG_ACCORDIONFAQ_XML_DESCRIPTION</description>
+	<files>
+		<filename plugin="accordionfaq">accordionfaq.php</filename>
+		<filename>LICENSE.php</filename>
+		<filename>css/accordionfaq-ie6.css</filename>
+		<filename>css/accordionfaq.css</filename>
+		<filename>css/blacktiefaq-ie6.css</filename>
+		<filename>css/blacktiefaq.css</filename>
+		<filename>css/blitzerfaq-ie6.css</filename>
+		<filename>css/blitzerfaq.css</filename>
+		<filename>css/blueaccordionfaq.css</filename>
+		<filename>css/bluefaq-ie6.css</filename>
+		<filename>css/bluefaq.css</filename>
+		<filename>css/cupertinofaq-ie6.css</filename>
+		<filename>css/css.php</filename>
+		<filename>css/cupertinofaq.css</filename>
+		<filename>css/darkhivefaq-ie6.css</filename>
+		<filename>css/darkhivefaq.css</filename>
+		<filename>css/darknessfaq-ie6.css</filename>
+		<filename>css/darknessfaq.css</filename>
+		<filename>css/dotluvfaq-ie6.css</filename>
+		<filename>css/dotluvfaq.css</filename>
+		<filename>css/eggplantfaq-ie6.css</filename>
+		<filename>css/eggplantfaq.css</filename>
+		<filename>css/excitebikefaq-ie6.css</filename>
+		<filename>css/excitebikefaq.css</filename>
+		<filename>css/flickfaq-ie6.css</filename>
+		<filename>css/flickfaq.css</filename>
+		<filename>css/grayaccordionfaq.css</filename>
+		<filename>css/graybarfaq-ie6.css</filename>
+		<filename>css/graybarfaq.css</filename>
+		<filename>css/grayfaq-ie6.css</filename>
+		<filename>css/grayfaq.css</filename>
+		<filename>css/hotsneaksfaq-ie6.css</filename>
+		<filename>css/hotsneaksfaq.css</filename>
+		<filename>css/humanityfaq-ie6.css</filename>
+		<filename>css/humanityfaq.css</filename>
+		<filename>css/index.html</filename>
+		<filename>css/lefrogfaq-ie6.css</filename>
+		<filename>css/lefrogfaq.css</filename>
+		<filename>css/lightnessfaq-ie6.css</filename>
+		<filename>css/lightnessfaq.css</filename>
+		<filename>css/mintchocfaq-ie6.css</filename>
+		<filename>css/mintchocfaq.css</filename>
+		<filename>css/overcastfaq-ie6.css</filename>
+		<filename>css/overcastfaq.css</filename>
+		<filename>css/peppergrinderfaq-ie6.css</filename>
+		<filename>css/peppergrinderfaq.css</filename>
+		<filename>css/plainaccordionfaq.css</filename>
+		<filename>css/plainfaq-ie6.css</filename>
+		<filename>css/plainfaq.css</filename>
+		<filename>css/redmondfaq-ie6.css</filename>
+		<filename>css/redmondfaq.css</filename>
+		<filename>css/smoothnessfaq-ie6.css</filename>
+		<filename>css/smoothnessfaq.css</filename>
+		<filename>css/southstreetfaq-ie6.css</filename>
+		<filename>css/southstreetfaq.css</filename>
+		<filename>css/startfaq-ie6.css</filename>
+		<filename>css/startfaq.css</filename>
+		<filename>css/sunnyfaq-ie6.css</filename>
+		<filename>css/sunnyfaq.css</filename>
+		<filename>css/swankypursefaq-ie6.css</filename>
+		<filename>css/swankypursefaq.css</filename>
+		<filename>css/trontasticfaq-ie6.css</filename>
+		<filename>css/trontasticfaq.css</filename>
+		<filename>css/vaderfaq-ie6.css</filename>
+		<filename>css/vaderfaq.css</filename>
+		<filename>images/02.gif</filename>
+		<filename>images/02.png</filename>
+		<filename>images/04.gif</filename>
+		<filename>images/04.png</filename>
+		<filename>images/add.gif</filename>
+		<filename>images/add.png</filename>
+		<filename>images/arrow.png</filename>
+		<filename>images/arrow-l.png</filename>
+		<filename>images/arrow_down.png</filename>
+		<filename>images/check.gif</filename>
+		<filename>images/check.png</filename>
+		<filename>images/collapse.gif</filename>
+		<filename>images/collapsed-black.gif</filename>
+		<filename>images/collapsed-black-l.gif</filename>
+		<filename>images/collapsed-white.gif</filename>
+		<filename>images/collapsed-white-l.gif</filename>
+		<filename>images/expand.gif</filename>
+		<filename>images/expanded-black.gif</filename>
+		<filename>images/expanded-white.gif</filename>
+		<filename>images/help.gif</filename>
+		<filename>images/help.png</filename>
+		<filename>images/icontexto-webdev-add-016x016.gif</filename>
+		<filename>images/icontexto-webdev-add-016x016.png</filename>
+		<filename>images/icontexto-webdev-remove-016x016.gif</filename>
+		<filename>images/icontexto-webdev-remove-016x016.png</filename>
+		<filename>images/index.html</filename>
+		<filename>images/info.gif</filename>
+		<filename>images/info.png</filename>
+		<filename>images/minus.gif</filename>
+		<filename>images/minus.png</filename>
+		<filename>images/nocheck.gif</filename>
+		<filename>images/nocheck.png</filename>
+		<filename>images/power_off.gif</filename>
+		<filename>images/power_off.png</filename>
+		<filename>images/power_on.gif</filename>
+		<filename>images/power_on.png</filename>
+		<filename>images/sign_info.gif</filename>
+		<filename>images/sign_info.png</filename>
+		<filename>images/sign_question.gif</filename>
+		<filename>images/sign_question.png</filename>
+		<filename>images/ui-bg_diagonals-small_40_db4865_40x40.png</filename>
+		<filename>images/ui-bg_diagonals-small_50_93c3cd_40x40.png</filename>
+		<filename>images/ui-bg_diagonals-small_75_ccd232_40x40.png</filename>
+		<filename>images/ui-bg_diagonals-thick_20_e69700_40x40.png</filename>
+		<filename>images/ui-bg_diagonals-thick_22_1484e6_40x40.png</filename>
+		<filename>images/ui-bg_diagonals-thick_26_2293f7_40x40.png</filename>
+		<filename>images/ui-bg_diamond_10_4f4221_10x8.png</filename>
+		<filename>images/ui-bg_diamond_25_675423_10x8.png</filename>
+		<filename>images/ui-bg_diamond_8_443113_10x8.png</filename>
+		<filename>images/ui-bg_dots-small_20_333333_2x2.png</filename>
+		<filename>images/ui-bg_dots-small_40_00498f_2x2.png</filename>
+		<filename>images/ui-bg_fine-grain_10_eceadf_60x60.png</filename>
+		<filename>images/ui-bg_fine-grain_10_f8f7f6_60x60.png</filename>
+		<filename>images/ui-bg_fine-grain_15_eceadf_60x60.png</filename>
+		<filename>images/ui-bg_fine-grain_65_654b24_60x60.png</filename>
+		<filename>images/ui-bg_flat_0_4c4c4c_40x100.png</filename>
+		<filename>images/ui-bg_flat_40_292929_40x100.png</filename>
+		<filename>images/ui-bg_flat_65_ffffff_40x100.png</filename>
+		<filename>images/ui-bg_flat_75_ffffff_40x100.png</filename>
+		<filename>images/ui-bg_glass_100_e4f1fb_1x400.png</filename>
+		<filename>images/ui-bg_glass_100_f5f0e5_1x400.png</filename>
+		<filename>images/ui-bg_glass_100_f6f6f6_1x400.png</filename>
+		<filename>images/ui-bg_glass_100_f8f8f8_1x400.png</filename>
+		<filename>images/ui-bg_glass_100_fdf5ce_1x400.png</filename>
+		<filename>images/ui-bg_glass_20_555555_1x400.png</filename>
+		<filename>images/ui-bg_glass_40_0078a3_1x400.png</filename>
+		<filename>images/ui-bg_glass_40_0a0a0a_1x400.png</filename>
+		<filename>images/ui-bg_glass_40_111111_1x400.png</filename>
+		<filename>images/ui-bg_glass_45_0078ae_1x400.png</filename>
+		<filename>images/ui-bg_glass_50_3baae3_1x400.png</filename>
+		<filename>images/ui-bg_glass_55_1c1c1c_1x400.png</filename>
+		<filename>images/ui-bg_glass_60_000000_1x400.png</filename>
+		<filename>images/ui-bg_glass_60_eeeeee_1x400.png</filename>
+		<filename>images/ui-bg_glass_65_ffffff_1x400.png</filename>
+		<filename>images/ui-bg_glass_70_ede4d4_1x400.png</filename>
+		<filename>images/ui-bg_glass_75_79c9ec_1x400.png</filename>
+		<filename>images/ui-bg_glass_75_d0e5f5_1x400.png</filename>
+		<filename>images/ui-bg_glass_75_dadada_1x400.png</filename>
+		<filename>images/ui-bg_glass_75_e6e6e6.png</filename>
+		<filename>images/ui-bg_glass_75_e6e6e6_1x400.png</filename>
+		<filename>images/ui-bg_glass_80_d7ebf9_1x400.png</filename>
+		<filename>images/ui-bg_glass_85_dfeffc_1x400.png</filename>
+		<filename>images/ui-bg_gloss-wave_16_121212_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_20_111111_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_20_1c160d_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_30_3d3644_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_30_44372c_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_50_6eac2c_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_55_000000_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_60_fece2f_500x100.png</filename>
+		<filename>images/ui-bg_gloss-wave_70_ffdd57_500x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_eeeeee_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_f2f5f7_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_f4f0ec_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_f5f3e5_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_f6f6f6_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_f9f9f9_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_100_fafaf4_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_15_459e00_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_20_0972a5_1x100.png</filename>
+		<filename>images/ui-bg_highlight-hard_30_285c00_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_100_dcd9de_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_100_eae6ea_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_100_eeeeee_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_100_f6f6f6_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_100_feeebd_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_20_201913_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_25_0073ea_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_25_67b021_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_33_003147_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_35_222222_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_35_adadad_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_45_5f5964_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_50_4eb305_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_60_4ca20b_1x100.png</filename>
+		<filename>images/ui-bg_highlight-soft_60_dddddd_1x100.png</filename>
+		<filename>images/ui-bg_inset-hard_100_eeeeee_1x100.png</filename>
+		<filename>images/ui-bg_inset-hard_100_f5f8f9_1x100.png</filename>
+		<filename>images/ui-bg_inset-hard_100_fcfdfd_1x100.png</filename>
+		<filename>images/ui-bg_inset-hard_75_999999_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_100_f4f0ec_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_10_201913_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_10_285c00_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_15_121212_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_25_000000_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_30_f58400_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_30_ffffff_1x100.png</filename>
+		<filename>images/ui-bg_inset-soft_50_c9c9c9_1x100.png</filename>
+		<filename>images/ui-bg_loop_25_000000_21x21.png</filename>
+		<filename>images/ui-icons_00498f_256x240.png</filename>
+		<filename>images/ui-icons_056b93_256x240.png</filename>
+		<filename>images/ui-icons_217bc0_256x240.png</filename>
+		<filename>images/ui-icons_222222_256x240.png</filename>
+		<filename>images/ui-icons_2694e8_256x240.png</filename>
+		<filename>images/ui-icons_3383bb_256x240.png</filename>
+		<filename>images/ui-icons_3d3d3d_256x240.png</filename>
+		<filename>images/ui-icons_3d80b3_256x240.png</filename>
+		<filename>images/ui-icons_454545_256x240.png</filename>
+		<filename>images/ui-icons_666666_256x240.png</filename>
+		<filename>images/ui-icons_6da8d5_256x240.png</filename>
+		<filename>images/ui-icons_70b2e1_256x240.png</filename>
+		<filename>images/ui-icons_734d99_256x240.png</filename>
+		<filename>images/ui-icons_888888_256x240.png</filename>
+		<filename>images/ui-icons_8c291d_256x240.png</filename>
+		<filename>images/ui-icons_8d78a5_256x240.png</filename>
+		<filename>images/ui-icons_8dc262_256x240.png</filename>
+		<filename>images/ui-icons_9bcc60_256x240.png</filename>
+		<filename>images/ui-icons_9ccdfc_256x240.png</filename>
+		<filename>images/ui-icons_add978_256x240.png</filename>
+		<filename>images/ui-icons_b83400_256x240.png</filename>
+		<filename>images/ui-icons_b8ec79_256x240.png</filename>
+		<filename>images/ui-icons_bd7b00_256x240.png</filename>
+		<filename>images/ui-icons_c98000_256x240.png</filename>
+		<filename>images/ui-icons_cc0000_256x240.png</filename>
+		<filename>images/ui-icons_cccccc_256x240.png</filename>
+		<filename>images/ui-icons_e0fdff_256x240.png</filename>
+		<filename>images/ui-icons_e3ddc9_256x240.png</filename>
+		<filename>images/ui-icons_e8e2b5_256x240.png</filename>
+		<filename>images/ui-icons_eb990f_256x240.png</filename>
+		<filename>images/ui-icons_ededed_256x240.png</filename>
+		<filename>images/ui-icons_eeeeee_256x240.png</filename>
+		<filename>images/ui-icons_ef8c08_256x240.png</filename>
+		<filename>images/ui-icons_f08000_256x240.png</filename>
+		<filename>images/ui-icons_f29a00_256x240.png</filename>
+		<filename>images/ui-icons_f2ec64_256x240.png</filename>
+		<filename>images/ui-icons_f35f07_256x240.png</filename>
+		<filename>images/ui-icons_f5e175_256x240.png</filename>
+		<filename>images/ui-icons_f9bd01_256x240.png</filename>
+		<filename>images/ui-icons_f9f2bd_256x240.png</filename>
+		<filename>images/ui-icons_fcdd4a_256x240.png</filename>
+		<filename>images/ui-icons_ffffff_256x240.png</filename>
+		<filename>js/bookmarkscroll.js</filename>
+		<filename>js/index.html</filename>
+		<filename>js/jquery.accordionfaq.js</filename>
+		<filename>js/csshover3.htc</filename>
+		<filename>js/jquery.easing.js</filename>
+		<filename>js/preparefaq.js</filename>
+	</files>
+	<languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.plg_content_accordionfaq.ini</language>
+        <language tag="he-IL">he-IL/he-IL.plg_content_accordionfaq.ini</language>
+        <language tag="en-GB">en-GB/en-GB.plg_content_accordionfaq.sys.ini</language>
+        <language tag="he-IL">he-IL/he-IL.plg_content_accordionfaq.sys.ini</language>
+	</languages>
+	<config>
+		<fields
+			name="params">
+			<fieldset
+				name="basic">
+
+				<field
+					name="includejquery"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="PLG_ACCORDIONFAQ_FIELD_INCLUDEJQUERY_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_INCLUDEJQUERY_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="jquerynoconflict"
+					type="radio"
+					default="1"
+					class="btn-group"
+					label="PLG_ACCORDIONFAQ_FIELD_JQUERYNOCONFLICT_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_JQUERYNOCONFLICT_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="faqid"
+					type="text"
+					default="accordion1"
+					label="PLG_ACCORDIONFAQ_FIELD_FAQID_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_FAQID_DESC" />
+
+				<field
+					name="faqclass"
+					type="text"
+					default="lightnessfaq defaulticon headerbackground headerborder contentbackground contentborder round5"
+					label="PLG_ACCORDIONFAQ_FIELD_FAQCLASS_LABEL"
+					size="50"
+					description="PLG_ACCORDIONFAQ_FIELD_FAQCLASS_DESC" />
+
+				<field
+					name="header"
+					type="text"
+					default="h3"
+					label="PLG_ACCORDIONFAQ_FIELD_HEADER_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_HEADER_DESC" />
+
+				<field
+					name="autonumber"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="PLG_ACCORDIONFAQ_FIELD_AUTONUMBER_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_AUTONUMBER_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field name="autoheight"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="PLG_ACCORDIONFAQ_FIELD_AUTOHEIGHT_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_AUTOHEIGHT_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="alwaysopen"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="PLG_ACCORDIONFAQ_FIELD_ALWAYSOPEN_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_ALWAYSOPEN_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="openmultiple"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="PLG_ACCORDIONFAQ_FIELD_OPENMULTIPLE_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_OPENMULTIPLE_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="scrollonopen"
+					type="radio"
+					class="btn-group"
+					default="0"
+					label="PLG_ACCORDIONFAQ_FIELD_SCROLLONOPEN_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_SCROLLONOPEN_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="active"
+					type="text"
+					default=""
+					label="PLG_ACCORDIONFAQ_FIELD_ACTIVE_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_ACTIVE_DESC" />
+
+				<field
+					name="animation"
+					type="list"
+					default="slide"
+					label="PLG_ACCORDIONFAQ_FIELD_ANIMATION_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_ANIMATION_DESC" >
+					<option
+						value="none">JNone</option>
+					<option
+						value="easeslide">PLG_ACCORDIONFAQ_OPTION_EASESLIDE</option>
+					<option
+						value="bounceslide">PLG_ACCORDIONFAQ_OPTION_BOUNCESLIDE</option>
+					<option
+						value="slide">PLG_ACCORDIONFAQ_OPTION_SLIDE</option>
+				</field>
+
+				<field
+					name="event"
+					type="list"
+					default="click"
+					label="PLG_ACCORDIONFAQ_FIELD_EVENT_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_EVENT_DESC" >
+					<option
+						value="click">PLG_ACCORDIONFAQ_OPTION_CLICK</option>
+					<option
+						value="dblclick">PLG_ACCORDIONFAQ_OPTION_DBLCLICK</option>
+					<option
+						value="mouseover">PLG_ACCORDIONFAQ_OPTION_MOUSEOVER</option>
+				</field>
+
+				<field
+					name="scrolltime"
+					type="text"
+					default="1000"
+					label="PLG_ACCORDIONFAQ_FIELD_SCROLLTIME_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_SCROLLTIME_DESC" />
+
+				<field
+					name="scrolloffset"
+					type="text"
+					default="0"
+					label="PLG_ACCORDIONFAQ_FIELD_SCROLLOFFSET_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_SCROLLOFFSET_DESC" />
+
+				<field
+					name="warnings"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_ACCORDIONFAQ_FIELD_WARNINGS_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_WARNINGS_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="usedynamiccssload"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_ACCORDIONFAQ_FIELD_USEDYNAMICCSSLOAD_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_USEDYNAMICCSSLOAD_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+				<field
+					name="faqlinks"
+					type="text"
+					default=""
+					label="PLG_ACCORDIONFAQ_FIELD_FAQLINKS_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_FAQLINKS_DESC" />
+
+				<field
+					name="keyaccess"
+					type="radio"
+					class="btn-group"
+					default="1"
+					label="PLG_ACCORDIONFAQ_FIELD_KEYACCESS_LABEL"
+					description="PLG_ACCORDIONFAQ_FIELD_KEYACCESS_DESC" >
+					<option
+						value="0">JNo</option>
+					<option
+						value="1">JYes</option>
+				</field>
+
+			</fieldset>
+		</fields>
+	</config>
+</extension>

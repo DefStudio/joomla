@@ -1,0 +1,337 @@
+/* new */
+.topmainlink{
+	width: 288px;
+	height: 203px;
+	margin: 38px 0 0 38px;
+}
+.tomainlink {
+    position: absolute;
+}
+.tomainlink  a{
+	width: 100%;
+	height: 100%;
+	display: inline-block;
+}
+.logintopl{
+	width: 1px;
+	display: inline-block;
+	background: url('../img/topmenul.png') left top repeat-x;
+	height: 46px;
+	float:left;
+}
+.logintop{
+	display: inline-block;
+	background: url('../img/topmenum.png') repeat-x #222323;
+	height: 46px;
+	width: 100%;
+}
+.logintopr{
+	display: inline-block;
+	width: 1px;
+	background: url('../img/topmenur.png') right top repeat-x;
+	height: 46px;
+	float:right;
+}
+.logintop .container{
+	text-align: center;
+}
+.logotop{
+	background: #161616 0 0 no-repeat;
+}
+.logotop .container{
+	background: url('../img/logo3.png') 0 1px no-repeat;
+	margin:-1px auto;
+}
+.logotop .logopic{
+	background: url('../img/shapka4a.png') 0 0 no-repeat;
+	height: 263px;
+	margin-left: 348px;
+}
+/*fix*/
+form#login-form{
+	margin:0;
+}
+.logintop .control-group{
+	display: inline-block;
+	margin:3px 0 0 0px;
+}
+.logintop ul.unstyled{
+	display: inline-block;
+}
+.logintop ul.unstyled li{
+	display: inline-block;
+}
+body #header{
+	background-color: #161616;
+	height: 30px;
+	margin: -1px 0;
+}
+body #header #mainmenu{
+	position: relative;
+	top:0;
+	background: url('../img/mainmenum.png') repeat-x transparent;
+	height: 55px;
+}
+body #header #mainmenu .mainmenuleft{
+	background: url('../img/mainmenul.jpg') no-repeat transparent;
+	height: 55px;
+	width: 15px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+body #header #mainmenu .mainmenuright{
+	background: url('../img/mainmenur.jpg') no-repeat transparent;
+	height: 55px;
+	width: 15px;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+body #footer .footermenu{
+	background: url('../img/fmenum.jpg') repeat-x transparent;
+	position: relative;
+	top:0;/*top: -13px;*/
+	height: 55px;
+	margin-bottom: 13px;
+}
+body #footer .footermenu .footermenuleft{
+	background: url('../img/fmenul.jpg') no-repeat transparent;
+	height: 55px;
+	width: 15px;
+	float: left;
+}
+body #footer .footermenu .footermenuright{
+	background: url('../img/fmenur.jpg') no-repeat transparent;
+	height: 55px;
+	width: 15px;
+	/*position: absolute;
+		top: 0;
+	left: 0;*/
+	float:right
+}
+#icemegamenu li{
+	display: inline-block;
+	float:none;
+	/*background: url('../img/sepline.jpg') right 56% no-repeat transparent;*/
+}
+/*
+	#icemegamenu li:last-child{
+	background: none;
+	}
+*/
+#icemegamenu li:first-child:before {
+    content: "";
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+	background: url('../img/sepline.jpg') left 56% no-repeat transparent;
+	position: absolute;
+	left: 0;
+}
+#icemegamenu li:after {
+    content: "";
+    height: 100%;
+    width: 1px;
+    display: inline-block;
+	background: url('../img/sepline.jpg') left 56% no-repeat transparent;
+	position: absolute;
+	right: 0;
+	top:0;
+}
+.icemegamenu ul#icemegamenu  li a.iceMenuTitle{
+	height: 54px;
+}
+#footer #copyright .custom p{
+	font-size: 15.5px;
+}
+#footer .mailcopy{
+	background: url('../img/mailcopy.png') left 0 no-repeat transparent;
+	display: inline-block;
+	vertical-align: sub;
+	width: 23px;
+	height: 19px;	
+}
+#footer p{
+	font-size: 15px;
+}
+#footer .sitedev{
+	background: url('../img/millor.png') 119px 0px no-repeat transparent;
+	position: absolute;
+	right: 0;
+	top: 31%;
+	font-size: 15px;
+	color: #2f3030;
+	width: 234px;
+	height: 25px;
+	padding: 2px 0 0;
+}
+#footer ul#icemegamenu{
+	clear:none;
+}
+/* modules on main page*/
+#sidebar .newssubsc{
+	background: url('../img/newsback.jpg') 0px 0px repeat transparent;
+	padding: 15px 15px 25px 25px;
+}
+#sidebar .newssubsc h3{
+	text-transform: uppercase;
+	color: #2f3030;
+}
+#sidebar .newssubsc p{
+	color:#939598;
+}
+#sidebar .newssubsc input[type=submit]{
+	font-size: 12.9px;
+	height: 46px;
+	color:#fff;
+	background: url('../img/newsub.jpg') 0px 0px repeat-x transparent;
+	border: 0 none;
+	display: block;	
+	text-transform: uppercase;
+}
+#sidebar .newssubsc form{
+	margin: 0;
+	font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+#sidebar .newssubsc input[type=text]{
+	width: auto;
+}
+#sidebar .newssubsc input[type=submit]{
+	font-weight: bold;
+}
+#sidebar .temsf h3{
+	font-size: 22.6px;
+	font-weight: bold;
+	text-transform: uppercase;
+	padding: 15px 15px 25px 25px;
+}
+#sidebar .temsf div,
+#sidebar .temsf div a{
+	/*height: 47px;*/
+	background-color: #000;
+	margin: 5px 0px;
+	color:#fff;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 17px;
+}
+#sidebar .temsf div a{
+	padding: 17px 0 15px;
+	display: inline-block;
+}
+#sidebar .tems1{
+	background: url('../img/tems1.jpg') 13px 21px no-repeat transparent;
+    background-color: transparent;
+	padding-left: 50px;
+}
+#sidebar .tems2{
+	background: url('../img/tems2.jpg') 13px 21px no-repeat transparent;
+	padding-left: 50px;
+}
+#sidebar .tems3{
+	background: url('../img/tems3.jpg') 13px 21px no-repeat transparent;
+	padding-left: 50px;
+}
+#sidebar .texth{
+	color: #2f3030;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 22.6px;
+}
+#sidebar .textb{
+	color: #939598;
+	text-transform: uppercase;
+	font-size: 17px;
+	margin-bottom: 20px;
+}
+.loginmainp #login-form #form-login-remember{
+	display: none;
+}
+.loginmainp{
+	position: relative;
+}
+.loginmainp #login-form{
+}
+.loginmainp #login-form .fingerprint{
+	background: url('../img/fingerptint.png') 0 0 no-repeat transparent;
+	width: 23px;
+	height: 26px;
+	display: inline-block;
+	vertical-align: middle;
+	margin: 2px 23px 0 136px;
+}
+
+.loginmainp #form-login-username .add-on{
+	border-radius: 0;
+	background: #595959;
+	border: 0 none;
+}
+.loginmainp #form-login-username .icon-user{
+	background: url('../img/loginuser.jpg');
+	width: 16px;
+	height: 16px;
+}
+.loginmainp #form-login-username input{
+	background: #595959;
+	font-size: 15px;
+	color: #fff;
+	font-style: italic;
+	border-radius: 0;
+	border: 0 none;
+}
+.loginmainp #form-login-password{
+	margin: 0 12px 0 13px;
+}
+.loginmainp #form-login-password .add-on{
+	border-radius: 0;
+	background: #595959;
+	border: 0 none;
+}
+.loginmainp #form-login-password .icon-lock{
+	background: url('../img/loginpass.jpg');
+	width: 22px;
+	height: 13px;
+	margin: 4px 0 0 0;
+}
+.loginmainp #form-login-password input{
+	background: #595959;
+	font-size: 15px;
+	color: #fff;
+	font-style: italic;
+	border-radius: 0;
+	border: 0 none;
+	width:147px;
+}
+.loginmainp #form-login-submit .btn{
+	font-size: 12.91px;
+	background: url('../img/loginback.jpg') repeat-x;
+	border-radius: 0;
+	border: 0 none;
+	width: 92px;
+	height: 42px;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-shadow: none;
+}
+.loginmainp #login-form li a{
+	font-size: 11.78px;
+	color: #fff;
+}
+.loginmainp #login-form ul{
+	vertical-align: sub;
+	margin: 0 20px;
+	
+}
+.loginmainp #login-form li.goregister a{
+	text-decoration: underline;
+}
+.loginmainp #login-form li.goregister{
+	display: block;
+	line-height: 0;
+	font-weight: bold;
+}
+.loginmainp #login-form li.forgotpass{
+	display: block;
+}

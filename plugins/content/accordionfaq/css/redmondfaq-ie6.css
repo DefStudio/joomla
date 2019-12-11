@@ -1,0 +1,21 @@
+/* redmondfaq faq layout */
+.redmondfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/collapsed-black.gif');
+}
+.redmondfaq.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/expanded-black.gif');
+}
+.redmondfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_6da8d5_256x240.png');
+}
+.redmondfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_217bc0_256x240.png');
+}
+.redmondfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_f9bd01_256x240.png');
+}

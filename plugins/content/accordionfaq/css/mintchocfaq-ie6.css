@@ -1,0 +1,13 @@
+/* mintchocfaq faq layout */
+.mintchocfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_9bcc60_256x240.png');
+}
+.mintchocfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_add978_256x240.png');
+}
+.mintchocfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_e3ddc9_256x240.png');
+}

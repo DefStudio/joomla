@@ -1,0 +1,9 @@
+/* blitzerfaq ie6 rules */
+/* NOTE! The src URLs are absolute to the Joomla base directory, not the CSS */
+.blitzerfaq.defaulticon span.accordionfaqicon,
+.blitzerfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_cc0000_256x240.png');
+}
+
+

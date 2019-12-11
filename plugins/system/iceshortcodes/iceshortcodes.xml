@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="3.0.1" 
+	type="plugin" 
+	group="system" 
+	client="administrator"
+	method="upgrade">
+	<name>IceShortCodes</name>
+	<version>3.0.1</version>
+	<creationDate>Apr 2013</creationDate>
+	<author>Icetheme</author>
+	<authorEmail>info@icetheme.com</authorEmail>
+	<authorUrl>http://www.icetheme.com</authorUrl>
+	
+	<updateservers>
+	<server type="extension" priority="1" name="IceShortCodes Module">http://update.icetheme.com/iceshortcodes/list.xml</server>
+	</updateservers>
+	
+	<license>GNU/GPL http://www.gnu.org/copyleft/gpl.html</license>
+	<copyright>Copyright (C) 2008 - 2013 IceTheme.com</copyright>
+<description>Adding content and making changes in your articles has never been easier. We all know that designing and creating content can be frustrated from time to time. We may not have time or simply grow lazy on several occasions therefore our work may not be properly reflected. With IceShortCodes you don’t need to worry. There will be plenty of time spared, you’ll finish any project with ease and what’s more important you’ll create something cool.<![CDATA[<p> <a href="http://www.icetheme.com"> IceTheme.com </a> | <a href="http://demo.icetheme.com/extensions30/iceshortcodes"> View Demo </a> | <a href="http://support.icetheme.com"> Get Support </a>				
+]]></description>
+
+	<files>
+		<folder>assets</folder>
+		<filename plugin="iceshortcodes">iceshortcodes.php</filename>	
+		<filename plugin="iceshortcodes">CHANGELOG.php</filename>	
+	</files>
+	<languages>
+	</languages>	
+		<config>
+		    <fields name="params">
+				<fieldset
+					name="basic">
+					<field name="enable_bootstrap" type="list" default="1"
+					label="Enable Bootstrap Framework" description="Wether to enable or disable the bootstrap framework. ">
+						<option value="0">No</option>
+						<option value="1">Yes</option>
+					</field>
+				</fieldset>
+			</fields>
+		</config>
+</extension>

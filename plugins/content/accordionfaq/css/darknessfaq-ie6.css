@@ -1,0 +1,26 @@
+/* darknessfaq faq layout */
+.darknessfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_cccccc_256x240.png');
+}
+.darknessfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.darknessfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.darknessfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_222222_256x240.png');
+}
+.darknessfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.darknessfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.darknessfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_222222_256x240.png');
+}

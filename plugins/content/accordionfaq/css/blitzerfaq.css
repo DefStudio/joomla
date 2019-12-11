@@ -1,0 +1,132 @@
+/* blitzerfaq faq layout */
+.blitzerfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+
+.blitzerfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #eeeeee;
+}
+.blitzerfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.blitzerfaq div.accordionfaqitem,
+.blitzerfaq div.accordionfaqitem *
+{
+	color: #333333;
+}
+.blitzerfaq.contentbackground div.accordionfaqitem
+{
+	background: #ffffff url(../images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+}
+.blitzerfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.blitzerfaq .accordionfaqheader,
+.blitzerfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.blitzerfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #d8dcdf;
+}
+.blitzerfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #cdd5da;
+}
+.blitzerfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #eeeeee;
+}
+.blitzerfaq .accordionfaqheader a,
+.blitzerfaq .accordionfaqheader a:hover,
+.blitzerfaq .accordionfaqheader a:active,
+.blitzerfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.blitzerfaq .accordionfaqheader,
+.blitzerfaq .accordionfaqheader a,
+.blitzerfaq .accordionfaqheader:hover,
+.blitzerfaq .accordionfaqheader:hover a
+{
+	color: #004276;
+}
+.blitzerfaq.headerbackground .accordionfaqheader:hover,
+.blitzerfaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #111111;
+}
+.blitzerfaq .accordionfaqheader.selected,
+.blitzerfaq .accordionfaqheader.selected a
+{
+	color: #cc0000;
+}
+.blitzerfaq .accordionfaqheader:hover,
+.blitzerfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.blitzerfaq.headerbackground .accordionfaqheader,
+.blitzerfaq.headerbackground .accordionfaqheader a
+{
+	background: #eeeeee url(../images/ui-bg_highlight-hard_100_eeeeee_1x100.png) 50% 50% repeat-x;
+}
+.blitzerfaq.headerbackground .accordionfaqheader:hover,
+.blitzerfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #f6f6f6 url(../images/ui-bg_highlight-hard_100_f6f6f6_1x100.png) 50% 50% repeat-x;
+}
+.blitzerfaq.headerbackground .accordionfaqheader.selected,
+.blitzerfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #ffffff url(../images/ui-bg_flat_65_ffffff_40x100.png) 50% 50% repeat-x;
+	color: #cc0000;
+}
+.blitzerfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+
+.blitzerfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.blitzerfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.blitzerfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.blitzerfaq.arrow .accordionfaqheader:hover.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.blitzerfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_cc0000_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.blitzerfaq.rtl.defaulticon span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.blitzerfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.blitzerfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-position: -64px -16px;
+}

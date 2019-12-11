@@ -1,0 +1,25 @@
+/* flickfaq faq layout */
+.flickfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_666666_256x240.png');
+}
+.flickfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_454545_256x240.png');
+}
+.flickfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_454545_256x240.png');
+}
+.flickfaq.headerbackground.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_666666_256x240.png');
+}
+.flickfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.flickfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_454545_256x240.png');
+}

@@ -1,0 +1,258 @@
+/**********************************************************************************
+
+	@copyright	Copyright (C) 2013 IceTheme. All Rights Reserved
+	@license	Copyrighted Commercial Software 
+	@author     IceTheme (icetheme.com)
+	
+**********************************************************************************/
+
+/* Import LESS variables and mixins files */
+@import "bootstrap/responsive.less"; 	
+@import "vars.less";
+
+
+
+/*********************************************************************************/
+/* DESKTOP XL */
+/*********************************************************************************/
+@media @desktop_xl {
+	
+	/* IceMegamenu */
+	.icemegamenu {
+	
+		> ul {
+	
+			> li {
+				margin-right:6px;
+			
+				a.iceMenuTitle {
+					padding: 0 12px!important;
+				}
+			}
+		}
+	}
+	
+	/* Layout */
+	#content {
+	
+		#promo {
+		
+			.moduletable  {
+				
+				.moduletable_heading {
+				}
+			}
+		}
+	}
+	
+	#footer {	
+	
+		.moduletable {
+		
+			.moduletable_heading {
+			
+			}
+		}
+	}
+	
+	
+}
+
+
+
+/*********************************************************************************/
+/* DESKTOP */
+/*********************************************************************************/
+@media @desktop {
+	
+	/* NORMALLY, THIS PART IS ALREADY DEFINED (WHEN RESPONSIVE IS DISABLED) */
+	
+}
+
+
+
+/*********************************************************************************/
+/* TABLET */
+/*********************************************************************************/
+@media @tablet {
+	
+	#header #mainmenu {
+		height:45px;
+		position:relative;
+		top:0;
+		margin-bottom: 15px;
+	}
+	
+	/* IceMegamenu */
+	.ice-megamenu-toggle {
+		display:block;
+		float:none;
+		text-align:center;
+		
+		a {
+			background:none;
+			display: block;
+			height: 45px;
+			line-height:45px;
+			margin-top: 0;
+			text-indent: 0;
+			width: 100%;
+			font-size:20px;
+			color:#fff;
+			font-family:@heading_font;
+		}
+	}
+	
+	.nav-collapse, .nav-collapse.collapse {
+		background:lighten(@bg_primary,10%);
+		overflow: hidden!important;
+	}
+	
+	#icemegamenu > li > ul.icesubMenu {
+		display: block;
+	}
+	
+	.icemegamenu > ul {
+		margin-left: 0;
+
+	 	> li {
+			background: none;
+		
+			a {
+				padding:0!important;
+			}
+		}
+	}
+	
+	#icemegamenu > li > ul.icesubMenu,
+	#icemegamenu > li > ul.icesubMenu li > ul {
+		background:lighten(@bg_primary,15%);
+		left:0!important;
+		margin:0!important;
+		.rotate(0);
+		
+		li {
+			background-image:none!important;
+		}
+	}
+	
+	.icesubMenu .icemega_cover_module {
+		display:block;
+	}
+	
+	
+	/* Layout */
+	#header {
+	}
+
+	
+	
+	/* iceslideshow */
+	#iceslideshow {
+		
+		
+	}
+	
+}
+
+
+
+/*********************************************************************************/
+/* PHONE */
+/*********************************************************************************/
+@media @phone {
+	
+	/* iceslideshow */
+	#iceslideshow {
+		
+		.carousel-indicators {
+			display:none;
+		}
+		
+		.carousel-caption {
+			opacity:1;
+			bottom:0;
+		}
+		
+		.carousel-control {
+			top:20%!important;
+		}
+	}
+	
+	/* layout */
+	#header {
+		margin: 0 -20px;
+		padding: 0 20px;
+		
+		#logo {
+			float: none;
+			margin: 15px 0;
+			text-align: center;
+		}
+				
+		#topmenu {
+			float: none;
+			text-align: center;
+		
+			li {
+				float: none!important;
+				display:inline-block;
+			}
+		}
+		
+		#search {
+			margin:0 0 25px;
+		}
+		
+		#language {
+			padding-top:5px;
+			float:none;
+			text-align: center;
+		
+			li {
+				float: none!important;
+				display:inline-block;
+			}
+		}
+		
+	}
+	
+	#footer {
+		margin: 0 -20px;
+		padding: 0 20px;
+	}
+	
+	#sidebar {
+		clear:both;
+	}
+	
+	.blog .items-leading .pull-left.item-image {
+		float: none;
+		text-align: center;
+		margin: 0 0 10px;
+	}
+	
+	#icecarousel h3.slider_heading:before,
+	#icecarousel h3.slider_heading:after {
+		display:none;
+	}
+	
+	
+	#gotop .scrollup {
+		clear: both;
+		float: right;
+		position: relative;
+		text-align: center;
+		display: block;
+		width: 100%;
+		padding: 0;
+		left: 0;
+		margin: 0 -20px;
+		padding: 0 20px;
+		
+		&:after {
+			width: 100%;
+		}
+	}
+	
+}

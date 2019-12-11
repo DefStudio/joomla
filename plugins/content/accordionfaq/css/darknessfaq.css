@@ -1,0 +1,154 @@
+/* darknessfaq faq layout */
+.darknessfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.darknessfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #666666;
+}
+.darknessfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.darknessfaq.contentbackground div.accordionfaqitem,
+.darknessfaq.contentbackground div.accordionfaqitem *
+{
+	color: #ffffff;
+}
+.darknessfaq.contentbackground div.accordionfaqitem
+{
+	background: #000000 url(../images/ui-bg_inset-soft_25_000000_1x100.png) 50% bottom repeat-x;
+	color: #ffffff;
+}
+.darknessfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.darknessfaq .accordionfaqheader,
+.darknessfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	color: #1c94c4;
+	font-weight: bold;
+}
+.darknessfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #cccccc;
+}
+.darknessfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #59b4d4;
+}
+.darknessfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #ffaf0f;
+}
+.darknessfaq .accordionfaqheader a,
+.darknessfaq .accordionfaqheader a:hover,
+.darknessfaq .accordionfaqheader a:active,
+.darknessfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.darknessfaq .accordionfaqheader,
+.darknessfaq .accordionfaqheader a
+{
+	color: #cccccc;
+}
+.darknessfaq .accordionfaqheader:hover,
+.darknessfaq .accordionfaqheader:hover a,
+.darknessfaq .accordionfaqheader.selected,
+.darknessfaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.darknessfaq.headerbackground .accordionfaqheader,
+.darknessfaq.headerbackground .accordionfaqheader a
+{
+	background: #555555 url(../images/ui-bg_glass_20_555555_1x400.png) 50% 50% repeat-x;
+	color: #eeeeee;
+}
+.darknessfaq.headerbackground .accordionfaqheader:hover,
+.darknessfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #0078a3 url(../images/ui-bg_glass_40_0078a3_1x400.png) 50% 50% repeat-x;
+	color: #ffffff;
+}
+.darknessfaq.headerbackground .accordionfaqheader.selected,
+.darknessfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #f58400 url(../images/ui-bg_inset-soft_30_f58400_1x100.png) 50% 50% repeat-x;
+	color: #ffffff;
+}
+.darknessfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.darknessfaq .accordionfaqheader:hover,
+.darknessfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.darknessfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.darknessfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.darknessfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.darknessfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.darknessfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_cccccc_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.darknessfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+.darknessfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -64px -16px;
+}
+.darknessfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_222222_256x240.png);
+	background-position: -32px -16px;
+}
+.darknessfaq.rtl.defaulticon span.accordionfaqicon,
+.darknessfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.darknessfaq.rtl.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.darknessfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+.darknessfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.darknessfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.darknessfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.darknessfaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_222222_256x240.png);
+	background-position: -64px -16px;
+}

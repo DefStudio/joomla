@@ -1,0 +1,133 @@
+/* redmondfaq faq layout */
+.redmondfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.redmondfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #aaaaaa;
+}
+.redmondfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.redmondfaq.contentbackground div.accordionfaqitem
+{
+	background: #ffffff url(../images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	color: #222222;
+}
+.redmondfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.redmondfaq .accordionfaqheader,
+.redmondfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	color: #1c94c4;
+	font-weight: bold;
+}
+.redmondfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #c5dbec;
+}
+.redmondfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #79b7e7;
+}
+.redmondfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #79b7e7;
+}
+.redmondfaq .accordionfaqheader a,
+.redmondfaq .accordionfaqheader a:hover,
+.redmondfaq .accordionfaqheader a:active,
+.redmondfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.redmondfaq .accordionfaqheader,
+.redmondfaq .accordionfaqheader a
+{
+	color: #2e6e9e;
+}
+.redmondfaq .accordionfaqheader:hover,
+.redmondfaq .accordionfaqheader:hover a
+{
+	color: #1d5987;
+}
+.redmondfaq .accordionfaqheader.selected,
+.redmondfaq .accordionfaqheader.selected a
+{
+	color: #e17009;
+}
+.redmondfaq.headerbackground .accordionfaqheader,
+.redmondfaq.headerbackground .accordionfaqheader a
+{
+	background: #dfeffc url(../images/ui-bg_glass_85_dfeffc_1x400.png) 50% 50% repeat-x;
+	color: #2e6e9e;
+}
+.redmondfaq.headerbackground .accordionfaqheader:hover,
+.redmondfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #d0e5f5 url(../images/ui-bg_glass_75_d0e5f5_1x400.png) 50% 50% repeat-x;
+}
+.redmondfaq.headerbackground .accordionfaqheader.selected,
+.redmondfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #f5f8f9 url(../images/ui-bg_inset-hard_100_f5f8f9_1x100.png) 50% 50% repeat-x;
+	color: #e17009;
+}
+.redmondfaq.contentborder .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.redmondfaq .accordionfaqheader:hover,
+.redmondfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.redmondfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.redmondfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.redmondfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.redmondfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.redmondfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_6da8d5_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.redmondfaq.rtl.defaulticon span.accordionfaqicon,
+.redmondfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.redmondfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_217bc0_256x240.png);
+	background-position: -32px -16px;
+}
+.redmondfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.redmondfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_f9bd01_256x240.png);
+	background-position: -64px -16px;
+}

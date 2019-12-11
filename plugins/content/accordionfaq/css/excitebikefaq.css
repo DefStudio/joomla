@@ -1,0 +1,146 @@
+/* excitebikefaq faq layout */
+.excitebikefaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.excitebikefaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #aaaaaa;
+}
+.excitebikefaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.excitebikefaq div.accordionfaqitem,
+.excitebikefaq div.accordionfaqitem *
+{
+	color: #222222;
+}
+.excitebikefaq.contentbackground div.accordionfaqitem
+{
+	background: #eeeeee url(../images/ui-bg_inset-hard_100_eeeeee_1x100.png) 50% bottom repeat-x;
+}
+.excitebikefaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.excitebikefaq .accordionfaqheader,
+.excitebikefaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.excitebikefaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #ffffff;
+}
+.excitebikefaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #2293f7;
+}
+.excitebikefaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #e69700;
+}
+.excitebikefaq .accordionfaqheader a,
+.excitebikefaq .accordionfaqheader a:hover,
+.excitebikefaq .accordionfaqheader a:active,
+.excitebikefaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.excitebikefaq .accordionfaqheader,
+.excitebikefaq .accordionfaqheader a,
+.excitebikefaq .accordionfaqheader:hover,
+.excitebikefaq .accordionfaqheader:hover a,
+.excitebikefaq .accordionfaqheader.selected,
+.excitebikefaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.excitebikefaq.headerbackground .accordionfaqheader,
+.excitebikefaq.headerbackground .accordionfaqheader a,
+.excitebikefaq.headerbackground .accordionfaqheader:hover,
+.excitebikefaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #ffffff;
+}
+.excitebikefaq.headerbackground .accordionfaqheader,
+.excitebikefaq.headerbackground .accordionfaqheader a
+{
+	background: #1484e6 url(../images/ui-bg_diagonals-thick_22_1484e6_40x40.png) 50% 50% repeat;
+}
+.excitebikefaq.headerbackground .accordionfaqheader:hover,
+.excitebikefaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #2293f7 url(../images/ui-bg_diagonals-thick_26_2293f7_40x40.png) 50% 50% repeat;
+}
+.excitebikefaq.headerbackground .accordionfaqheader.selected,
+.excitebikefaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #e69700 url(../images/ui-bg_diagonals-thick_20_e69700_40x40.png) 50% 50% repeat;
+	color: #ffffff;
+}
+.excitebikefaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.excitebikefaq .accordionfaqheader:hover,
+.excitebikefaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.excitebikefaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.excitebikefaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.excitebikefaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.excitebikefaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.excitebikefaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_fcdd4a_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.excitebikefaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.excitebikefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_fcdd4a_256x240.png);
+}
+.excitebikefaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+.excitebikefaq.rtl.defaulticon span.accordionfaqicon,
+.excitebikefaq.rtl.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.excitebikefaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.excitebikefaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -64px -16px;
+}
+.excitebikefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.excitebikefaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-position: -64px -16px;
+}

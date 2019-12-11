@@ -1,0 +1,153 @@
+/* southstreetfaq faq layout */
+.southstreetfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.southstreetfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #dfd9c3;
+}
+.southstreetfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.southstreetfaq div.accordionfaqitem,
+.southstreetfaq div.accordionfaqitem *
+{
+	color: #312e25;
+}
+.southstreetfaq.contentbackground div.accordionfaqitem
+{
+	background: #f5f3e5 url(../images/ui-bg_highlight-hard_100_f5f3e5_1x100.png) 50% top repeat-x;
+}
+.southstreetfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.southstreetfaq .accordionfaqheader,
+.southstreetfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.southstreetfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #327e04;
+}
+.southstreetfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #327e04;
+}
+.southstreetfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #d4ccb0;
+}
+.southstreetfaq .accordionfaqheader a,
+.southstreetfaq .accordionfaqheader a:hover,
+.southstreetfaq .accordionfaqheader a:active,
+.southstreetfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.southstreetfaq .accordionfaqheader,
+.southstreetfaq .accordionfaqheader a,
+.southstreetfaq .accordionfaqheader:hover,
+.southstreetfaq .accordionfaqheader:hover a
+{
+	color: #888888;
+}
+.southstreetfaq.headerbackground .accordionfaqheader,
+.southstreetfaq.headerbackground .accordionfaqheader a,
+.southstreetfaq.headerbackground .accordionfaqheader:hover,
+.southstreetfaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #ffffff;
+}
+.southstreetfaq .accordionfaqheader.selected,
+.southstreetfaq .accordionfaqheader.selected a
+{
+	color: #459e00;
+}
+.southstreetfaq.headerbackground .accordionfaqheader,
+.southstreetfaq.headerbackground .accordionfaqheader a
+{
+	background: #459e00 url(../images/ui-bg_highlight-hard_15_459e00_1x100.png) 50% 50% repeat-x;
+}
+.southstreetfaq.headerbackground .accordionfaqheader:hover,
+.southstreetfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #67b021 url(../images/ui-bg_highlight-soft_25_67b021_1x100.png) 50% 50% repeat-x;
+}
+.southstreetfaq.headerbackground .accordionfaqheader.selected,
+.southstreetfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #fafaf4 url(../images/ui-bg_highlight-hard_100_fafaf4_1x100.png) 50% 50% repeat-x;
+	color: #459e00;
+}
+.southstreetfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.southstreetfaq .accordionfaqheader:hover,
+.southstreetfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.southstreetfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.southstreetfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.southstreetfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.southstreetfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.southstreetfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_8dc262_256x240.png);
+ 	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.southstreetfaq.rtl.defaulticon span.accordionfaqicon,
+.southstreetfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.southstreetfaq.rtl.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.southstreetfaq.rtl.headerbackground.defaulticon .accordionfaqheader span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.southstreetfaq.headerbackground.defaulticon .accordionfaqheader span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_eeeeee_256x240.png);
+	background-position: -32px -16px;
+}
+.southstreetfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_8dc262_256x240.png);
+	background-position: -32px -16px;
+}
+.southstreetfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+.southstreetfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.southstreetfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.southstreetfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.southstreetfaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_8dc262_256x240.png);
+	background-position: -64px -16px;
+}

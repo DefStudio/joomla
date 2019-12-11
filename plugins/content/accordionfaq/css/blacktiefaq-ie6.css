@@ -1,0 +1,19 @@
+/* blacktiefaq ie6 rules */
+/* NOTE! The src URLs are absolute to the Joomla base directory, not the CSS */
+.blacktiefaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_222222_256x240.png');
+}
+.blacktiefaq.headerbackground.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ededed_256x240.png');
+}
+.blacktiefaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.blacktiefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.blacktiefaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_222222_256x240.png');
+}

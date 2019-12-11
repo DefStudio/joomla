@@ -1,0 +1,29 @@
+/* southstreetfaq faq layout */
+.southstreetfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/collapsed-black.gif');
+}
+.southstreetfaq.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/expanded-black.gif');
+}
+.southstreetfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_8dc262_256x240.png');
+}
+.southstreetfaq.headerbackground.defaulticon .accordionfaqheader span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_eeeeee_256x240.png');
+}
+.southstreetfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_8dc262_256x240.png');
+}
+.southstreetfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.southstreetfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_8dc262_256x240.png');
+}

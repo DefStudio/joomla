@@ -1,0 +1,74 @@
+/* accordionfaq ie6 rules */
+/* NOTE! The src URLs are absolute to the Joomla base directory, not the CSS */
+body {
+	behavior:url('/plugins/content/accordionfaq/js/csshover3.htc' );
+}
+.accordionfaq.onoff span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/04.gif');
+}
+.accordionfaq.greenarrow span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/arrow.png');
+}
+.accordionfaq.plus2 span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/add.gif');
+}
+.accordionfaq.plus2 .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/minus.gif');
+}
+.accordionfaq.plus3 span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/icontexto-webdev-add-016x016.gif');
+}
+.accordionfaq.plus3 .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/icontexto-webdev-remove-016x016.gif');
+}
+.accordionfaq.power span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/power_off.gif');
+}
+.accordionfaq.power .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/power_on.gif');
+}
+.accordionfaq.check span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/nocheck.gif');
+}
+.accordionfaq.check .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/check.gif');
+}
+.accordionfaq.help span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/sign_question.gif');
+}
+.accordionfaq.help .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/sign_info.gif');
+}
+.accordionfaq.help2 span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/help.gif');
+}
+.accordionfaq.help2 .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/info.gif');
+}
+.accordionfaq.orangearrow2 span.accordionfaqicon,
+.accordionfaq.orangearrow2 .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ef8c08_256x240.png');
+}
+.accordionfaq.onoff .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/02.gif');
+}
+.accordionfaq.greenarrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/arrow_down.png');
+}

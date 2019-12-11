@@ -1,0 +1,160 @@
+/* Compiled Less CSS File */
+/* Generated from "style2.css" */
+
+/* 
+DO NOT DELETE THIS LINE
+Necessary to check if StyleSheet has loaded  */
+#dummy-element {
+  width: 2px;
+}
+/* Import LESS variables and mixins files */
+/***********************************************************************************************/
+/* LESS VARIABLES */
+/***********************************************************************************************/
+/***********************************************************************************************/
+/* LESS MIXINS */
+/***********************************************************************************************/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:before,
+.clearfix:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+.clearfix:after {
+  clear: both;
+}
+.hide-text {
+  font: NaN a;
+  color: transparent;
+  text-shadow: none;
+  background-color: transparent;
+  border: 0;
+}
+.input-block-level {
+  display: block;
+  width: 100%;
+  min-height: 30px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/*********************************************************************************/
+/* LESS VARIABLES */
+/*********************************************************************************/
+/*********************************************************************************/
+/* Style 2 */
+/*********************************************************************************/
+#iceslideshow .carousel-indicators li.active {
+  background: #dd5960;
+}
+#sidebar {
+  /* Sidebar Modules */
+
+}
+#sidebar .sidebar_module {
+  background-color: #dd5960;
+  /* with style1 */
+
+  /* with style2 */
+
+}
+#sidebar .sidebar_module h3.sidebar_module_heading {
+  text-shadow: 1px 1px 1px #c22830;
+}
+#sidebar .sidebar_module .sidebar_module_content .icebtn {
+  background: #d42f37;
+}
+#sidebar .sidebar_module .sidebar_module_content .icebtn:hover {
+  background-color: #e68389;
+}
+#sidebar .sidebar_module.sidebar_module_style1 {
+  background-color: #e1a75b;
+}
+#sidebar .sidebar_module.sidebar_module_style1 h3.sidebar_module_heading {
+  text-shadow: 1px 1px 1px #ca8325;
+}
+#sidebar .sidebar_module.sidebar_module_style1 .icebtn {
+  background: #d99030;
+}
+#sidebar .sidebar_module.sidebar_module_style1 .icebtn:hover {
+  background-color: #e9be86;
+}
+#sidebar .sidebar_module.sidebar_module_style2 {
+  background-color: #50bfc7;
+}
+#sidebar .sidebar_module.sidebar_module_style2 h3.sidebar_module_heading {
+  text-shadow: 1px 1px 1px #319299;
+}
+#sidebar .sidebar_module.sidebar_module_style2 .icebtn {
+  background: #37a5ad;
+}
+#sidebar .sidebar_module.sidebar_module_style2 .icebtn:hover {
+  background-color: #77cdd3;
+}
+#social_icons ul li a {
+  background-image: url(../../images/styles/style2/social_icons.png);
+}
+.icebtn,
+p.readmore a.btn {
+  background: #dd5960;
+}
+.icebtn:hover,
+p.readmore a.btn:hover {
+  background-color: #e16e74;
+}
+/* Page Slide */
+.iceslide_link {
+  background: #dd5960;
+}
+#iceslide .close {
+  background: #dd5960;
+}
+#iceslide .close:hover {
+  background: #e16e74;
+}
+#icecarousel {
+  background: #dd5960;
+}
+#icecarousel:after {
+  background-color: #f8dbdc;
+  background-image: -moz-linear-gradient(top, #f3c3c5, #ffffff);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f3c3c5), to(#ffffff));
+  background-image: -webkit-linear-gradient(top, #f3c3c5, #ffffff);
+  background-image: -o-linear-gradient(top, #f3c3c5, #ffffff);
+  background-image: linear-gradient(to bottom, #f3c3c5, #ffffff);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff3c3c5', endColorstr='#ffffffff', GradientType=0);
+}
+#gotop .scrollup {
+  background-color: #dd5960;
+  background-color: rgba(221, 89, 96, 0.75);
+}
+body.page-pricing div.pricing-table .pricing-table-header {
+  background: #dd5960;
+}
+body.page-pricing div.pricing-table .pricing-table-header h3 {
+  text-shadow: 1px 1px 1px #c22830;
+}
+body.page-portfolio .ice_filter ul.ice_filter_nav li.current a {
+  background: #dd5960;
+  border-color: #dd5960;
+  text-shadow: 1px 1px 1px #c22830;
+}
+.icesubMenu .icemega_cover_module form#login-form button {
+  background: #dd5960;
+}
+.icesubMenu .icemega_cover_module form#login-form button:hover {
+  background-color: #e16e74;
+}
+.ice_preload .movingBallG {
+  background-color: #dd5960;
+}
+.icemegamenu > ul > li a:hover span.icemega_title {
+  color: #ca2932;
+}
+.icemegamenu > ul > li.active > a > span.icemega_title {
+  color: #ca2932 !important;
+}

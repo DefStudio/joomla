@@ -1,0 +1,201 @@
+##Может быть закомментировано, если вызывает ошибку сервера. Возможность использовать
+##символические ссылки на каталоги или файлы, которые не находятся в пределах корня
+##вашего сайта. Запрет на листинг каталогов.
+Options -Indexes
+##
+## Кодировка по умолчанию
+AddDefaultCharset utf-8
+##
+## Mod_rewrite in use.
+
+## Включение модуля mod_rewrite
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteRule ^get/(.+) /go/redirect.php/$1 [L]
+##
+
+##Корневая директория - начало
+RewriteBase /
+##Корневая директория конец
+
+##Редирект с index.php на / - начало
+RewriteCond %{THE_REQUEST} !^POST
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTPS/
+RewriteCond %{SERVER_PORT}>s ^(443>(s)|[0-9]+>s)$
+RewriteRule ^index\.php$ https%2://bestnetentcasinos.info/ [R=301,L]
+##Редирект с index.php на / - конец
+
+##Редирект с www на без www - начало
+RewriteCond %{HTTPS_HOST} ^www\.(.+)$ [NC]
+RewriteRule ^(.*)$ https://%1/$1 [R=301,L]
+##Редирект с www на без www - конец
+</IfModule>
+## Конец модуля mod_rewrite
+
+##Индексная страница
+DirectoryIndex index.php
+##
+
+## Begin - Custom redirects
+#http://pop.bestnetentcasino.info/* https://bestnetentcasino.info/*
+#
+# If you need to redirect some pages, or set a canonical non-www to
+# www redirect (or vice versa), place that code here. Ensure those
+# redirects use the correct RewriteRule syntax and the [R=301,L] flags.
+RewriteEngine on
+## End - Custom redirects
+
+## Настройки хостинга - начало
+<ifModule mod_php.c>
+php_value register_globals 0
+php_value safe_mode 0
+php_value allow_url_fopen 0
+php_value display_errors 0
+php_value file_uploads 1
+php_value magic_quotes_gpc 1
+php_value magic_quotes_runtime 0
+php_value upload_max_filesize 20M
+php_value post_max_size 10M
+php_value max_execution_time 100
+php_flag register_globals Off
+php_flag display_errors Off
+php_flag file_uploads On
+php_flag allow_url_fopen off
+php_flag magic_quotes_gpc On
+php_flag magic_quotes_runtime Off
+</ifModule>
+## Настройки хостинга - конец
+
+## Правила обработки запросов для блокировки распространенных эксплоитов - начало
+RewriteCond %{QUERY_STRING} proc/self/environ [OR]
+RewriteCond %{QUERY_STRING} mosConfig_[a-zA-Z_]{1,21}(=|\%3D) [OR]
+RewriteCond %{QUERY_STRING} base64_(en|de)code\(.*\) [OR]
+RewriteCond %{QUERY_STRING} (<|%3C).*script.*(>|%3E) [NC,OR]
+RewriteCond %{QUERY_STRING} GLOBALS(=|\[|\%[0-9A-Z]{0,2}) [OR]
+RewriteCond %{QUERY_STRING} _REQUEST(=|\[|\%[0-9A-Z]{0,2})
+RewriteRule .* index.php [F]
+## Правила обработки запросов для блокировки распространенных эксплоитов - конец
+
+##Блокировка прямого доступа к ядру - начало
+#RewriteCond %{REQUEST_FILENAME} -f
+#RewriteCond %{REQUEST_URI} \.php|\.ini|\.xml [NC]
+#RewriteCond %{REQUEST_URI} \/components\/ [OR]
+#RewriteCond %{REQUEST_URI} ^\/includes\/|^\/administrator\/includes\/ [OR]
+#RewriteCond %{REQUEST_URI} \/language\/ [OR]
+#RewriteCond %{REQUEST_URI} \/libraries\/ [OR]
+#RewriteCond %{REQUEST_URI} \/modules\/ [OR]
+#RewriteCond %{REQUEST_URI} \/plugins\/ [OR]
+#RewriteCond %{REQUEST_URI} \/templates\/ [OR]
+#RewriteCond %{REQUEST_URI} \/cli\/
+#RewriteRule ^(.*)$ index.php [R=404,L]
+##Блокировка прямого доступа к ядру - конец
+
+ 
+
+##Блокировка MySQL инъекций - начало
+RewriteCond %{query_string} concat.*\( [NC,OR]
+RewriteCond %{query_string} union.*select.*\( [NC,OR]
+RewriteCond %{query_string} union.*all.*select [NC]
+RewriteRule ^(.*)$ index.php [F,L]
+##Блокировка MySQL инъекций - конец
+
+ 
+
+##Блокировка файловых инъекций - начало
+RewriteCond %{REQUEST_METHOD} GET
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=http:// [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=(\.\.//?)+ [OR]
+RewriteCond %{QUERY_STRING} [a-zA-Z0-9_]=/([a-z0-9_.]//?)+ [NC]
+RewriteRule .* - [F]
+##Блокировка файловых инъекций -конец
+
+ 
+
+## Запретит доступа к htaccess.txt, configuration.php и php.ini
+RewriteRule ^(htaccess\.txt|configuration\.php-dist|php\.ini)$ - [F]
+##
+
+## Раздел SEF ядра Joomla - начало
+RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
+RewriteCond %{REQUEST_URI} !^/index\.php
+RewriteCond %{REQUEST_URI} /component/|(/[^.]*|\.(php|html?|feed|pdf|raw|ini|zip|json|file|vcf))$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule .* index.php [L]
+##Раздел SEF ядра Joomla - конец
+
+##Ускорение загрузки сайта
+
+ 
+
+##Gzip сжатие с помощью модуля mod_deflate - начало
+<ifModule mod_deflate.c>
+AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
+</ifModule>
+##Gzip сжатие с помощью модуля mod_deflate - конец
+
+ 
+
+##Gzip сжатие с помощью модуля mod_gzip - начало
+<IfModule mod_gzip.c>
+mod_gzip_on Yes
+mod_gzip_dechunk Yes
+mod_gzip_item_include file \.(html?|txt|css|js|php|pl)$
+mod_gzip_item_include mime ^text\.*
+mod_gzip_item_include mime ^application/x-javascript.*
+mod_gzip_item_include mime ^application/x-font-woff.*
+mod_gzip_item_exclude rspheader ^Content-Encoding:.*gzip.*
+</IfModule>
+##Gzip сжатие с помощью модуля mod_gzip - конец
+
+ 
+
+##Кэширование с помощью модуля mod_headers - начало
+#<ifModule mod_headers.c>
+
+#кэшировать html и htm файлы на один день
+#<FilesMatch "\.(html|htm)$">
+#Header set Cache-Control "max-age=43200"
+#</FilesMatch>
+
+#кэшировать css, javascript и текстовые файлы на одну неделю
+<FilesMatch "\.(js|css|txt)$">
+Header set Cache-Control "max-age=604800"
+</FilesMatch>
+
+#кэшировать флэш и изображения на месяц
+<FilesMatch "\.(flv|swf|ico|gif|jpg|jpeg|png)$">
+Header set Cache-Control "max-age=2592000"
+</FilesMatch>
+
+#отключить кэширование
+#<FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+#Header unset Cache-Control
+#</FilesMatch>
+#</IfModule>
+##Кэширование с помощью модуля mod_headers - конец
+
+ 
+
+##Кэширование с помощью модуля mod_expires - начало
+<ifModule mod_expires.c>
+ExpiresActive On
+#по умолчанию кеш в 5 секунд
+ExpiresDefault "access plus 5 seconds"
+#кэшировать флэш и изображения на месяц
+ExpiresByType image/x-icon "access plus 2592000 seconds"
+ExpiresByType image/jpeg "access plus 2592000 seconds"
+ExpiresByType image/png "access plus 2592000 seconds"
+ExpiresByType image/gif "access plus 2592000 seconds"
+ExpiresByType application/x-shockwave-flash "access plus 2592000 seconds"
+#кэшировать css, javascript и текстовые файлы на одну неделю
+ExpiresByType text/css "access plus 604800 seconds"
+ExpiresByType text/javascript "access plus 604800 seconds"
+ExpiresByType application/javascript "access plus 604800 seconds"
+ExpiresByType application/x-javascript "access plus 604800 seconds"
+#кэшировать html и htm файлы на один день
+ExpiresByType text/html "access plus 43200 seconds"
+#кэшировать xml файлы на десять минут
+ExpiresByType application/xhtml+xml "access plus 600 seconds"
+</ifModule>
+##Кэширование с помощью модуля mod_expires - конец

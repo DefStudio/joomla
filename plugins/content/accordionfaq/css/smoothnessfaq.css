@@ -1,0 +1,136 @@
+/* smoothnessfaq faq layout */
+.smoothnessfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.smoothnessfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #aaaaaa;
+}
+.smoothnessfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.smoothnessfaq.contentbackground div.accordionfaqitem
+{
+	background: #ffffff url(../images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	color: #222222;
+}
+.smoothnessfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.smoothnessfaq .accordionfaqheader,
+.smoothnessfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	color: #1c94c4;
+	font-weight: normal;
+}
+.smoothnessfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #d3d3d3;
+}
+.smoothnessfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #999999;
+}
+.smoothnessfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #aaaaaa;
+}
+.smoothnessfaq .accordionfaqheader a,
+.smoothnessfaq .accordionfaqheader a:hover,
+.smoothnessfaq .accordionfaqheader a:active,
+.smoothnessfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.smoothnessfaq .accordionfaqheader,
+.smoothnessfaq .accordionfaqheader a
+{
+	font-weight: normal;
+	color: #555555;
+}
+.smoothnessfaq .accordionfaqheader:hover,
+.smoothnessfaq .accordionfaqheader:hover a,
+.smoothnessfaq .accordionfaqheader.selected,
+.smoothnessfaq .accordionfaqheader.selected a
+{
+	font-weight: normal;
+	color: #212121;
+}
+.smoothnessfaq.headerbackground .accordionfaqheader,
+.smoothnessfaq.headerbackground .accordionfaqheader a
+{
+	background: #e6e6e6 url(../images/ui-bg_glass_75_e6e6e6_1x400.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #555555;
+}
+.smoothnessfaq.headerbackground .accordionfaqheader:hover,
+.smoothnessfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #dadada url(../images/ui-bg_glass_75_dadada_1x400.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #212121;
+}
+.smoothnessfaq.headerbackground .accordionfaqheader.selected,
+.smoothnessfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #ffffff url(../images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+	font-weight: normal;
+	color: #212121;
+}
+.smoothnessfaq.contentborder .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.smoothnessfaq .accordionfaqheader:hover,
+.smoothnessfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.smoothnessfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.smoothnessfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.smoothnessfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.smoothnessfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.smoothnessfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_888888_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.smoothnessfaq.rtl.defaulticon span.accordionfaqicon,
+.smoothnessfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.smoothnessfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_222222_256x240.png);
+	background-position: -32px -16px;
+}
+.smoothnessfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.smoothnessfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_222222_256x240.png);
+	background-position: -64px -16px;
+}

@@ -1,0 +1,73 @@
+/* plainaccordionfaq faq layout */
+.plainaccordionfaq.round3 .accordionfaqheader.selected,
+.plainaccordionfaq.round3.selected .accordionfaqitem
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.plainaccordionfaq.round5 .accordionfaqheader.selected,
+.plainaccordionfaq.round5.selected .accordionfaqitem
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.plainaccordionfaq.round7 .accordionfaqheader.selected,
+.plainaccordionfaq.round7.selected .accordionfaqitem
+{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	border-radius: 7px;
+}
+.plainaccordionfaq.round9 .accordionfaqheader.selected,
+.plainaccordionfaq.round9.selected .accordionfaqitem
+{
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	border-radius: 9px;
+}
+.plainaccordionfaq .accordionfaqheader a,
+.plainaccordionfaq .accordionfaqheader a:hover,
+.plainaccordionfaq .accordionfaqheader a:active,
+.plainaccordionfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.plainaccordionfaq .accordionfaqheader,
+.plainaccordionfaq .accordionfaqheader a
+{
+	color: black;
+}
+.plainaccordionfaq div.accordionfaqitem
+{
+	background-color: white;
+	border: 1px solid black;
+}
+
+.plainaccordionfaq.border .accordionfaqheader
+{
+	border:1px solid black;
+}
+
+.plainaccordionfaq .accordionfaqheader:hover,
+.plainaccordionfaq .accordionfaqheader.selected,
+.plainaccordionfaq .accordionfaqheader:hover a,
+.plainaccordionfaq .accordionfaqheader.selected a
+{
+	color: white !important;
+	background-color: black !important;
+}
+.plainaccordionfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white.gif);
+}
+.plainaccordionfaq.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-white.gif);
+}

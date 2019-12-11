@@ -1,0 +1,17 @@
+/* plainfaq faq layout */
+.plainfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/collapsed-white.gif');
+}
+.plainfaq.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/expanded-white.gif');
+}
+.plainfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/expand.gif');
+}
+.plainfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/collapse.gif');
+}

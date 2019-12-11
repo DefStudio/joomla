@@ -1,0 +1,17 @@
+/* cupertinofaq faq layout */
+.cupertinofaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_3d80b3_256x240.png');
+}
+.cupertinofaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_2694e8_256x240.png');
+}
+.cupertinofaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_2694e8_256x240.png');
+}
+.cupertinofaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}

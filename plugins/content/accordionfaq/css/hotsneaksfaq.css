@@ -1,0 +1,140 @@
+/* hotsneaksfaq faq layout */
+.hotsneaksfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.hotsneaksfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #aaaaaa;
+}
+.hotsneaksfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.hotsneaksfaq div.accordionfaqitem,
+.hotsneaksfaq div.accordionfaqitem *
+{
+	color: #2c4359;
+}
+.hotsneaksfaq.contentbackground div.accordionfaqitem
+{
+	background: #ffffff url(../images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+}
+.hotsneaksfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.hotsneaksfaq .accordionfaqheader,
+.hotsneaksfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.hotsneaksfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #93c3cd;
+}
+.hotsneaksfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #999999;
+}
+.hotsneaksfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #ff6b7f;
+}
+.hotsneaksfaq .accordionfaqheader a,
+.hotsneaksfaq .accordionfaqheader a:hover,
+.hotsneaksfaq .accordionfaqheader a:active,
+.hotsneaksfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.hotsneaksfaq .accordionfaqheader,
+.hotsneaksfaq .accordionfaqheader a
+{
+	color: #333333;
+}
+.hotsneaksfaq .accordionfaqheader:hover,
+.hotsneaksfaq .accordionfaqheader:hover a
+{
+	color: #212121;
+}
+.hotsneaksfaq .accordionfaqheader.selected,
+.hotsneaksfaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.hotsneaksfaq.headerbackground .accordionfaqheader,
+.hotsneaksfaq.headerbackground .accordionfaqheader a
+{
+	background: #93c3cd url(../images/ui-bg_diagonals-small_50_93c3cd_40x40.png) 50% 50% repeat;
+}
+.hotsneaksfaq.headerbackground .accordionfaqheader:hover,
+.hotsneaksfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #ccd232 url(../images/ui-bg_diagonals-small_75_ccd232_40x40.png) 50% 50% repeat;
+}
+.hotsneaksfaq.headerbackground .accordionfaqheader.selected,
+.hotsneaksfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #db4865 url(../images/ui-bg_diagonals-small_40_db4865_40x40.png) 50% 50% repeat;
+	color: #ffffff;
+}
+.hotsneaksfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.hotsneaksfaq .accordionfaqheader:hover,
+.hotsneaksfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.hotsneaksfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.hotsneaksfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.hotsneaksfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.hotsneaksfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.hotsneaksfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_454545_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.hotsneaksfaq.rtl.defaulticon span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.hotsneaksfaq.headerbackground.defaulticon .accordionfaqheader span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+}
+.hotsneaksfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_454545_256x240.png);
+}
+.hotsneaksfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.hotsneaksfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-position: -64px -16px;
+}
+.hotsneaksfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+}

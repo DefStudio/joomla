@@ -1,0 +1,18 @@
+/* dotluvfaq faq layout */
+.dotluvfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_9ccdfc_256x240.png');
+}
+.dotluvfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_9ccdfc_256x240.png');
+}
+.dotluvfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.dotluvfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.dotluvfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_00498f_256x240.png');
+}

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<listings>
+    <listing>
+        <id>1</id>
+        <mls_id>210010637</mls_id>
+        <categories>
+            <category>A</category>
+            <category>B</category>
+        </categories>
+        <stype>Sold</stype>
+        <stype_freq>month</stype_freq>
+        <listing_office>1</listing_office>
+        <street_num>6179</street_num>
+        <street>Ash</street>
+        <street2>Lane</street2>
+        <apt>Apt 1</apt>
+        <title>Single Family</title>
+        <alias>single-family-sandpoint</alias>
+        <hide_address>0</hide_address>
+        <show_map>1</show_map>
+        <short_description>Short description!</short_description>
+        <description>Lovely 4 bedroom single family home with private preserve views. Tile throughout the main living areas, corian countertops in the kitchen, updated cabinetry and hardware in the kitchen, plantation shutters and much more!</description>
+        <terms></terms>
+        <agent_notes></agent_notes>
+        <city>Sandpoint</city>
+        <locstate>ID</locstate>
+        <province></province>
+        <postcode>83864</postcode>
+        <region>Cool District</region>
+        <county>Bonner</county>
+        <country>United States</country>
+        <latitude>43.1337679</latitude>
+        <longitude>-115.7128848</longitude>
+        <price>260000.00</price>
+        <price2>0.00</price2>
+        <call_for_price>0</call_for_price>
+        <beds>3</beds>
+        <baths>2.00</baths>
+        <reception></reception>
+        <tax></tax>
+        <income></income>
+        <sqft>2103</sqft>
+        <lotsize>0</lotsize>
+        <lot_acres>10</lot_acres>
+        <yearbuilt>2003</yearbuilt>
+        <heat>Gas fireplace</heat>
+        <cool>Central AC</cool>
+        <fuel>Gasoline</fuel>
+        <garage_type>Tarp</garage_type>
+        <garage_size>2</garage_size>
+        <zoning>Residential</zoning>
+        <frontage>1</frontage>
+        <siding>Sort of wood, I guess.</siding>
+        <roof>A roof even!</roof>
+        <propview>Nice Views!</propview>
+        <school_district>School District 1</school_district>
+        <lot_type>0</lot_type>
+        <style>Rancher</style>
+        <hoa>1</hoa>
+        <reo>1</reo>
+        <vtour></vtour>
+        <video></video>
+        <featured>0</featured>
+        <available>0000-00-00</available>
+        <metadesc>metadesc</metadesc>
+        <metakey>metakey</metakey>
+        <created>2010-01-01 00:00:00</created>
+        <publish_up>2012-08-13 15:15:06</publish_up>
+        <publish_down>0000-00-00 00:00:00</publish_down>
+        <photos>
+            <photo>
+                <ordering>1</ordering>
+                <path>http://iproperty.thethinkery.net/media/com_iproperty/pictures/property_temp2_1258585961.jpg</path>
+                <remote>1</remote>
+                <title>Photo 1</title>
+                <description>This is a picture of something cool</description>
+            </photo>
+            <photo>
+                <ordering>2</ordering>
+                <path>http://iproperty.thethinkery.net/media/com_iproperty/pictures/house3_1258589923.jpg</path>
+                <remote>1</remote>
+                <title>Photo 2</title>
+                <description>A second photo</description>
+            </photo>
+        </photos>
+        <amenities>
+            <interior>whirlpool bath, double oven</interior>
+            <exterior>doghouse, sprinkler system</exterior>
+            <general>paved driveway, grass</general>
+        </amenities>
+        <agents>
+            <agent>
+                <id>123456</id>
+                <fname>John</fname>
+                <lname>Colletting</lname>
+                <alias></alias>
+                <company>1</company>
+                <email>email@example.com</email>
+                <phone>555-123-4567</phone>
+                <mobile>555-123-4567</mobile>
+                <fax>555-123-4567</fax>
+                <street>123 Fake Street</street>
+                <street2>Unit 1</street2>
+                <city>Sandpoint</city>
+                <locstate>ID</locstate>
+                <province></province>
+                <postcode>83864</postcode>
+                <country>United States</country>
+                <website>www.example.com</website>
+                <bio>I'm a really great agent!</bio>
+                <featured>1</featured>
+                <icon></icon>
+                <icon_remote></icon_remote>
+                <msn></msn>
+                <skype></skype>
+                <gtalk></gtalk>
+                <linkedin></linkedin>
+                <facebook></facebook>
+                <twitter></twitter>
+                <social1></social1>
+                <alicense></alicense>
+                <ordering>0</ordering>
+            </agent>
+        </agents>
+        <company>
+            <id>1</id>
+            <name>Ed Wood REALTORS</name>
+            <alias></alias>
+            <description>Company 1 description</description>
+            <street>1234 Street</street>
+            <city>Sandpoint</city>
+            <locstate>ID</locstate>
+            <province></province>
+            <postcode>83854</postcode>
+            <country>United States</country>
+            <fax>123-456-7894</fax>
+            <phone>123-456-7894</phone>
+            <email>company@example.com</email>
+            <website>www.example.com</website>
+            <featured>0</featured>
+            <icon></icon>
+            <icon_remote></icon_remote>
+            <clicense>123</clicense>
+        </company>
+        <openhouses>
+            <openhouse>
+                <openhouse_start>2012-09-20 08:00:00</openhouse_start>
+                <openhouse_end>2012-09-20 09:00:00</openhouse_end>
+                <name>Open housing yo!</name>
+                <comments>Bring your own cool-aid</comments>
+            </openhouse>
+        </openhouses>
+    </listing>
+</listings>

@@ -1,0 +1,142 @@
+/* mintchocfaq faq layout */
+.mintchocfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.mintchocfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #9c947c;
+}
+.mintchocfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.mintchocfaq div.accordionfaqitem,
+.mintchocfaq div.accordionfaqitem *
+{
+	color: #555555;
+}
+.mintchocfaq.contentbackground div.accordionfaqitem,
+.mintchocfaq.contentbackground div.accordionfaqitem *
+{
+	color: #ffffff;
+}
+.mintchocfaq.contentbackground div.accordionfaqitem
+{
+	background: #201913 url(../images/ui-bg_inset-soft_10_201913_1x100.png) 50% bottom repeat-x;
+}
+.mintchocfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.mintchocfaq .accordionfaqheader,
+.mintchocfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.mintchocfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #695444;
+}
+.mintchocfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #9c947c;
+}
+.mintchocfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #9c947c;
+}
+.mintchocfaq .accordionfaqheader a,
+.mintchocfaq .accordionfaqheader a:hover,
+.mintchocfaq .accordionfaqheader a:active,
+.mintchocfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.mintchocfaq .accordionfaqheader,
+.mintchocfaq .accordionfaqheader a,
+.mintchocfaq .accordionfaqheader:hover,
+.mintchocfaq .accordionfaqheader:hover a
+{
+	color: #9bcc60;
+}
+.mintchocfaq.headerbackground .accordionfaqheader:hover,
+.mintchocfaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #baec7e;
+}
+.mintchocfaq.headerbackground .accordionfaqheader.selected,
+.mintchocfaq.headerbackground .accordionfaqheader.selected a
+{
+	color: #e3ddc9;
+}
+.mintchocfaq.headerbackground .accordionfaqheader,
+.mintchocfaq.headerbackground .accordionfaqheader a
+{
+	background: #1c160d url(../images/ui-bg_gloss-wave_20_1c160d_500x100.png) 50% 50% repeat-x;
+}
+.mintchocfaq.headerbackground .accordionfaqheader:hover,
+.mintchocfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #44372c url(../images/ui-bg_gloss-wave_30_44372c_500x100.png) 50% 50% repeat-x;
+}
+.mintchocfaq.headerbackground .accordionfaqheader.selected,
+.mintchocfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #201913 url(../images/ui-bg_highlight-soft_20_201913_1x100.png) 50% 50% repeat-x;
+	color: #e3ddc9;
+}
+.mintchocfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.mintchocfaq .accordionfaqheader:hover,
+.mintchocfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.mintchocfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.mintchocfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.mintchocfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.mintchocfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.mintchocfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_9bcc60_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.mintchocfaq.rtl.defaulticon span.accordionfaqicon,
+.mintchocfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.mintchocfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_add978_256x240.png);
+	background-position: -32px -16px;
+}
+.mintchocfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.mintchocfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_e3ddc9_256x240.png);
+	background-position: -64px -16px;
+}

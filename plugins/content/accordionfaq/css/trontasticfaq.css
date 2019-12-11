@@ -1,0 +1,148 @@
+/* trontasticfaq faq layout */
+.trontasticfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.trontasticfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #4a4a4a;
+}
+.trontasticfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.trontasticfaq div.accordionfaqitem,
+.trontasticfaq div.accordionfaqitem *
+{
+	color: #555555;
+}
+.trontasticfaq.contentbackground div.accordionfaqitem,
+.trontasticfaq.contentbackground div.accordionfaqitem *
+{
+	color: #ffffff;
+}
+.trontasticfaq.contentbackground div.accordionfaqitem
+{
+	background: #000000 url(../images/ui-bg_gloss-wave_55_000000_500x100.png) 50% top repeat-x;
+}
+.trontasticfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.trontasticfaq .accordionfaqheader,
+.trontasticfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.trontasticfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #1b1613;
+}
+.trontasticfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #000000;
+}
+.trontasticfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #696969;
+}
+.trontasticfaq .accordionfaqheader a,
+.trontasticfaq .accordionfaqheader a:hover,
+.trontasticfaq .accordionfaqheader a:active,
+.trontasticfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.trontasticfaq .accordionfaqheader,
+.trontasticfaq .accordionfaqheader a,
+.trontasticfaq .accordionfaqheader:hover,
+.trontasticfaq .accordionfaqheader:hover a
+{
+	color: #b8ec79;
+}
+.trontasticfaq.headerbackground .accordionfaqheader:hover,
+.trontasticfaq.headerbackground .accordionfaqheader:hover
+{
+	color: #96f226;
+}
+.trontasticfaq .accordionfaqheader.selected,
+.trontasticfaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.trontasticfaq.headerbackground .accordionfaqheader,
+.trontasticfaq.headerbackground .accordionfaqheader a
+{
+	background: #0a0a0a url(../images/ui-bg_glass_40_0a0a0a_1x400.png) 50% 50% repeat-x;
+}
+.trontasticfaq.headerbackground .accordionfaqheader:hover,
+.trontasticfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #000000 url(../images/ui-bg_glass_60_000000_1x400.png) 50% 50% repeat-x;
+}
+.trontasticfaq.headerbackground .accordionfaqheader.selected,
+.trontasticfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #4c4c4c url(../images/ui-bg_flat_0_4c4c4c_40x100.png) 50% 50% repeat-x;
+	color: #ffffff;
+}
+.trontasticfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.trontasticfaq .accordionfaqheader:hover,
+.trontasticfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.trontasticfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.trontasticfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.trontasticfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.trontasticfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.trontasticfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_b8ec79_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.trontasticfaq.rtl.defaulticon span.accordionfaqicon,
+.trontasticfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.trontasticfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_b8ec79_256x240.png);
+	background-position: -32px -16px;
+}
+.trontasticfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.trontasticfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_b8ec79_256x240.png);
+	background-position: -64px -16px;
+}
+.trontasticfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.trontasticfaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -64px -16px;
+}

@@ -1,0 +1,13 @@
+/* eggplantfaq faq layout */
+.eggplantfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_8d78a5_256x240.png');
+}
+.eggplantfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_734d99_256x240.png');
+}
+.eggplantfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_454545_256x240.png');
+}

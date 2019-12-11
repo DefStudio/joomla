@@ -1,0 +1,76 @@
+/* grayaccordionfaq layout */
+.grayaccordionfaq.round3 .accordionfaqheader.selected,
+.grayaccordionfaq.round3.selected .accordionfaqitem
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.grayaccordionfaq.round5 .accordionfaqheader.selected,
+.grayaccordionfaq.round5.selected .accordionfaqitem
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.grayaccordionfaq.round7 .accordionfaqheader.selected,
+.grayaccordionfaq.round7.selected .accordionfaqitem
+{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	border-radius: 7px;
+}
+.grayaccordionfaq.round9 .accordionfaqheader.selected,
+.grayaccordionfaq.round9.selected .accordionfaqitem
+{
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	border-radius: 9px;
+}
+.grayaccordionfaq .accordionfaqheader a,
+.grayaccordionfaq .accordionfaqheader a:hover,
+.grayaccordionfaq .accordionfaqheader a:active,
+.grayaccordionfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.grayaccordionfaq .accordionfaqheader,
+.grayaccordionfaq .accordionfaqheader a
+{
+	color: black;
+}
+.grayaccordionfaq div.accordionfaqitem
+{
+	background-color: #eee;
+	border: 1px solid black;
+}
+
+.grayaccordionfaq.border .accordionfaqheader
+{
+	border:1px solid black;
+}
+.grayaccordionfaq.bcolor .accordionfaqheader
+{
+	background-color: #D3D3D3;	/* lightgrey */
+}
+.grayaccordionfaq .accordionfaqheader:hover,
+.grayaccordionfaq .accordionfaqheader.selected,
+.grayaccordionfaq .accordionfaqheader:hover a,
+.grayaccordionfaq .accordionfaqheader.selected a
+{
+	color: white !important;
+	background-color: black !important;
+}
+.grayaccordionfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white.gif);
+}
+.grayaccordionfaq.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-white.gif);
+}

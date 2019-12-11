@@ -1,0 +1,21 @@
+/* swankypursefaq faq layout */
+.swankypursefaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/collapsed-black.gif');
+}
+.swankypursefaq.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/expanded-black.gif');
+}
+.swankypursefaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_e8e2b5_256x240.png');
+}
+.swankypursefaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_f2ec64_256x240.png');
+}
+.swankypursefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_f9f2bd_256x240.png');
+}

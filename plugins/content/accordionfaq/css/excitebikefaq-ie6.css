@@ -1,0 +1,18 @@
+/* excitebikefaq faq layout */
+.excitebikefaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_fcdd4a_256x240.png');
+}
+.excitebikefaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.excitebikefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_fcdd4a_256x240.png');
+}
+.excitebikefaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}
+.excitebikefaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_ffffff_256x240.png');
+}

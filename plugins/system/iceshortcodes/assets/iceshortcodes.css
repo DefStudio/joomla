@@ -1,0 +1,107 @@
+/* -------------------------------------------------------------
+	
+	Copyright (C) 2008 - 2013 IceTheme. All Rights Reserved
+  	
+	http://www.gnu.org/licenses/gpl.html
+  
+	IceTheme - http://wwww.icetheme.com
+  
+---------------------------------------------------------------- */
+
+/* --- IceBox --- */
+
+.box {}
+	
+	.box h3 { line-height:20px;}
+	
+	/* --- IceBox Resets --- */
+	.box.info, 
+	.box.alert,
+	.box.download,
+	.box.note {
+		font-size:16px;
+		line-height:20px;
+		border-radius: 4px 4px 4px 4px;
+		margin-bottom: 20px;
+		padding: 8px 35px 8px 14px;
+		border-width:1px;
+		border-style:solid;
+		text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);}
+	
+	/* --- IceBox Color --- */
+	.box.info {
+		background-color: #FCF8E3;
+		border-color:#FBEED5;
+		color: #ADA771;}
+		
+	.box.alert {
+		background-color: #F2DEDE;
+		border-color: #F2CECE;
+		color:#AD7676}
+		
+	.box.download {
+		background-color: #DFF0D8;
+		border-color:#D2F0C7;
+		color:#7EA57B;}
+		
+	.box.note {
+		background-color: #FAFAFA;
+		border-color:#E8E8E8;
+		color:#737373;}
+	
+/* --- IceBox Icon --- */	
+	.box.info.icebox_icon:before, 
+	.box.alert.icebox_icon:before, 
+	.box.download.icebox_icon:before, 
+	.box.note.icebox_icon:before {
+		background-image: url("../images/iceshortcode.png");
+		background-size:cover;
+		background-position: right top;
+		background-repeat: no-repeat;
+		content: ".";
+		display: block;
+		position: relative;
+		float: right;
+		width:46px;
+		height: 50px;
+		margin-right: -25px;
+		text-indent: -999px;}
+		
+	.box.info.icebox_icon:before {background-position:-80px center;}
+		
+	.box.alert.icebox_icon:before {background-position:-125px center;}
+		
+	.box.download.icebox_icon:before {background-position:-39px center;}
+		
+	.box.note.icebox_icon:before {background-position:2px center;}
+	
+	
+/* --- IceColumns --- */
+.icecolumns {
+	margin:10px -2% 20px;
+	position:relative;
+	overflow:hidden}
+	
+.icecolumns.columns1 { }
+
+	.icecolumns.columns1 .icecol { 	width:auto}
+	.icecolumns.columns2 .icecol { 	width:46%}
+	.icecolumns.columns3 .icecol {	width:29.333%}
+	.icecolumns.columns4 .icecol { 	width:21%}
+	.icecolumns.columns5 .icecol { 	width:16%}
+
+		.icecolumns .icecol {
+			margin:0 2%;
+			float:left;}
+			
+			.icecol h2 { font-size:22px;}
+
+
+/* --- IceTabs --- */
+	 .icetabs ul.nav li { float:left !important;}
+
+
+/* --- IceCarousel --- */
+	.carousel-caption h4 a { color:#FFF;}
+
+			

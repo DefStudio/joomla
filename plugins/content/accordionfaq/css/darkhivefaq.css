@@ -1,0 +1,163 @@
+/* darkhivefaq faq layout */
+.darkhivefaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.darkhivefaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #555555;
+}
+.darkhivefaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.darkhivefaq div.accordionfaqitem,
+.darkhivefaq div.accordionfaqitem *
+{
+	color: #1f1f1f;
+}
+.darkhivefaq.contentbackground div.accordionfaqitem *
+{
+	color: #ffffff;
+}
+.darkhivefaq.contentbackground div.accordionfaqitem
+{
+	background: #000000 url(../images/ui-bg_loop_25_000000_21x21.png) 50% 50% repeat;
+	color: #ffffff;
+}
+.darkhivefaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.darkhivefaq .accordionfaqheader,
+.darkhivefaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: normal;
+}
+.darkhivefaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #444444;
+}
+.darkhivefaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #0b93d5;
+}
+.darkhivefaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #26b3f7;
+}
+.darkhivefaq .accordionfaqheader a,
+.darkhivefaq .accordionfaqheader a:hover,
+.darkhivefaq .accordionfaqheader a:active,
+.darkhivefaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.darkhivefaq .accordionfaqheader,
+.darkhivefaq .accordionfaqheader a,
+.darkhivefaq .accordionfaqheader:hover,
+.darkhivefaq .accordionfaqheader:hover a
+{
+	color: #1f1f1f;
+}
+.darkhivefaq.headerbackground .accordionfaqheader,
+.darkhivefaq.headerbackground .accordionfaqheader a
+{
+	color: #eeeeee;
+}
+.darkhivefaq.headerbackground .accordionfaqheader:hover,
+.darkhivefaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #ffffff;
+}
+.darkhivefaq .accordionfaqheader.selected,
+.darkhivefaq .accordionfaqheader.selected a
+{
+	color: #140f06;
+}
+.darkhivefaq.headerbackground .accordionfaqheader,
+.darkhivefaq.headerbackground .accordionfaqheader a
+{
+	background: #222222 url(../images/ui-bg_highlight-soft_35_222222_1x100.png) 50% 50% repeat-x;
+}
+.darkhivefaq.headerbackground .accordionfaqheader:hover,
+.darkhivefaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #003147 url(../images/ui-bg_highlight-soft_33_003147_1x100.png) 50% 50% repeat-x;
+}
+.darkhivefaq.headerbackground .accordionfaqheader.selected,
+.darkhivefaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #0972a5 url(../images/ui-bg_highlight-hard_20_0972a5_1x100.png) 50% 50% repeat-x;
+	color: #ffffff;
+}
+.darkhivefaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.darkhivefaq .accordionfaqheader:hover,
+.darkhivefaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.darkhivefaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.darkhivefaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.darkhivefaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.darkhivefaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.darkhivefaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_cccccc_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.darkhivefaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_454545_256x240.png);
+	background-position: -32px -16px;
+}
+.darkhivefaq.rtl.defaulticon span.accordionfaqicon,
+.darkhivefaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.darkhivefaq.rtl.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.darkhivefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.darkhivefaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_222222_256x240.png);
+	background-position: -64px -16px;
+}
+.darkhivefaq.headerbackground.defaulticon span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_cccccc_256x240.png);
+}
+.darkhivefaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+.darkhivefaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.darkhivefaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_222222_256x240.png);
+	background-position: -64px -16px;
+}

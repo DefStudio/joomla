@@ -1,0 +1,74 @@
+/***********************************************************************************************/
+/* LESS VARIABLES */
+/***********************************************************************************************/
+
+/* change this value to change your main website color */
+@bg_primary: #333333; 
+
+
+@heading_font:          "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;		// Font Family for Headings
+@heading_color:		  #444444;														   // Font Color for Headings
+@heading_shadow:	     1px 1px 1px #30819B;											   // Text Shadow for Headings
+
+@text_font:              "Helvetica Neue", Helvetica, Arial, sans-serif;					// Font Family for Text
+@text_color:		      #666666;														  // Font Color for Text
+
+@desktop_xl:   		  ~"only screen and (min-width: 1200px)";
+@desktop:   			 ~"only screen and (max-width: 1200px)";
+@tablet:   			  ~"only screen and (max-width: 979px)";
+@phone:   		       ~"only screen and (max-width: 767px)";
+
+
+/***********************************************************************************************/
+/* LESS MIXINS */
+/***********************************************************************************************/
+.rounded-corners (@radius: 5px) {
+  -webkit-border-radius: @radius;
+  -moz-border-radius: @radius;
+  -ms-border-radius: @radius;
+  -o-border-radius: @radius;
+  border-radius: @radius;
+}
+
+.transition (@property: all, @duration: .2s) {
+	-webkit-transition: @property @duration ease-out; 
+	-moz-transition: 	@property @duration ease-out; 
+	-o-transition: 	  @property @duration ease-out;
+	transition: 		 @property @duration ease-out;
+}
+
+.transform(...) {
+  -webkit-transform: @arguments;
+  -moz-transform: @arguments;
+  -o-transform: @arguments;
+  -ms-transform: @arguments;
+  transform: @arguments;
+}
+
+.rotation(@deg:5deg){
+  .transform(rotate(@deg));
+}
+
+.scale(@ratio:1.5){
+  .transform(scale(@ratio));
+}
+
+.translate(@property-x:0, @property-y:0){
+  .transform(translate(@property-x, @property-y));
+}
+
+.hexBackgroundToRGBA(@color,@alpha){
+  @myred:red(@color);
+  @mygreen:green(@color);
+  @myblue:blue(@color);
+  background-color: @color;
+  background-color: rgba(@myred,@mygreen,@myblue,@alpha);
+}
+
+.hexColorToRGBA(@color,@alpha){
+  @myred:red(@color);
+  @mygreen:green(@color);
+  @myblue:blue(@color);
+  color: @color;
+  color: rgba(@myred,@mygreen,@myblue,@alpha);
+}

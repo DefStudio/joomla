@@ -1,0 +1,147 @@
+/* cupertinofaq faq layout */
+.cupertinofaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.cupertinofaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #dddddd;
+}
+.cupertinofaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}.cupertinofaq div.accordionfaqitem,
+.cupertinofaq div.accordionfaqitem *
+{
+	color: #362b36;
+}
+.cupertinofaq.contentbackground div.accordionfaqitem
+{
+	background: #f2f5f7 url(../images/ui-bg_highlight-hard_100_f2f5f7_1x100.png) 50% top repeat-x;
+}
+.cupertinofaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.cupertinofaq .accordionfaqheader,
+.cupertinofaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.cupertinofaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #aed0ea;
+}
+.cupertinofaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #74b2e2;
+}
+.cupertinofaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #2694e8;
+}
+.cupertinofaq .accordionfaqheader a,
+.cupertinofaq .accordionfaqheader a:hover,
+.cupertinofaq .accordionfaqheader a:active,
+.cupertinofaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.cupertinofaq .accordionfaqheader,
+.cupertinofaq .accordionfaqheader a,
+.cupertinofaq .accordionfaqheader:hover,
+.cupertinofaq .accordionfaqheader:hover a
+{
+	color: #2779aa;
+}
+.cupertinofaq.headerbackground .accordionfaqheader:hover,
+.cupertinofaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #0070a3;
+}
+.cupertinofaq .accordionfaqheader.selected,
+.cupertinofaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.cupertinofaq.headerbackground .accordionfaqheader,
+.cupertinofaq.headerbackground .accordionfaqheader a
+{
+	background: #d7ebf9 url(../images/ui-bg_glass_80_d7ebf9_1x400.png) 50% 50% repeat-x;
+}
+.cupertinofaq.headerbackground .accordionfaqheader:hover,
+.cupertinofaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #e4f1fb url(../images/ui-bg_glass_100_e4f1fb_1x400.png) 50% 50% repeat-x;
+}
+.cupertinofaq.headerbackground .accordionfaqheader.selected,
+.cupertinofaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #3baae3 url(../images/ui-bg_glass_50_3baae3_1x400.png) 50% 50% repeat-x;
+	color: #ffffff;
+}
+.cupertinofaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.cupertinofaq .accordionfaqheader:hover,
+.cupertinofaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.cupertinofaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.cupertinofaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.cupertinofaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.cupertinofaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.cupertinofaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_3d80b3_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.cupertinofaq.rtl.defaulticon span.accordionfaqicon,
+.cupertinofaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.cupertinofaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_2694e8_256x240.png);
+	background-position: -32px -16px;
+}
+.cupertinofaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.cupertinofaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_2694e8_256x240.png);
+	background-position: -64px -16px;
+}
+.cupertinofaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+.cupertinofaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.cupertinofaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.cupertinofaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -64px -16px;
+}

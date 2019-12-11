@@ -1,0 +1,10 @@
+/* blacktiefaq ie6 rules */
+/* NOTE! The src URLs are absolute to the Joomla base directory, not the CSS */
+.bluefaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/04.gif');
+}
+.bluefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/02.gif');
+}

@@ -1,0 +1,146 @@
+/* swankypursefaq faq layout */
+.swankypursefaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.swankypursefaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #efec9f;
+}
+.swankypursefaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.swankypursefaq div.accordionfaqitem,
+.swankypursefaq div.accordionfaqitem *
+{
+	color: #555555;
+}
+.swankypursefaq.contentbackground div.accordionfaqitem,
+.swankypursefaq.contentbackground div.accordionfaqitem *
+{
+	color: #efec9f;
+}
+.swankypursefaq.contentbackground div.accordionfaqitem
+{
+	background: #443113 url(../images/ui-bg_diamond_8_443113_10x8.png) 50% 50% repeat;
+}
+.swankypursefaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.swankypursefaq .accordionfaqheader,
+.swankypursefaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.swankypursefaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #362917;
+}
+.swankypursefaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #362917;
+}
+.swankypursefaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #efec9f;
+}
+.swankypursefaq .accordionfaqheader a,
+.swankypursefaq .accordionfaqheader a:hover,
+.swankypursefaq .accordionfaqheader a:active,
+.swankypursefaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.swankypursefaq .accordionfaqheader,
+.swankypursefaq .accordionfaqheader a,
+.swankypursefaq .accordionfaqheader:hover,
+.swankypursefaq .accordionfaqheader:hover a,
+.swankypursefaq .accordionfaqheader.selected,
+.swankypursefaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.swankypursefaq.headerbackground .accordionfaqheader,
+.swankypursefaq.headerbackground .accordionfaqheader a,
+.swankypursefaq.headerbackground .accordionfaqheader:hover,
+.swankypursefaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #f8eec9;
+}
+.swankypursefaq.headerbackground .accordionfaqheader.selected,
+.swankypursefaq.headerbackground .accordionfaqheader.selected a
+{
+	color: #f9f2bd;
+}
+.swankypursefaq.headerbackground .accordionfaqheader,
+.swankypursefaq.headerbackground .accordionfaqheader a
+{
+	background: #4f4221 url(../images/ui-bg_diamond_10_4f4221_10x8.png) 50% 50% repeat;
+}
+.swankypursefaq.headerbackground .accordionfaqheader:hover,
+.swankypursefaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #675423 url(../images/ui-bg_diamond_25_675423_10x8.png) 50% 50% repeat;
+}
+.swankypursefaq.headerbackground .accordionfaqheader.selected,
+.swankypursefaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #443113 url(../images/ui-bg_diamond_8_443113_10x8.png) 50% 50% repeat;
+	color: #f9f2bd;
+}
+.swankypursefaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.swankypursefaq .accordionfaqheader:hover,
+.swankypursefaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.swankypursefaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.swankypursefaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.swankypursefaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.swankypursefaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.swankypursefaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_e8e2b5_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.swankypursefaq.rtl.defaulticon span.accordionfaqicon,
+.swankypursefaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.swankypursefaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_f2ec64_256x240.png);
+	background-position: -32px -16px;
+}
+.swankypursefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.swankypursefaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_f9f2bd_256x240.png);
+	background-position: -64px -16px;
+}

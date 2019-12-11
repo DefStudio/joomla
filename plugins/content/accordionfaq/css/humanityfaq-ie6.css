@@ -1,0 +1,9 @@
+/* humanityfaq faq layout */
+.humanityfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_f08000_256x240.png');
+}
+.humanityfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_f35f07_256x240.png');
+}

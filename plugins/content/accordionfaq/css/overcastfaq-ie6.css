@@ -1,0 +1,18 @@
+/* overcastfaq faq layout */
+.overcastfaq.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_70b2e1_256x240.png');
+}
+.overcastfaq.headerbackground.defaulticon span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_70b2e1_256x240.png');
+}
+.overcastfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_3383bb_256x240.png');
+}
+.overcastfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.overcastfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url('/plugins/content/accordionfaq/images/ui-icons_454545_256x240.png');
+}

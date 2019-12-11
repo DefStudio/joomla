@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<extension
+	type="module"
+	version="3.0.0"
+	client="site"
+	method="upgrade">
+    <name>IceFilter </name>
+    <creationDate>May 2013</creationDate>
+    <author>IceTheme</author>
+    <copyright>GNU / GPL</copyright>
+    <authorEmail>info@icetheme.com</authorEmail>
+    <authorUrl>http://www.icetheme.com</authorUrl>
+    <version>3.0.0</version>
+	
+    <updateservers>
+       <server type="extension" priority="1" name="IceFilter Module">http://update.icetheme.com/icefilter/list.xml</server>
+    </updateservers>
+	
+	<description>
+	<![CDATA[
+	 <a target="_blank" href="http://www.icetheme.com/"><b>IceFilter Module</b></a> </br><br>
+	 IceFilter module lets your users filter a group of content as they like. Also, it can be used as a gallery for photos.
+	 <br><br><ul>
+	 <li><a target="_blank" href="http://www.icetheme.com/joomla-extensions/icefilter">IceFilter Page</a></li>
+	 <li><a target="_blank" href="http://icetheme.com/Forums">Support Forums</a></li></ul></li></ul>
+	]]>
+	</description>
+     <files>
+        <filename module="mod_ice_filter">mod_ice_filter.php</filename>
+        <filename module="mod_ice_filter">helper.php</filename>
+		<filename module="mod_ice_filter">index.html</filename>
+        <folder module="mod_ice_filter">libs</folder>
+		<folder module="mod_ice_filter">assets</folder>
+        <folder module="mod_ice_filter">tmpl</folder>
+		<folder module="mod_ice_filter">themes</folder>
+    </files>
+	<languages>
+		<language tag="en-GB">languages/en-GB/en-GB.mod_ice_filter.ini</language>
+	</languages>
+	<config>
+    <fields 
+		name="params"
+		addfieldpath="/modules/mod_ice_filter/libs/elements">
+		<fieldset 
+			name="basic">
+			<field 
+				name="theme" 
+				type="folderlist"
+				directory="modules/mod_ice_filter/themes/" 
+				default="- Use Default -"
+				label="ICE_FILTER_THEME_LABEL" 
+				description="ICE_FILTER_THEME_DESC">
+			</field>
+			
+			<field 
+			name="enable_bootrap" 
+			type="radio" 
+			class="btn-group"
+			default="0" 
+			label="ICE_FILTER_BOOTSTRAP" 
+			description="ICE_FILTER_BOOTSTRAP_DESC">
+			  <option value="1">YES</option>
+			  <option value="0">NO</option>
+			</field>
+			
+		    <field name="" type="spacer" default="" label="" description="" />
+			<field 
+				name="item_width" 
+				type="text" 
+				default="240" 
+				label="ICE_FILTER_ITEMWIDTH_LABEL" 
+				description="ICE_FILTER_ITEMWIDTH_DESC">
+			</field>
+			
+			<field name="" type="spacer" default="" label="" description="" />
+			
+			<field 
+			name="enable_categoryfilter" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="ICE_FILTER_CATEGORYFILTER" 
+			description="ICE_FILTER_CATEGORYFILTER_DESC">
+			  <option value="1">YES</option>
+			  <option value="0">NO</option>
+			</field>
+
+			<field 
+			name="auto_renderthumb" 
+			type="radio" 
+			class="btn-group"
+			default="1" 
+			label="ICE_FILTER_RENDERTHUMB_LABEL" 
+			description="ICE_FILTER_RENDERTHUMB_DESC">
+			  <option value="1">YES</option>
+			  <option value="0">NO</option>
+			</field>
+			
+			<field 
+				name="main_width" 
+				type="text" 
+				default="240" 
+				label="ICE_FILTER_MAIN_WIDTH_LABEL" 
+				description="ICE_FILTER_MAIN_WIDTH_DESC">
+			</field>
+			
+			<field 
+				name="main_height" 
+				type="text" 
+				default="160" 
+				label="ICE_FILTER_MAIN_HEIGHT_LABEL" 
+				description="ICE_FILTER_MAIN_HEIGHT_DESC">
+			</field>
+					
+			<field 
+				name="image_quanlity" 
+				type="text" 
+				default="75" 
+				label="ICE_FILTER_IMAGE_QUANLITY_LABEL" 
+				description="ICE_FILTER_IMAGE_QUANLITY_DESC" />		
+			
+			
+			
+			<field name="" type="spacer" default="" label="" description="" />
+			
+				<field 
+				name="Data Source" 
+				type="list"
+				default="content" 
+				title="ICE_FILTER_SOURCE" 
+				description="ICE_FILTER_SOURCE_DESC">
+					<option value="content">Content</option>
+				</field>
+		
+		</fieldset>		
+			
+		<fieldset name="content" label="ICE_FILTER_MOD_CAROSUEL_FIELD_GROUP_CONTENT_LABEL">
+			
+			<field
+					name="source_from"
+					type="list"
+					class="btn-group"
+					default="catid"
+					label="ICE_FILTER_SOURCE_FROM"
+					description="ICE_FILTER_SOURCE_FROM_DESC">
+						<option value="catid">Category</option>
+						<option value="article_id">Articles ID</option>
+				</field>
+				
+				<field
+					name="catid"
+					type="category"
+					extension="com_content"
+					multiple="true"
+					default=""
+					size="10"
+					label="ICE_FILTER_JCATEGORY_LABEL"
+					description="ICE_FILTER_MOD_CATEGORY_DESC" >
+					<option value="">ICE_FILTER_JOPTION_ALL_CATEGORIES</option>
+				</field>
+				
+				<field name="article_id"
+					type="text"
+					size="45"
+					label="ICE_FILTER_ARTICLES_ID_LABEL"
+					description="ICE_FILTER_ARTICLES_ID_DESC"/>
+				
+				
+				<field
+					name="ordering"
+					type="list"
+					default="a.publish_up"
+					label="ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_LABEL"
+					description="ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_DESC">
+					
+					<option
+						value="a.ordering__ASC">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_ORDERING_ASC</option>
+					<option
+						value="a.ordering__DESC">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_ORDERING_DESC</option>
+					<option
+						value="a.created__ASC">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_CREATED_DATE_ASC</option>
+					<option
+						value="a.created__DESC">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_CREATED_DATE_DESC</option>
+					<option
+						value="a.hits__ASC">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_HITS_ASC</option>
+					<option
+						value="a.hits__DESC">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_HITS_DESC</option>
+					<option
+						value="rand()">ICE_FILTER_MOD_ARTICLES_NEWS_FIELD_ORDERING_RANDOM</option>
+				</field>
+
+		</fieldset>
+		
+		
+		<fieldset name="ITEM_OPTIONS" label="ITEM_OPTIONS"> 
+			
+				<field 
+					name="limit_items" 
+					type="text" 
+					default="8" 
+					label="ICE_FILTER_LIMIT_ITEMS" 
+					description="ICE_FILTER_LIMIT_ITEMS_DESC" />
+				
+				<field name="" type="spacer" default="" label="" description="" />	
+				
+				<field name="loading_animation" 
+					type="radio" 
+					class="btn-group" 
+					default="1" 
+					label="ICE_FILTER_OVERLAP_LABEL" 
+					description="ICE_FILTER_OVERLAP_LABEL_DESC">
+						<option value="1">ICE_FILTER_JYES</option>
+						<option value="0">ICE_FILTER_JNO</option>
+				</field>	
+
+				<field name="" type="spacer" default="" label="" description="" />	
+
+				<field
+					name="layout_span"
+					type="list"
+					default="span3" 
+					label="ICE_FILTER_LAYOUTOPTIONS_COLUMNS"
+					class="btn-group"
+					description="ICE_FILTER_LAYOUTOPTIONS_COLUMNS_DESC">
+					<option
+					value="span6">2 Columns</option>
+					<option
+					value="span4">3 Columns</option>
+					<option
+					value="span3">4 Columns</option>
+					<option
+					value="span2">6 Columns</option>
+					<option
+					value="span12">No Columns</option>
+				</field>
+
+				<field name="" type="spacer" default="" label="" description="" />	
+
+				<field name="display_caption" 
+					type="radio" 
+					class="btn-group" 
+					default="1" 
+					label="ICE_FILTER_DISPLAY_CAPTION_LABEL" 
+					description="ICE_FILTER_DISPLAY_CAPTION_DESC">
+						<option value="1">ICE_FILTER_JYES</option>
+						<option value="0">ICE_FILTER_JNO</option>
+				</field>	
+
+
+				<field name="" type="spacer" default="" label="" description="" />	
+
+				<field
+					name="animationspeed"
+					type="text" 
+					default="600" 
+					label="ICE_FILTER_ANIMATIONSPEED_LABEL" 
+					description="CE_CAROUSEL_ANIMATIONSPEED_DESC" />
+					
+				
+				<field name="" type="spacer" default="" label="" description="" />
+				
+				<field name="show_title" 
+					type="radio"
+					class="btn-group"
+					default="1" 
+					label="ICE_FILTER_SHOWTITLE" 
+					description="ICE_FILTER_SHOWTITLE_DESC">
+						<option value="1">ICE_FILTER_JYES</option>
+						<option value="0">ICE_FILTER_JNO</option>
+				</field>
+					
+				<field 
+					name="title_max_chars" 
+					type="text" 
+					default="100" 
+					label="ICE_FILTER_TITLE_MAX_CHARS_LABEL" 
+					description="ICE_FILTER_TITLE_MAX_CHARS_DESC" />
+					
+				<field name="show_description" 
+					type="radio"
+					class="btn-group"
+					default="1" 
+					label="ICE_FILTER_SHOWDESCRIPTION" 
+					description="ICE_FILTER_SHOWDESCRIPTION_DESC">
+						<option value="1">ICE_FILTER_JYES</option>
+						<option value="0">ICE_FILTER_JNO</option>
+				</field>
+									
+				<field 
+					name="description_max_chars" 
+					type="text" 
+					default="100" 
+					label="ICE_FILTER_DESCIPTION_MAX_CHARS_LABEL" 
+					description="ICE_FILTER_DESCIPTION_MAX_CHARS_DESC" />
+					
+				<field name="strip_tags" type="radio" class="btn-group" default="1" label="ICE_FILTER_STRIP_TAGS_LABEL" description="ICE_FILTER_STRIP_TAGS_DESC">
+					<option value="1">ICE_FILTER_JYES</option>
+					<option value="0">ICE_FILTER_JNO</option>
+				</field>
+					
+				<field
+					name="link_titles"
+					type="radio"
+					default="1" 
+					label="ICE_FILTER_REAMORE_SHOW_LABEL"
+					class="btn-group"
+					description="ICE_FILTER_REAMORE_SHOW_DESC">
+					<option
+						value="1">ICE_FILTER_JYES</option>
+					<option
+						value="0">ICE_FILTER_JNO</option>
+				</field>
+					
+				<field 
+					name="istruncate" 
+					type="radio" 
+					class="btn-group" 
+					default="0" 
+					label="Show readmore 3 dots?" 
+					description="In case you have put max chars on the 2 above paramters we reccomend that you enable this paramter to make the paragraph look continues">
+					<option value="1">Yes</option>
+					<option value="0">No</option>
+				</field>
+						
+		</fieldset>
+		
+		<fieldset 
+			name="GALLERY">
+							
+				<field
+					name="enable_prettyphoto"
+					type="radio"
+					default="1" 
+					label="ICE_GALLERY_ENABLE"
+					class="btn-group"
+					description="ICE_GALLERY_ENABLE_DESC">
+					<option
+						value="1">Yes</option>
+					<option
+						value="0">No</option>
+				</field>
+				
+				<field 
+					name="prettyphoto_theme" 
+					type="list"
+					default="pp_default" 
+					label="ICE_PRETTYPHOTO_THEME" 
+					description="ICE_PRETTYPHOTO_THEME_DESC">
+						<option value="pp_default">Default</option>
+						<option value="light_rounded">Light Rounded</option>
+						<option value="dark_rounded">Dark Rounded</option>
+						<option value="dark_square">Dark Square</option>
+						<option value="light_square">Light Square</option>
+						<option value="facebook">Facebook</option>
+				</field>
+				
+				<field
+					name="prettyphtoo_autoplay"
+					type="radio"
+					default="true" 
+					label="ICE_GALLERY_AUTOPLAY"
+					class="btn-group"
+					description="ICE_GALLERY_AUTOPLAY_DESC">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+				
+				<field
+					name="prettyphtoo_thumbnav"
+					type="radio"
+					default="true" 
+					label="ICE_GALLERY_THUMBNAV"
+					class="btn-group"
+					description="ICE_GALLERY_THUMBNAV_DESC">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+				
+				<field
+					name="prettyphtoo_showtitle"
+					type="radio"
+					default="true" 
+					label="ICE_GALLERY_SHOWTITLE"
+					class="btn-group"
+					description="ICE_GALLERY_SHOWTITLE_DESC">
+					<option
+						value="true">Yes</option>
+					<option
+						value="false">No</option>
+				</field>
+
+		</fieldset>
+		
+		<fieldset 
+			name="advanced">
+			<field 
+				name="moduleclass_sfx" 
+				type="text" 
+				default="" 
+				label="ICE_FILTER_MODULE_CLASS_SUFFIX_LABEL" 
+				description="ICE_FILTER_PARAMMODULECLASSSUFFIX_DESC" />	
+				
+			<field name="" type="spacer" default="" label="" description="" />
+
+			<field 
+				name="enable_cache"
+				type="list" 
+				default="0" 
+				label="ICE_FILTER_CACHING_LABEL" 
+				description="ICE_FILTER_CACHING_DESC">
+					<option value="1">Use Cache Data</option>
+					<option value="0">Don't cache</option>
+				</field>
+				<field 
+					name="cache_time" 
+					type="text" 
+					default="15" 
+					label="ICE_FILTER_CACHE_TIME_LABEL"
+					description="ICE_FILTER_CACHE_TIME_DESC" />
+			<field name="" type="spacer" default="" label="" description="" />
+			<field name="" type="spacer" default="" label="" description="" />
+		</fieldset>
+
+	</fields>
+	
+	</config>	
+</extension>

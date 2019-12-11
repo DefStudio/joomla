@@ -1,0 +1,76 @@
+/* blueaccordionfaq faq layout */
+.blueaccordionfaq.round3 .accordionfaqheader.selected,
+.blueaccordionfaq.round3.selected .accordionfaqitem
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.blueaccordionfaq.round5 .accordionfaqheader.selected,
+.blueaccordionfaq.round5.selected .accordionfaqitem
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.blueaccordionfaq.round7 .accordionfaqheader.selected,
+.blueaccordionfaq.round7.selected .accordionfaqitem
+{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	border-radius: 7px;
+}
+.blueaccordionfaq.round9 .accordionfaqheader.selected,
+.blueaccordionfaq.round9.selected .accordionfaqitem
+{
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	border-radius: 9px;
+}
+.blueaccordionfaq .accordionfaqheader a,
+.blueaccordionfaq .accordionfaqheader a:hover,
+.blueaccordionfaq .accordionfaqheader a:active,
+.blueaccordionfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.blueaccordionfaq .accordionfaqheader,
+.blueaccordionfaq .accordionfaqheader a
+{
+	color: black;
+}
+.blueaccordionfaq div.accordionfaqitem
+{
+	background-color: #F0F8FF;	/* aliceblue */
+	border: 1px solid navy;
+}
+
+.blueaccordionfaq.border .accordionfaqheader
+{
+	border:1px solid navy;
+}
+.blueaccordionfaq.bcolor .accordionfaqheader
+{
+	background-color: #B0C4DE;	/* lightsteelblue */
+}
+.blueaccordionfaq .accordionfaqheader:hover,
+.blueaccordionfaq .accordionfaqheader:hover a,
+.blueaccordionfaq .accordionfaqheader.selected,
+.blueaccordionfaq .accordionfaqheader.selected a
+{
+	color: white !important;
+	background-color: black !important;
+}
+.blueaccordionfaq.arrow  .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white.gif);
+}
+.blueaccordionfaq.arrow  .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-white.gif);
+}

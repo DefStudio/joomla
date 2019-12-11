@@ -1,0 +1,17 @@
+/* new */
+.logintop:before{
+	width: 1px;
+	display: inline-block;
+	background: url('img/topmenul.png');
+}
+.logintop{
+	display: inline-block;
+	background: url('img/topmenum.png') repeat;
+}
+.logintop:after{
+	display: inline-block;
+	width: 1px;
+	background: url('img/topmenur.png');
+}
+.logotop{
+}

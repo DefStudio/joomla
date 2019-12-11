@@ -1,0 +1,141 @@
+/* overcastfaq faq layout */
+.overcastfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.overcastfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #aaaaaa;
+}
+.overcastfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.overcastfaq.contentbackground div.accordionfaqitem
+{
+	background: #c9c9c9 url(../images/ui-bg_inset-soft_50_c9c9c9_1x100.png) 50% bottom repeat-x;
+	color: #333333;
+}
+.overcastfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.overcastfaq .accordionfaqheader,
+.overcastfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.overcastfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #cccccc;
+}
+.overcastfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #bbbbbb;
+}
+.overcastfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #999999;
+}
+.overcastfaq .accordionfaqheader a,
+.overcastfaq .accordionfaqheader a:hover,
+.overcastfaq .accordionfaqheader a:active,
+.overcastfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.overcastfaq .accordionfaqheader,
+.overcastfaq .accordionfaqheader a
+{
+	color: #3383bb;
+}
+.overcastfaq .accordionfaqheader:hover,
+.overcastfaq .accordionfaqheader:hover a
+{
+	color: #599fcf;
+}
+.overcastfaq .accordionfaqheader.selected,
+.overcastfaq .accordionfaqheader.selected a
+{
+	color: #aaaaaa;
+}
+.overcastfaq.headerbackground .accordionfaqheader.selected,
+.overcastfaq.headerbackground .accordionfaqheader.selected a
+{
+	color: #ffffff;
+}
+.overcastfaq.headerbackground .accordionfaqheader,
+.overcastfaq.headerbackground .accordionfaqheader a
+{
+	background: #eeeeee url(../images/ui-bg_glass_60_eeeeee_1x400.png) 50% 50% repeat-x;
+}
+.overcastfaq.headerbackground .accordionfaqheader:hover,
+.overcastfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #f8f8f8 url(../images/ui-bg_glass_100_f8f8f8_1x400.png) 50% 50% repeat-x;
+}
+.overcastfaq.headerbackground .accordionfaqheader.selected,
+.overcastfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #999999 url(../images/ui-bg_inset-hard_75_999999_1x100.png) 50% 50% repeat-x;
+}
+.overcastfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.overcastfaq .accordionfaqheader:hover,
+.overcastfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.overcastfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.overcastfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.overcastfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.overcastfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.overcastfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_70b2e1_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.overcastfaq.rtl.defaulticon span.accordionfaqicon,
+.overcastfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.overcastfaq.headerbackground.defaulticon span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_70b2e1_256x240.png);
+}
+.overcastfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_3383bb_256x240.png);
+	background-position: -32px -16px;
+}
+.overcastfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.overcastfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.overcastfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.overcastfaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_454545_256x240.png);
+	background-position: -64px -16px;
+}

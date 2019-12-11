@@ -1,0 +1,153 @@
+/* dotluvfaq faq layout */
+.dotluvfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.dotluvfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #000000;
+}
+.dotluvfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.dotluvfaq div.accordionfaqitem,
+.dotluvfaq div.accordionfaqitem *
+{
+	color: #555555;
+}
+.dotluvfaq.contentbackground div.accordionfaqitem,
+.dotluvfaq.contentbackground div.accordionfaqitem *
+{
+	color: #d9d9d9;
+}
+.dotluvfaq.contentbackground div.accordionfaqitem
+{
+	background: #111111 url(../images/ui-bg_gloss-wave_20_111111_500x100.png) 50% top repeat-x;
+}
+.dotluvfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.dotluvfaq .accordionfaqheader,
+.dotluvfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.dotluvfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #333333;
+}
+.dotluvfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #222222;
+}
+.dotluvfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #096ac8;
+}
+.dotluvfaq .accordionfaqheader a,
+.dotluvfaq .accordionfaqheader a:hover,
+.dotluvfaq .accordionfaqheader a:active,
+.dotluvfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.dotluvfaq .accordionfaqheader,
+.dotluvfaq .accordionfaqheader a,
+.dotluvfaq .accordionfaqheader:hover,
+.dotluvfaq .accordionfaqheader:hover a
+{
+	color: #555555;
+}
+.dotluvfaq.headerbackground .accordionfaqheader,
+.dotluvfaq.headerbackground .accordionfaqheader a,
+.dotluvfaq.headerbackground .accordionfaqheader:hover,
+.dotluvfaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #ffffff;
+}
+.dotluvfaq .accordionfaqheader.selected,
+.dotluvfaq .accordionfaqheader.selected a
+{
+	color: #75abff;
+}
+.dotluvfaq.headerbackground .accordionfaqheader,
+.dotluvfaq.headerbackground .accordionfaqheader a
+{
+	background: #333333 url(../images/ui-bg_dots-small_20_333333_2x2.png) 50% 50% repeat;
+}
+.dotluvfaq.headerbackground .accordionfaqheader:hover,
+.dotluvfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #00498f url(../images/ui-bg_dots-small_40_00498f_2x2.png) 50% 50% repeat;
+}
+.dotluvfaq.headerbackground .accordionfaqheader.selected,
+.dotluvfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #292929 url(../images/ui-bg_flat_40_292929_40x100.png) 50% 50% repeat-x;
+	color: #75abff;
+}
+.dotluvfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.dotluvfaq .accordionfaqheader:hover,
+.dotluvfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.dotluvfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.dotluvfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.dotluvfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.dotluvfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.dotluvfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_9ccdfc_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.dotluvfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -32px -16px;
+}
+.dotluvfaq.rtl.defaulticon span.accordionfaqicon,
+.dotluvfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.dotluvfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_9ccdfc_256x240.png);
+}
+.dotluvfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+}
+.dotluvfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.dotluvfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.dotluvfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.dotluvfaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_00498f_256x240.png);
+	background-position: -64px -16px;
+}

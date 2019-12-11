@@ -1,0 +1,97 @@
+/*---------------------------------------------------------------- 
+  Copyright:
+  Copyright (C) 2008 - 2013 IceTheme. All Rights Reserved
+  
+  License:
+  GNU General Public License version 2 
+  
+  Author:
+  IceTheme - http://wwww.icetheme.com
+---------------------------------------------------------------- */
+
+
+/* Creating the fade effect */
+.iceslideshow.carousel-fade .item {
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -ms-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;}
+  
+	.iceslideshow.carousel-fade .active.left,
+	.iceslideshow.carousel-fade .active.right {
+	  left: 0;
+	  z-index: 2;
+	  opacity: 0;
+	  filter: alpha(opacity=0);}
+	  
+	.iceslideshow.carousel-fade .next,
+	.iceslideshow.carousel-fade .prev {
+	  left: 0;
+	  z-index: 1;}
+	
+	.iceslideshow.carousel-fade .carousel-control {
+	  z-index: 3;}
+	  
+		
+		
+/* Captions */
+.iceslideshow .carousel-caption {
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-out;
+	transition:  all .2s ease-out;
+	opacity:0;
+	margin-bottom:-50px}
+	
+	.iceslideshow:hover .carousel-caption {
+		opacity:1;
+		margin-bottom:0}
+		
+		.carousel-caption h4 {
+			margin: 0 0 5px;
+			font-size: 22px;
+			margin-bottom: 8px;
+			margin-top: 5px;}
+
+	
+
+/* Controls */
+.iceslideshow .carousel-control {
+	-webkit-transition: all .2s ease-out;
+	-moz-transition: all .2s ease-in-out;
+	-ms-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-out;
+	transition:  all .2s ease-out;
+	-webkit-transform:scale(0);
+	opacity:0}
+	
+	.iceslideshow .carousel-control.left {
+		margin-left:-30px;}
+	
+	.iceslideshow .carousel-control.right {
+		margin-right:-30px;}	
+		
+	
+	
+		.iceslideshow:hover .carousel-control {
+			-webkit-transform:scale(1);
+			margin-left:0;
+			margin-right:0;
+			opacity:.5}
+			
+			.iceslideshow:hover .carousel-control:hover {
+				opacity:1}
+
+
+
+	
+	
+
+
+
+
+
+
+

@@ -1,0 +1,562 @@
+<html>
+<head>
+<!-- revisium.com/ai/ -->
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" >
+<META NAME="ROBOTS" CONTENT="NOINDEX,NOFOLLOW">
+<title>Отчет по /home/admin/web</title>
+<style type="text/css" title="currentStyle">
+	@import "https://cdn.revisium.com/ai/media/css/demo_page2.css";
+	@import "https://cdn.revisium.com/ai/media/css/jquery.dataTables2.css";
+</style>
+
+<script type="text/javascript" language="javascript" src="https://cdn.revisium.com/ai/jquery.js"></script>
+<script type="text/javascript" language="javascript" src="https://cdn.revisium.com/ai/datatables.min.js"></script>
+
+<style type="text/css">
+ body 
+ {
+   font-family: Tahoma;
+   color: #5a5a5a;
+   background: #FFFFFF;
+   font-size: 14px;
+   margin: 20px;
+   padding: 0;
+ }
+
+.header
+ {
+   font-size: 34px;
+   margin: 0 0 10px 0;
+ }
+
+ .hidd
+ {
+    display: none;
+ }
+ 
+ .ok
+ {
+    color: green;
+ }
+ 
+ .line_no
+ {
+   -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   background: #DAF2C1;
+   padding: 2px 5px 2px 5px;
+   margin: 0 5px 0 5px;
+ }
+ 
+ .credits_header 
+ {
+  -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   background: #F2F2F2;
+   padding: 10px;
+   font-size: 11px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .marker
+ {
+    color: #FF0090;
+	font-weight: 100;
+	background: #FF0090;
+	padding: 2px 0px 2px 0px;
+	width: 2px;
+ }
+ 
+ .title
+ {
+   font-size: 24px;
+   margin: 20px 0 10px 0;
+   color: #9CA9D1;
+}
+
+.summary 
+{
+  float: left;
+  width: 500px;
+}
+
+.summary TD
+{
+  font-size: 12px;
+  border-bottom: 1px solid #F0F0F0;
+  font-weight: 700;
+  padding: 10px 0 10px 0;
+}
+ 
+.crit, .vir
+{
+  color: #D84B55;
+}
+
+.intitem
+{
+  color:#4a6975;
+}
+
+.spacer
+{
+   margin: 0 0 50px 0;
+   clear:both;
+}
+
+.warn
+{
+  color: #F6B700;
+}
+
+.clear
+{
+   clear: both;
+}
+
+.offer
+{
+  -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   width: 500px;
+   background: #F2F2F2;
+   color: #747474;
+   font-family: Helvetica, Arial;
+   padding: 30px;
+   margin: 20px 0 0 550px;
+   font-size: 14px;
+}
+
+.offer2
+{
+  -webkit-border-radius: 4px;
+   -moz-border-radius: 4px;
+   border-radius: 4px;
+
+   width: 500px;
+   background: #f6f5e0;
+   color: #747474;
+   font-family: Helvetica, Arial;
+   padding: 30px;
+   margin: 20px 0 0 550px;
+   font-size: 14px;
+}
+
+
+HR {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  opacity: .2;
+}
+ 
+.flist
+{
+   font-family: Henvetica, Arial;
+}
+
+.flist TD
+{
+   font-size: 11px;
+   padding: 5px;
+}
+
+.flist TH
+{
+   font-size: 12px;
+   height: 30px;
+   padding: 5px;
+   background: #CEE9EF;
+}
+
+
+.it
+{
+   font-size: 14px;
+   font-weight: 100;
+   margin-top: 10px;
+}
+
+.crit .it A {
+   color: #E50931; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+.warn .it A {
+   color: #F2C900; 
+   line-height: 25px;
+   text-decoration: none;
+}
+
+
+
+.details
+{
+   font-family: Calibri;
+   font-size: 12px;
+   margin: 10px 10px 10px 0px;
+}
+
+.crit .details
+{
+   color: #A08080;
+}
+
+.warn .details
+{
+   color: #808080;
+}
+
+.details A
+{
+  color: #FFF;
+  font-weight: 700;
+  text-decoration: none;
+  padding: 2px;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+}
+
+.details A:hover
+{
+   background: #A0909B;
+}
+
+.ctd
+{
+   margin: 10px 0px 10px 0;
+   align:center;
+}
+
+.ctd A 
+{
+   color: #0D9922;
+}
+
+.disclaimer
+{
+   color: darkgreen;
+   margin: 10px 10px 10px 0;
+}
+
+.note_vir
+{
+   margin: 10px 0 10px 0;
+   //padding: 10px;
+   color: #FF4F4F;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+  
+}
+
+.note_warn
+{
+   margin: 10px 0 10px 0;
+   color: #F6B700;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.note_int
+{
+   margin: 10px 0 10px 0;
+   color: #60b5d6;
+   font-size: 15px;
+   font-weight: 700;
+   clear:both;
+}
+
+.updateinfo
+{
+  color: #FFF;
+  text-decoration: none;
+  background: #E5CEDE;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+}
+
+
+.caution
+{
+  color: #EF7B75;
+  text-decoration: none;
+  margin: 20px 0 0px 0px;   
+  font-size: 12px;
+}
+
+.footer
+{
+  color: #303030;
+  text-decoration: none;
+  background: #F4F4F4;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 80px 0 10px 0px;   
+  padding: 10px;
+}
+
+.rep
+{
+  color: #303030;
+  text-decoration: none;
+  background: #94DDDB;
+  -webkit-border-radius: 7px;
+   -moz-border-radius: 7px;
+   border-radius: 7px;
+
+  margin: 10px 0 10px 0px;   
+  padding: 10px;
+  font-size: 12px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="header">Отчет сканера <a href="https://revisium.com/ai/">AI-Bolit</a> v20190226-2242: /home/admin/web/ (2/1)</div>
+<div class="credits_header">Сканер бесплатный только для личного некоммерческого использования. Информация по <a href="https://revisium.com/ai/faq.php#faq11" target=_blank>коммерческой лицензии</a> (пункт №11). <a href="https://revisium.com/images/mini_aibolit.jpg">Авторское свидетельство</a> о гос. регистрации в РосПатенте №2012619254 от 12 октября 2012 г.</div>
+<div class="details_header">
+   Затрачено времени: <b>11 m </b>. Сканирование начато 13-03-2019 в 15:51:07, сканирование завершено 13-03-2019 в 16:02:53<br/>
+   Всего проверено 4758 директорий и 19391 файлов. Использовано памяти при сканировании: 12.18 Mb.
+ </div>
+
+ 
+ 
+ <div class="summary">
+<div class="title">Сводный отчет</div><table cellspacing=0 border=0><tr><td class="crit" width=400>Вредоносных скриптов</td><td class="crit">38</td></tr><tr><td class="crit" width=400>JS Вирусов</td><td class="crit">9</td></tr><tr><td class="warn" width=400>Пропущенных больших файлов</td><td class="warn">49</td></tr><tr><td class="warn" width=400>Символических ссылок</td><td class="warn">4</td></tr></table><!--[json]{"redirect":0,"critical_php":38,"critical_js":9,"phishing":0,"unix_exec":0,"iframes":0,"not_read":0,"base64":0,"heuristics":0,"symlinks":4,"big_files_skipped":49}[/json]--><div class=details style="margin: 20px 20px 20px 0">Обращаем внимание, что обнаруженные файлы не всегда являются вирусами и хакерскими скриптами. Сканер минимизирует число ложных обнаружений, но это не всегда возможно, так как найденный фрагмент может встречаться как во вредоносных скриптах, так и в обычных.<p>Для диагностического сканирования без ложных срабатываний мы разработали специальную версию <u><a href="https://revisium.com/ru/blog/ai-bolit-4-ISP.html" target=_blank style="background: none; color: #303030">сканера для хостинг-компаний</a></u>.</div>
+
+ </div>
+ 
+ <div class="offer">
+    <div>
+	 <div class="crit" style="font-size: 17px; margin-bottom: 20px"><b>Внимание! Наш сканер обнаружил подозрительный или вредоносный код</b>.</div> 
+	 <p>Возможно, ваш сайт был взломан. Рекомендуем срочно <a href="https://revisium.com/ru/order/#fform" target=_blank>проконсультироваться со специалистами</a> по данному отчету.</p>
+	 <p><hr size=1></p>
+	 <p>Рекомендуем также проверить сайт бесплатным <b><a href="https://rescan.pro/?utm=aibolit" target=_blank>онлайн-сканером ReScan.Pro</a></b>.</p>
+	 <p><hr size=1></p>
+         <div class="caution">Не оставляйте файл отчета на сервере, и не давайте на него прямых ссылок с других сайтов. Информация из отчета может быть использована злоумышленниками для взлома сайта, так как содержит информацию о настройках сервера, файлах и каталогах.</div>
+    </div>
+ </div>
+
+ <div class="offer2">
+	   <b>Наши продукты:</b><br/>
+              <ul>
+               <li style="margin-top: 10px"><font color=red><sup>[new]</sup></font><b><a href="https://revisium.com/ru/products/antivirus_for_ispmanager/" target=_blank>Антивирус для ISPmanager Lite</a></b> &mdash;  сканирование и лечение сайтов прямо в панели хостинга</li>
+               <li style="margin-top: 10px"><b><a href="https://revisium.com/ru/blog/revisium-antivirus-for-plesk.html" target=_blank>Антивирус для Plesk</a> Onyx 17.x</b> &mdash;  сканирование и лечение сайтов прямо в панели хостинга</li>
+               <li style="margin-top: 10px"><b><a href="https://cloudscan.pro/ru/" target=_blank>Облачный антивирус CloudScan.Pro</a> для веб-специалистов</b> &mdash; лечение сайтов в один клик</li>
+               <li style="margin-top: 10px"><b><a href="https://revisium.com/ru/antivirus-server/" target=_blank>Антивирус для сервера</a></b> &mdash; для хостин-компаний, веб-студий и агентств.</li>
+              </ul>  
+	</div>
+ </div> 
+ 
+ <div class="clear"></div>
+ 
+ <div class="title">Критические замечания</div><div class="note_vir">Уязвимости в скриптах (1)</div><div class="crit"><li>/home/admin/web/bestnetentcasinos.info/public_html/components/com_acymailing/inc/phpmailer/class.phpmailer.php - RCE : CVE-2016-10045, CVE-2016-10031</li></div><p>
+<div class="note_vir">Эти файлы могут быть вредоносными или хакерскими скриптами (38)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_crit"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_admin/views/profile/tmpl/edit.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…=&#039;.$this-&gt;item-&gt;id);?&gt;&quot; method=&quot;post&quot; name=&quot;adminForm&quot; id=&quot;profile-form&quot; class=&quot;form-validate form-horizontal&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot;&gt;&lt;?php  echo JHtml::_(&#039;bootstrap.startTabSet&#039;,&#039;myTab&#039;,array(&#039;active&#039;=&gt;&#039;account&#039;));?&gt;&lt;?php  echo JHtml</div></td><td align=center><div class="ctd">13/03/2019 14:49:13</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">1.82 Kb</div></td><td class="hidd"><div class="hidd">ae9228725168f114108d92fea37bf1b713224ab8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg1" o="id_2b7bceff"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/Master/Cli/Base.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2b7bceff')">[x]</a> <span class="line_no">1</span>…flectionClass(&#039;JRequest&#039;);$refMethod=$reflector-&gt;getMethod(&#039;_cleanVar&#039;);$refMethod-&gt;setAccessible(true);return$refMethod<span class="marker">&nbsp;</span>-&gt;invoke(null,$var,0,$type);}}function akeeba_exception_handler($ex){echo &quot;\n\n&quot;;echo &quot;********** ERROR! **********\n\n</div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">19.75 Kb</div></td><td class="hidd"><div class="hidd">692d27b1fde535175c3c95e9bc94bb8ddaab6f13</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491538</div></td><td class="hidd"><div class="hidd">id_2b7bceff</div></td></tr><tr class="tbg0" o="id_f4b211f8"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/restore.php</a></div><div class="details"><a href="#" onclick="return hsig('id_f4b211f8')">[x]</a> <span class="line_no">1</span>…rRecursive($dirName,$perms){if(AKFactory::get(&#039;kickstart.setup.dryrun&#039;,&#039;0&#039;)){return true;}if(mkdir($dirName,0755,true)){<span class="marker">&nbsp;</span>chmod($dirName,0755);return true;}$root=AKFactory::get(&#039;kickstart.setup.destdir&#039;);$root=rtrim(str_replace(&#039;\\&#039;,&#039;/&#039;,$roo</div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">233.26 Kb</div></td><td class="hidd"><div class="hidd">0d7f07ba33bbd8db5ad689e94f8ee6318b6002b0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491538</div></td><td class="hidd"><div class="hidd">id_f4b211f8</div></td></tr><tr class="tbg1" o="id_d05820be"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_finder/helpers/indexer/stemmer/fr.php</a></div><div class="details"><a href="#" onclick="return hsig('id_d05820be')">[x]</a> <span class="line_no">1</span>…urn self::$stemRules; } $vars=array(); // French accented letters in ISO-8859-1 encoding $vars[&#039;accents&#039;]=<span class="marker">&nbsp;</span>chr(224).&#039;�������&#039; .&#039;�&#039;.chr(24</div></td><td align=center><div class="ctd">13/03/2019 14:49:14</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">10.11 Kb</div></td><td class="hidd"><div class="hidd">40c32c556362a17bf01f2f4aede09fcbead53edf</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_d05820be</div></td></tr><tr class="tbg0" o="id_f4b211f8"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_joomlaupdate/restore.php</a></div><div class="details"><a href="#" onclick="return hsig('id_f4b211f8')">[x]</a> <span class="line_no">1</span>…rRecursive($dirName,$perms){if(AKFactory::get(&#039;kickstart.setup.dryrun&#039;,&#039;0&#039;)){return true;}if(mkdir($dirName,0755,true)){<span class="marker">&nbsp;</span>chmod($dirName,0755);return true;}$root=AKFactory::get(&#039;kickstart.setup.destdir&#039;);$root=rtrim(str_replace(&#039;\\&#039;,&#039;/&#039;,$roo</div></td><td align=center><div class="ctd">13/03/2019 14:49:14</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">208.17 Kb</div></td><td class="hidd"><div class="hidd">021a5bc53597bb137ffd523cbaf2d9df343f73f6</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_f4b211f8</div></td></tr><tr class="tbg1" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_kunena/template/templates/add.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…action=&quot;&lt;?php  echo KunenaRoute::_(&#039;administrator/index.php?option=com_kunena&amp;view=templates&#039;)?&gt;&quot; method=&quot;post&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot; id=&quot;adminForm&quot; name=&quot;adminForm&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;task&quot; value=&quot;install&quot; /&gt;&lt;?php  echo JHtm</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">15/03/2018 08:21:07</div></td><td align=center><div class="ctd">1.55 Kb</div></td><td class="hidd"><div class="hidd">b0cbac65e0934784e61f1faf4049c42718758a1e</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1521102067</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg0" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_kunena/template/j3/templates/add.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…action=&quot;&lt;?php  echo KunenaRoute::_(&#039;administrator/index.php?option=com_kunena&amp;view=templates&#039;)?&gt;&quot; method=&quot;post&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot; id=&quot;adminForm&quot; name=&quot;adminForm&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;task&quot; value=&quot;install&quot;/&gt;&lt;?php  echo HTMLH</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">1.63 Kb</div></td><td class="hidd"><div class="hidd">e939ca2a383b1a9106210f5f191af101f88683c9</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491555</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg1" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_kunena/template/j4/templates/add.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…action=&quot;&lt;?php  echo KunenaRoute::_(&#039;administrator/index.php?option=com_kunena&amp;view=templates&#039;)?&gt;&quot; method=&quot;post&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot; id=&quot;adminForm&quot; name=&quot;adminForm&quot;&gt;&lt;input type=&quot;hidden&quot; name=&quot;task&quot; value=&quot;install&quot;/&gt;&lt;?php  echo HTMLH</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">1.53 Kb</div></td><td class="hidd"><div class="hidd">b844234a625c645aa82c9d3c3063bf78e00a68e1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491555</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg0" o="id_3810d622"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_xmap/models/fields/xmapmenus.php</a></div><div class="details"><a href="#" onclick="return hsig('id_3810d622')">[x]</a> <span class="line_no">1</span>… if($indexB===false){ return -1; } return($indexA&lt;$indexB)?-1 : 1; } } //<span class="marker">&nbsp;</span>file_put_contents($_SERVER[&#039;DOCUMENT_ROOT&#039;].&#039;/SESSION.txt&#039;,&#039;SESSION\n&quot;.print_r($_SESSION,1).&#039;REQUEST\n&quot;.print_r($</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">04/10/2018 11:19:18</div></td><td align=center><div class="ctd">6.44 Kb</div></td><td class="hidd"><div class="hidd">ac1d388e717107dd72e25c5bd305fde16ad9a23f</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1538651958</div></td><td class="hidd"><div class="hidd">id_3810d622</div></td></tr><tr class="tbg1" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/classes/mail.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…r(&#039;array&#039;,&#039;data&#039;,array(),&#039;&#039;); if(!empty($formData[&#039;mail&#039;][&#039;subject&#039;]))$formData[&#039;mail&#039;][&#039;subject&#039;]=str_replace(<span class="marker">&nbsp;</span>chr(226).&#039;��&#039;,&#039;&#039;,$formData[&#039;mail&#039;][&#039;subject&#039;]); $formData[&#039;mail&#039;][&#039;subject&#039;]=acyEmoji::Encode($form</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">24.00 Kb</div></td><td class="hidd"><div class="hidd">70c86ddbe4216d5a5cebe07c0dc99726e9554848</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr><tr class="tbg0" o="id_162f9aaf"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/classes/stats.php</a></div><div class="details"><a href="#" onclick="return hsig('id_162f9aaf')">[x]</a> <span class="line_no">1</span>…e,$agent);break;}}$isMobile=0;$osName=&#039;&#039;;if(preg_match(&#039;/(android|bb\d+|meego).+mobile|avantgo|bada\/|blackberry|blazer|<span class="marker">&nbsp;</span>compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|midp|mmp|mobile.+firefox|netfront|opera m(ob|in</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">11.62 Kb</div></td><td class="hidd"><div class="hidd">429b583d0be363179f866f19256840b361f3da32</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_162f9aaf</div></td></tr><tr class="tbg1" o="id_big_1"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/extensions/plg_editors_acyeditor/acyeditor/ckeditor/ckeditor.js</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">448.90 Kb</div></td><td class="hidd"><div class="hidd">c0199a6c608c575f31f50f3bfe7cc9e65c072283</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg0" o="id_105a4fcd"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/helpers/acymailer.php</a></div><div class="details"><a href="#" onclick="return hsig('id_105a4fcd')">[x]</a> <span class="line_no">1</span>…ar,$replaceByStars,$replaceByReturnChar1,$replaceByReturnChar,$replaceLinks),array(&#039;&#039;,&#039;&#039;,&#039;&#039;,&#039;&#039;,&quot;\n\n&quot;,&quot;\n* &quot;,&quot;\n&quot;,&quot;\n&quot;,&#039;<span class="marker">&nbsp;</span>${2}(${1})&#039;),$html);$text=preg_replace(&#039;#(&amp;lt;|&amp;\#60;)([^\n\r\t])#i&#039;,&#039;&amp;lt;${2}&#039;,$text);$text=str_replace(array(&quot; &quot;,&quot;&amp;n</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">28.93 Kb</div></td><td class="hidd"><div class="hidd">fe11f3ada9ec95f202a704d975be0c2744af5ce1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_105a4fcd</div></td></tr><tr class="tbg1" o="id_2b093717"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/helpers/acyuser.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2b093717')">[x]</a> <span class="line_no">1</span>…tch(&#039;#^.{1,5}(gmail|yahoo|aol|hotmail|msn|ymail)#i&#039;,$email)){return false;}}if($config-&gt;get(&#039;email_checkdomain&#039;,false)&amp;&amp;<span class="marker">&nbsp;</span>function_exists(&#039;getmxrr&#039;)){$domain=substr($email,strrpos($email,&#039;&#039;) + 1);$mxhosts=array();$checkDomain=getmxrr($domain</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">15.82 Kb</div></td><td class="hidd"><div class="hidd">dcffe68b22391860b0e8a2e9835525a69daff930</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_2b093717</div></td></tr><tr class="tbg0" o="id_2b093717"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/views/cpanel/tmpl/security.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2b093717')">[x]</a> <span class="line_no">1</span>…le&quot; cellspacing=&quot;1&quot;&gt;&lt;tr&gt;&lt;td class=&quot;acykey&quot;&gt;&lt;?php  echo acymailing_translation(&#039;CHECK_DOMAIN_EXISTS&#039;);?&gt;&lt;/td&gt;&lt;td&gt;&lt;?php  if(<span class="marker">&nbsp;</span>function_exists(&#039;getmxrr&#039;)){echo acymailing_boolean(&quot;config[email_checkdomain]&quot;,&#039;&#039;,$this-&gt;config-&gt;get(&#039;email_checkdomai</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">5.69 Kb</div></td><td class="hidd"><div class="hidd">9cf67e6d691cb9626fc0b1b76ae6ab1569189b71</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_2b093717</div></td></tr><tr class="tbg1" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/views/email/tmpl/form.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…ink(acymailing_getVar(&#039;cmd&#039;,&#039;ctrl&#039;),true);?&gt;&quot; method=&quot;post&quot; name=&quot;adminForm&quot; id=&quot;adminForm&quot; autocomplete=&quot;off&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot;&gt;&lt;div id=&quot;iframetemplate&quot;&gt;&lt;/div&gt;&lt;div id=&quot;iframetag&quot;&gt;&lt;/div&gt;&lt;?php  include(dirname(__FILE__).DS.&#039;param</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">1.72 Kb</div></td><td class="hidd"><div class="hidd">e4820e7267028191b7580c35e4214f336b84be56</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg0" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/views/newsletter/tmpl/upload.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…echo acymailing_completeLink(&#039;file&#039;,true);?&gt;&quot; method=&quot;post&quot; name=&quot;adminForm&quot; id=&quot;adminForm&quot; autocomplete=&quot;off&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot;&gt;&lt;div id=&quot;iframedoc&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;padding-top:20px;&quot;&gt;&lt;input type=&quot;file&quot; styl</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">903 b</div></td><td class="hidd"><div class="hidd">30b2ed02d766d657ae35ba4957774087b156bbba</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg1" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/views/template/tmpl/upload.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>… acymailing_completeLink(&#039;template&#039;,true);?&gt;&quot; method=&quot;post&quot; name=&quot;adminForm&quot; id=&quot;adminForm&quot; autocomplete=&quot;off&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot;&gt;&lt;div id=&quot;iframedoc&quot;&gt;&lt;/div&gt;&lt;div style=&quot;text-align:center;padding-top:20px;&quot;&gt;&lt;input type=&quot;file&quot; styl</div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">1.05 Kb</div></td><td class="hidd"><div class="hidd">7ca7227887e975cf9903cce92595aad1dc7a2b5e</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg0" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_users/views/registration/tmpl/default.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…php?option=com_users&amp;task=registration.register&#039;);?&gt;&quot; method=&quot;post&quot; class=&quot;form-validate form-horizontal well&quot; enctype=&quot;<span class="marker">&nbsp;</span>multipart/form-data&quot;&gt;&lt;?php ?&gt;&lt;?php  foreach($this-&gt;form-&gt;getFieldsets() as$fieldset) :?&gt;&lt;?php $fields=$this-&gt;form-&gt;getFiel</div></td><td align=center><div class="ctd">13/03/2019 14:49:15</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">1.86 Kb</div></td><td class="hidd"><div class="hidd">e4d94c2c3f72a4d2bdf5ae3067a8b28bb7d26e19</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg1" o="id_9786c492"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_acymailing/inc/phpmailer/class.phpmailer.php</a></div><div class="details"><a href="#" onclick="return hsig('id_9786c492')">[x]</a> <span class="line_no">1</span>…(&#039;sha256&#039;,$signHeader);$t=&#039;3031300d060960864801650304020105000420&#039;.$hash;$pslen=$pinfo[&#039;bits&#039;] / 8 -(strlen($t) / 2 + 3)<span class="marker">&nbsp;</span>;$eb=pack(&#039;H*&#039;,&#039;0001&#039;.str_repeat(&#039;FF&#039;,$pslen).&#039;00&#039;.$t);if(openssl_private_encrypt($eb,$signature,$privKey,OPENSSL_NO_PA</div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">142.57 Kb</div></td><td class="hidd"><div class="hidd">ee69a6c9c72400714328e65d3c6202f48c4fbec0</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_9786c492</div></td></tr><tr class="tbg0" o="id_6f049b4e"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_jcomments/classes/bbcode.php</a></div><div class="details"><a href="#" onclick="return hsig('id_6f049b4e')">[x]</a> <span class="line_no">1</span>…rn$this-&gt;_codes[$str]?1 : 0;}function filter($str,$forceStrip=false){ob_start();$patterns=array();$replacements=array();<span class="marker">&nbsp;</span>$patterns[]=&#039;/\[email\](.*?)\[\/email\]/iu&#039;;$replacements[]=&#039; \ &#039;;$patterns[]=&#039;/\[sup\](.*?)\[\/sup\]/iu&#039;;$replacements</div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">22/08/2018 15:06:21</div></td><td align=center><div class="ctd">11.83 Kb</div></td><td class="hidd"><div class="hidd">e91a73f9148a09c83c7c28b21c80d2b16580b20d</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950381</div></td><td class="hidd"><div class="hidd">id_6f049b4e</div></td></tr><tr class="tbg1" o="id_2b7bceff"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/fof30/Factory/Scaffolding/Layout/Builder.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2b7bceff')">[x]</a> <span class="line_no">1</span>…adLangReflection=$langReflection-&gt;getMethod(&#039;loadLanguage&#039;);$loadLangReflection-&gt;setAccessible(true);$loadLangReflection<span class="marker">&nbsp;</span>-&gt;invoke($lang,$filename,$this-&gt;container-&gt;componentName);unlink($filename);}public function getContainer(){return$this</div></td><td align=center><div class="ctd">13/03/2019 15:38:57</div></td><td align=center><div class="ctd">13/03/2019 15:38:57</div></td><td align=center><div class="ctd">6.83 Kb</div></td><td class="hidd"><div class="hidd">b566c1517438190df502f9d9233468c21af74ea8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491537</div></td><td class="hidd"><div class="hidd">id_2b7bceff</div></td></tr><tr class="tbg0" o="id_2b7bceff"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/fof30/Model/Mixin/Generators.php</a></div><div class="details"><a href="#" onclick="return hsig('id_2b7bceff')">[x]</a> <span class="line_no">1</span>…t($db);$refFetchAssoc=$reflectDB-&gt;getMethod(&#039;fetchAssoc&#039;);$refFetchAssoc-&gt;setAccessible(true);while($data=$refFetchAssoc<span class="marker">&nbsp;</span>-&gt;invoke($db,$cursor)){$item=clone$this;$item-&gt;clearState()-&gt;reset(true);$item-&gt;bind($data);$item-&gt;relationManager=clon</div></td><td align=center><div class="ctd">13/03/2019 15:38:57</div></td><td align=center><div class="ctd">13/03/2019 15:38:57</div></td><td align=center><div class="ctd">1.91 Kb</div></td><td class="hidd"><div class="hidd">da42c3aa0a3d0af67ac6c1d407cfeb561248910e</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491537</div></td><td class="hidd"><div class="hidd">id_2b7bceff</div></td></tr><tr class="tbg1" o="id_c536f275"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/fof30/Pimple/Container.php</a></div><div class="details"><a href="#" onclick="return hsig('id_c536f275')">[x]</a> <span class="line_no">1</span>… not a Closure or invokable object.&#039;);}$factory=$this-&gt;values[$id];$extended=function($c) use($callable,$factory){return<span class="marker">&nbsp;</span>$callable($factory($c),$c);};if(isset($this-&gt;factories[$factory])){$this-&gt;factories-&gt;detach($factory);$this-&gt;factories-</div></td><td align=center><div class="ctd">13/03/2019 15:38:57</div></td><td align=center><div class="ctd">13/03/2019 15:38:57</div></td><td align=center><div class="ctd">8.77 Kb</div></td><td class="hidd"><div class="hidd">5e53fd82bbe283c730ae67eee19b033f2f4249d7</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491537</div></td><td class="hidd"><div class="hidd">id_c536f275</div></td></tr><tr class="tbg0" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/regularlabs/src/Html.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…unction convertWysiwygToPlainText($string) { // replace chr style enters with normal enters $string=str_replace([<span class="marker">&nbsp;</span>chr(194).&#039;�&#039;,&#039;&amp;#160;&#039;,&#039;&amp;nbsp;&#039;],&#039; &#039;,$string); // replace linebreak tags with normal linebreaks(paragraph</div></td><td align=center><div class="ctd">27/12/2018 15:21:59</div></td><td align=center><div class="ctd">27/12/2018 15:21:59</div></td><td align=center><div class="ctd">18.95 Kb</div></td><td class="hidd"><div class="hidd">389b5b575265ea1a87f0b56bd29833c20f11d9e9</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924119</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr><tr class="tbg1" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/regularlabs/src/PluginTag.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…(&#039;&amp;quot;&#039;,&#039;&quot;&#039;,$string); self::protectSpecialChars($string); // replace weird whitespace $string=str_replace(<span class="marker">&nbsp;</span>chr(194).&#039;�&#039;,&#039; &#039;,$string); // Replace html entity spaces between attributes to normal spaces $string=Re</div></td><td align=center><div class="ctd">27/12/2018 15:21:59</div></td><td align=center><div class="ctd">27/12/2018 15:21:59</div></td><td align=center><div class="ctd">17.52 Kb</div></td><td class="hidd"><div class="hidd">e32b60613777f082786b02bdc0d8ee27832df845</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924119</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr><tr class="tbg0" o="id_bb568918"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/regularlabs/src/Uri.php</a></div><div class="details"><a href="#" onclick="return hsig('id_bb568918')">[x]</a> <span class="line_no">1</span>…tion encode($string){return urlencode(base64_encode(gzdeflate($string)));}public static function decode($string){return<span class="marker">&nbsp;</span>gzinflate(base64_decode(urldecode($string)));}public static function createCompressedAttributes($string){$parameters=[]</div></td><td align=center><div class="ctd">27/12/2018 15:21:59</div></td><td align=center><div class="ctd">27/12/2018 15:21:59</div></td><td align=center><div class="ctd">2.51 Kb</div></td><td class="hidd"><div class="hidd">1d98fcf3a78291cbf4f16dcd5ba3bd8b13877468</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924119</div></td><td class="hidd"><div class="hidd">id_bb568918</div></td></tr><tr class="tbg1" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/src/Filter/InputFilter.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…String) { $cleaned=(string) trim($eachString); $cleaned=StringHelper::trim($cleaned,&#039;�&#039;.<span class="marker">&nbsp;</span>chr(0x80).&#039;�&#039;); $result[]=StringHelper::trim($cleaned,&#039; &#039;); } } else </div></td><td align=center><div class="ctd">13/03/2019 14:49:17</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">33.31 Kb</div></td><td class="hidd"><div class="hidd">67ebbca2cb25de5086edb329c94fa90fcf2e3942</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr><tr class="tbg0" o="id_85781d45"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/kunena/external/nbbc/nbbc.php</a></div><div class="details"><a href="#" onclick="return hsig('id_85781d45')">[x]</a> <span class="line_no">1</span>…urn$output;}public function FillTemplate($template,$insert_array,$default_array=array()){if(is_array($template)){return<span class="marker">&nbsp;</span>call_user_func($template,$insert_array);}$pieces=preg_split(&#039;/(\{\$[a-zA-Z0-9_.:\/-]+\})/&#039;,$template,-1,PREG_SPLIT_DELI</div></td><td align=center><div class="ctd">13/03/2019 15:39:13</div></td><td align=center><div class="ctd">13/03/2019 15:39:13</div></td><td align=center><div class="ctd">84.89 Kb</div></td><td class="hidd"><div class="hidd">6973630c7126721e33c019ef26454c32a6bba804</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491553</div></td><td class="hidd"><div class="hidd">id_85781d45</div></td></tr><tr class="tbg1" o="id_3810d622"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/libraries/kunena/upload/upload.php</a></div><div class="details"><a href="#" onclick="return hsig('id_3810d622')">[x]</a> <span class="line_no">1</span>…s($contentType,&#039;multipart&#039;)!==false){$exception=$this-&gt;checkUpload($_FILES[&#039;file&#039;]);if($exception){throw$exception;}$in=<span class="marker">&nbsp;</span>fopen($_FILES[&#039;file&#039;][&#039;tmp_name&#039;],&#039;rb&#039;);}else{$in=fopen(&#039;php://input&#039;,&#039;rb&#039;);}if(!$in){throw new RuntimeException(Text::</div></td><td align=center><div class="ctd">13/03/2019 15:39:13</div></td><td align=center><div class="ctd">13/03/2019 15:39:13</div></td><td align=center><div class="ctd">18.07 Kb</div></td><td class="hidd"><div class="hidd">2f4492289a6f5bb5e59398d8551ea3823485a4f8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491553</div></td><td class="hidd"><div class="hidd">id_3810d622</div></td></tr><tr class="tbg0" o="id_big_1"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/foundry/2.1/scripts_/foundry.js</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:42:31</div></td><td align=center><div class="ctd">413.07 Kb</div></td><td class="hidd"><div class="hidd">719aeb76620684ce17cb1cb5440ae2a831353167</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477351</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg1" o="id_big_1"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/foundry/2.1/scripts_/ui.js</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:42:43</div></td><td align=center><div class="ctd">435.78 Kb</div></td><td class="hidd"><div class="hidd">2d655cf9e62655a374bacdfcd2a6d6f6d7b6d26c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477363</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg0" o="id_big_1"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/editors/acyeditor/acyeditor/ckeditor/ckeditor.js</a></div><div class="details"><a href="#" onclick="return hsig('id_big_1')">[x]</a> BIG FILE. SKIPPED.</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">02/09/2018 21:22:31</div></td><td align=center><div class="ctd">448.90 Kb</div></td><td class="hidd"><div class="hidd">c0199a6c608c575f31f50f3bfe7cc9e65c072283</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1535923351</div></td><td class="hidd"><div class="hidd">id_big_1</div></td></tr><tr class="tbg1" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/system/advancedmodules/src/Helpers/advancedmodulehelper.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…is empty if($content==&#039;&#039;) { return true; } // remove html and hidden whitespace $content=str_replace(<span class="marker">&nbsp;</span>chr(194).&#039;�&#039;,&#039; &#039;,$content); $content=str_replace([&#039;&amp;nbsp;&#039;,&#039;&amp;#160;&#039;],&#039; &#039;,$content); // remove comment</div></td><td align=center><div class="ctd">27/12/2018 15:22:01</div></td><td align=center><div class="ctd">27/12/2018 15:22:01</div></td><td align=center><div class="ctd">11.03 Kb</div></td><td class="hidd"><div class="hidd">41e459c3608188b544fb501c0e187e3e4a126e11</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924121</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr><tr class="tbg0" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/system/advancedmodules/src/Helpers/advancedmodulehelper_legacy.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…is empty if($content==&#039;&#039;) { return true; } // remove html and hidden whitespace $content=str_replace(<span class="marker">&nbsp;</span>chr(194).&#039;�&#039;,&#039; &#039;,$content); $content=str_replace([&#039;&amp;nbsp;&#039;,&#039;&amp;#160;&#039;],&#039; &#039;,$content); // remove comment</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">20/11/2017 16:15:02</div></td><td align=center><div class="ctd">10.13 Kb</div></td><td class="hidd"><div class="hidd">b12fb264828643c4ec0187eeb0ec697144b55732</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1511194502</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr><tr class="tbg1" o="id_1d2a5806"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/system/jlnodoubles/helpers/helper.php</a></div><div class="details"><a href="#" onclick="return hsig('id_1d2a5806')">[x]</a> <span class="line_no">1</span>… for($j=0;$j&lt;$dimension;$j++){ $s1[$i][$j]=$basea[$i*$dimension+$j]; $s2[$i][$j]=<span class="marker">&nbsp;</span>str_rot13($basea[($dimension*$dimension-1) -($i*$dimension+$j)]); } } unset($basea); </div></td><td align=center><div class="ctd">27/12/2018 15:21:44</div></td><td align=center><div class="ctd">27/12/2018 15:21:44</div></td><td align=center><div class="ctd">4.47 Kb</div></td><td class="hidd"><div class="hidd">3d56edbb8e2b7387b722d5f85470ae2acfbe31b5</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924104</div></td><td class="hidd"><div class="hidd">id_1d2a5806</div></td></tr><tr class="tbg0" o="id_"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/system/moduleplant/installscript.php</a></div><div class="details"><a href="#" onclick="return hsig('id_')">[x]</a> <span class="line_no">1</span>…manifest&#039;)));$filesFolder=dirname(__FILE__).&#039;/&#039;.$this-&gt;filesFolder.&#039;/&#039;;JFile::delete($filesFolder.$manifestFile);JFile::<span class="marker">&nbsp;</span>copy($filesFolder.&#039;../&#039;.$manifestFile,$filesFolder.$manifestFile);}private function deleteFakeManifestFile($parent){$in</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:57:38</div></td><td align=center><div class="ctd">1.42 Kb</div></td><td class="hidd"><div class="hidd">b0d2580e7edb75166256457bf70ab79559af2b80</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507478258</div></td><td class="hidd"><div class="hidd">id_</div></td></tr><tr class="tbg1" o="id_17d869af"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/system/nnframework/helpers/text.php</a></div><div class="details"><a href="#" onclick="return hsig('id_17d869af')">[x]</a> <span class="line_no">1</span>…nt tags $string=preg_replace(&#039;#&lt;\!--.*?--&gt;#s&#039;,&#039;&#039;,$string); // replace weird whitespace $string=str_replace(<span class="marker">&nbsp;</span>chr(194).&#039;�&#039;,&#039; &#039;,$string); if($strip_tags) { // remove html tags $string=preg_replace(&#039;#&lt;/?[a-z]</div></td><td align=center><div class="ctd">27/12/2018 15:22:00</div></td><td align=center><div class="ctd">27/12/2018 15:22:00</div></td><td align=center><div class="ctd">17.81 Kb</div></td><td class="hidd"><div class="hidd">4b8a2634953b1f1af4bf99023941a02454a250fb</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924120</div></td><td class="hidd"><div class="hidd">id_17d869af</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_vir">Эти файлы могут быть javascript вирусами (9)</div><div class="crit"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_vir"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_162f9aaf"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_kunena/template/crypsis/assets/js/jquery.wysibb-min.js</a></div><div class="details"><a href="#" onclick="return hsig('id_162f9aaf')">[x]</a> <span class="line_no">1</span>…otype={lastid:1,init:function(){a.log(&quot;Init&quot;,this);this.isMobile=function(b){(/android|avantgo|bada\/|blackberry|blazer|<span class="marker">&nbsp;</span>compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i</div></td><td align=center><div class="ctd">13/03/2019 15:39:14</div></td><td align=center><div class="ctd">13/03/2019 15:39:14</div></td><td align=center><div class="ctd">64.41 Kb</div></td><td class="hidd"><div class="hidd">a1761f10cfcdfbfe812ff4de82bbfdf9be41894b</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491554</div></td><td class="hidd"><div class="hidd">id_162f9aaf</div></td></tr><tr class="tbg1" o="id_162f9aaf"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_kunena/template/crypsis/assets/js/jquery.wysibb.js</a></div><div class="details"><a href="#" onclick="return hsig('id_162f9aaf')">[x]</a> <span class="line_no">1</span>…: function(){$.log(&quot;Init&quot;,this);//check for mobile this.isMobile=function(a){(/android|avantgo|bada\/|blackberry|blazer|<span class="marker">&nbsp;</span>compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i</div></td><td align=center><div class="ctd">13/03/2019 15:39:14</div></td><td align=center><div class="ctd">13/03/2019 15:39:14</div></td><td align=center><div class="ctd">101.24 Kb</div></td><td class="hidd"><div class="hidd">f31c606fe5af0b6e8177a5dbf4cd0db79d97b2d8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491554</div></td><td class="hidd"><div class="hidd">id_162f9aaf</div></td></tr><tr class="tbg0" o="id_162f9aaf"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_kunena/template/crypsisb3/assets/js/jquery.wysibb-min.js</a></div><div class="details"><a href="#" onclick="return hsig('id_162f9aaf')">[x]</a> <span class="line_no">1</span>…otype={lastid:1,init:function(){a.log(&quot;Init&quot;,this);this.isMobile=function(b){(/android|avantgo|bada\/|blackberry|blazer|<span class="marker">&nbsp;</span>compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">64.39 Kb</div></td><td class="hidd"><div class="hidd">365e6abb2ea1b87945e1b486d688d4de6be34a9a</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491555</div></td><td class="hidd"><div class="hidd">id_162f9aaf</div></td></tr><tr class="tbg1" o="id_162f9aaf"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/components/com_kunena/template/crypsisb3/assets/js/jquery.wysibb.js</a></div><div class="details"><a href="#" onclick="return hsig('id_162f9aaf')">[x]</a> <span class="line_no">1</span>…: function(){$.log(&quot;Init&quot;,this);//check for mobile this.isMobile=function(a){(/android|avantgo|bada\/|blackberry|blazer|<span class="marker">&nbsp;</span>compal|elaine|fennec|hiptop|iemobile|ip(hone|od)|iris|kindle|lge |maemo|meego.+mobile|midp|mmp|netfront|opera m(ob|in)i</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">13/03/2019 15:39:15</div></td><td align=center><div class="ctd">101.21 Kb</div></td><td class="hidd"><div class="hidd">b5597bde27adf314133401d9caf91a1e058b9154</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491555</div></td><td class="hidd"><div class="hidd">id_162f9aaf</div></td></tr><tr class="tbg0" o="id_d516e8a1"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/editors/codemirror/mode/mirc/mirc.js</a></div><div class="details"><a href="#" onclick="return hsig('id_d516e8a1')">[x]</a> <span class="line_no">1</span>…AMD define([&quot;../../lib/codemirror&quot;],mod);else // Plain browser env mod(CodeMirror);})(function(CodeMirror){&quot;use strict&quot;;<span class="marker">&nbsp;</span>CodeMirror.defineMIME(&quot;text/mirc&quot;,&quot;mirc&quot;);CodeMirror.defineMode(&quot;mirc&quot;,function(){function parseWords(str){var obj={},w</div></td><td align=center><div class="ctd">13/03/2019 14:49:18</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">9.84 Kb</div></td><td class="hidd"><div class="hidd">6a8048c5fc8d6c7de5ce36e69046c9d895519820</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_d516e8a1</div></td></tr><tr class="tbg1" o="id_6f049b4e"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/foundry/2.1/scripts/bootstrap.js</a></div><div class="details"><a href="#" onclick="return hsig('id_6f049b4e')">[x]</a> <span class="line_no">1</span>…&quot;);if(r&amp;&amp;r.length){i=r.data(&quot;collapse&quot;);if(i&amp;&amp;i.transitioning)return;r.collapse(&quot;hide&quot;),i||r.data(&quot;collapse&quot;,null)}this.<span class="marker">&nbsp;</span>$element[t](0),e.support.transition&amp;&amp;this.$element[t](this.$element[0][n]),this.transition(&quot;addClass&quot;,e.Event(&quot;bootstra</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:42:12</div></td><td align=center><div class="ctd">26.91 Kb</div></td><td class="hidd"><div class="hidd">ba38c0c7571bb0983bfca33c1317ca1a8b67b4c8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477332</div></td><td class="hidd"><div class="hidd">id_6f049b4e</div></td></tr><tr class="tbg0" o="id_6f049b4e"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/foundry/2.1/scripts_/bootstrap.js</a></div><div class="details"><a href="#" onclick="return hsig('id_6f049b4e')">[x]</a> <span class="line_no">1</span>…ata=$el.data(),val=$el.is(&#039;input&#039;)?&#039;val&#039; : &#039;html&#039; state=state + &#039;Text&#039; data.resetText ||$el.data(&#039;resetText&#039;,$el[val]())<span class="marker">&nbsp;</span>$el[val](data[state] || this.options[state]) // push to event loop to allow forms to submit setTimeout(function(){state</div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:42:27</div></td><td align=center><div class="ctd">58.78 Kb</div></td><td class="hidd"><div class="hidd">947f21d0eceb1412c97f4940ac889970d42dc12f</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477347</div></td><td class="hidd"><div class="hidd">id_6f049b4e</div></td></tr><tr class="tbg1" o="id_6f049b4e"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/jui/js/bootstrap.js</a></div><div class="details"><a href="#" onclick="return hsig('id_6f049b4e')">[x]</a> <span class="line_no">1</span>…ata=$el.data(),val=$el.is(&#039;input&#039;)?&#039;val&#039; : &#039;html&#039; state=state + &#039;Text&#039; data.resetText ||$el.data(&#039;resetText&#039;,$el[val]())<span class="marker">&nbsp;</span>$el[val](data[state] || this.options[state]) // push to event loop to allow forms to submit setTimeout(function(){state</div></td><td align=center><div class="ctd">13/03/2019 14:49:18</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">62.68 Kb</div></td><td class="hidd"><div class="hidd">282cb13e63de772739c42a054d71bd013f5a61c1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_6f049b4e</div></td></tr><tr class="tbg0" o="id_6f049b4e"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/jui/js/bootstrap.min.js</a></div><div class="details"><a href="#" onclick="return hsig('id_6f049b4e')">[x]</a> <span class="line_no">1</span>…&gt;.in&quot;))&amp;&amp;n.length){if((o=n.data(&quot;collapse&quot;))&amp;&amp;o.transitioning)return;n.collapse(&quot;hide&quot;),o||n.data(&quot;collapse&quot;,null)}this.<span class="marker">&nbsp;</span>$element[e](0),this.transition(&quot;addClass&quot;,t.Event(&quot;show&quot;),&quot;shown&quot;),t.support.transition&amp;&amp;this.$element[e](this.$element</div></td><td align=center><div class="ctd">13/03/2019 14:49:18</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">28.44 Kb</div></td><td class="hidd"><div class="hidd">2e4545620c697888131d75907cbbc394e0e077c9</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_6f049b4e</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+<div class="note_vir">Символические ссылки (symlinks) (4)</div><div class="crit">/home/admin/web/srv0099.ispiria.net/logs/srv0099.ispiria.net.error.log<br />
+/home/admin/web/srv0099.ispiria.net/logs/srv0099.ispiria.net.log<br />
+/home/admin/web/bestnetentcasinos.info/logs/bestnetentcasinos.info.error.log<br />
+/home/admin/web/bestnetentcasinos.info/logs/bestnetentcasinos.info.log</div><div class="spacer"></div><div style="margin-top: 20px" class="title">Предупреждения</div><div class="note_warn">Большие файлы (больше чем 300.00 Kb). Пропущено</div><div class="warn"><div class="flist"><table cellspacing=1 cellpadding=4 border=0 id="table_7342748"><thead><tr class="tbgh0"><th width=70%>Путь</th><th>Изменение свойств</th><th>Изменение содержимого</th><th width=90>Размер</th><th width=0 class="hidd">CRC32</th><th width=0 class="hidd"></th><th width=0 class="hidd"></th><th width=0 class="hidd"></th></tr></thead><tbody><tr class="tbg0" o="id_z8010630"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/Master/Installers/angie.jpa</a></div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">943.03 Kb</div></td><td class="hidd"><div class="hidd">1d1f6ed495dfb26f87d1465bef0dd508c4d93661</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491538</div></td><td class="hidd"><div class="hidd">id_z8010630</div></td></tr><tr class="tbg1" o="id_z7745597"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/Master/Installers/kickstart.txt</a></div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">13/03/2019 15:38:58</div></td><td align=center><div class="ctd">368.86 Kb</div></td><td class="hidd"><div class="hidd">40aa7b504152e839981ea0cd5619b8e3adb68f53</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491538</div></td><td class="hidd"><div class="hidd">id_z7745597</div></td></tr><tr class="tbg0" o="id_z7353802"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/akeeba.backend.id2.log</a></div></td><td align=center><div class="ctd">27/12/2018 14:49:56</div></td><td align=center><div class="ctd">08/10/2017 14:36:29</div></td><td align=center><div class="ctd">7.80 Mb</div></td><td class="hidd"><div class="hidd">63764ed4fe5b27f123ed6eded3f9706730f29370</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507473389</div></td><td class="hidd"><div class="hidd">id_z7353802</div></td></tr><tr class="tbg1" o="id_z8436952"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/akeeba.backend.id3.log</a></div></td><td align=center><div class="ctd">27/12/2018 14:49:56</div></td><td align=center><div class="ctd">09/10/2017 08:05:36</div></td><td align=center><div class="ctd">8.24 Mb</div></td><td class="hidd"><div class="hidd">63764ed4fe5b27f123ed6eded3f9706730f29370</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507536336</div></td><td class="hidd"><div class="hidd">id_z8436952</div></td></tr><tr class="tbg0" o="id_z3288159"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/akeeba.backend.id5.log</a></div></td><td align=center><div class="ctd">27/12/2018 14:49:56</div></td><td align=center><div class="ctd">08/10/2017 12:01:10</div></td><td align=center><div class="ctd">7.99 Mb</div></td><td class="hidd"><div class="hidd">63764ed4fe5b27f123ed6eded3f9706730f29370</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507464070</div></td><td class="hidd"><div class="hidd">id_z3288159</div></td></tr><tr class="tbg1" o="id_z7439714"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/site-bestnetentcasinos.info-20170829-131521.zip</a></div></td><td align=center><div class="ctd">27/12/2018 14:49:57</div></td><td align=center><div class="ctd">08/10/2017 14:39:51</div></td><td align=center><div class="ctd">48.26 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507473591</div></td><td class="hidd"><div class="hidd">id_z7439714</div></td></tr><tr class="tbg0" o="id_z8967486"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/site-bestnetentcasinos.info-20171009-110513.zip</a></div></td><td align=center><div class="ctd">27/12/2018 14:49:57</div></td><td align=center><div class="ctd">09/10/2017 08:05:34</div></td><td align=center><div class="ctd">52.19 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507536334</div></td><td class="hidd"><div class="hidd">id_z8967486</div></td></tr><tr class="tbg1" o="id_z3982935"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/site-cr23103.tmweb.ru-20170907-132153.zip</a></div></td><td align=center><div class="ctd">27/12/2018 14:49:59</div></td><td align=center><div class="ctd">08/10/2017 12:10:23</div></td><td align=center><div class="ctd">197.54 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507464623</div></td><td class="hidd"><div class="hidd">id_z3982935</div></td></tr><tr class="tbg0" o="id_z5747348"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/site-cr23103.tmweb.ru-20170911-153800.zip</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:00</div></td><td align=center><div class="ctd">08/10/2017 12:14:00</div></td><td align=center><div class="ctd">197.54 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507464840</div></td><td class="hidd"><div class="hidd">id_z5747348</div></td></tr><tr class="tbg1" o="id_z4102688"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/site-allnetentcasinos.info-20180611-105600.zip</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">11/06/2018 09:57:30</div></td><td align=center><div class="ctd">106.39 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1528711050</div></td><td class="hidd"><div class="hidd">id_z4102688</div></td></tr><tr class="tbg0" o="id_z4260502"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/akeeba_backend.id819</a></div></td><td align=center><div class="ctd">27/12/2018 15:21:31</div></td><td align=center><div class="ctd">27/12/2018 15:21:31</div></td><td align=center><div class="ctd">539.85 Kb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924091</div></td><td class="hidd"><div class="hidd">id_z4260502</div></td></tr><tr class="tbg1" o="id_z6641649"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/akeeba.backend.id4.log</a></div></td><td align=center><div class="ctd">12/01/2019 21:44:39</div></td><td align=center><div class="ctd">12/01/2019 21:44:39</div></td><td align=center><div class="ctd">10.36 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1547329479</div></td><td class="hidd"><div class="hidd">id_z6641649</div></td></tr><tr class="tbg0" o="id_z2872290"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_akeeba/backup/site-bestnetentcasinos.info-20190113-004311.zip</a></div></td><td align=center><div class="ctd">12/01/2019 21:44:36</div></td><td align=center><div class="ctd">12/01/2019 21:44:36</div></td><td align=center><div class="ctd">748.66 Mb</div></td><td class="hidd"><div class="hidd">da39a3ee5e6b4b0d3255bfef95601890afd80709</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1547329476</div></td><td class="hidd"><div class="hidd">id_z2872290</div></td></tr><tr class="tbg1" o="id_z5094736"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/administrator/components/com_acymailing/extensions/plg_editors_acyeditor/acyeditor/ckeditor/ckeditor.js</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:01</div></td><td align=center><div class="ctd">22/08/2018 15:05:50</div></td><td align=center><div class="ctd">448.90 Kb</div></td><td class="hidd"><div class="hidd">c0199a6c608c575f31f50f3bfe7cc9e65c072283</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1534950350</div></td><td class="hidd"><div class="hidd">id_z5094736</div></td></tr><tr class="tbg0" o="id_z1741238"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/cache/com_menus/20aa2460c66cc2f30342eed2b01690a8-cache-com_menus-8e631fa45ceddcf62cb6f0de5c06b8c2.php</a></div></td><td align=center><div class="ctd">13/03/2019 15:37:40</div></td><td align=center><div class="ctd">13/03/2019 15:37:40</div></td><td align=center><div class="ctd">999.50 Kb</div></td><td class="hidd"><div class="hidd">9870644b9d7571ee96eeaeda2c8d7c5858b10f92</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491460</div></td><td class="hidd"><div class="hidd">id_z1741238</div></td></tr><tr class="tbg1" o="id_z8655934"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/cache/com_modules/20aa2460c66cc2f30342eed2b01690a8-cache-com_modules-c8b642a72f372fcec82144677bcd077b.php</a></div></td><td align=center><div class="ctd">13/03/2019 15:40:11</div></td><td align=center><div class="ctd">13/03/2019 15:40:11</div></td><td align=center><div class="ctd">348.60 Kb</div></td><td class="hidd"><div class="hidd">9870644b9d7571ee96eeaeda2c8d7c5858b10f92</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552491611</div></td><td class="hidd"><div class="hidd">id_z8655934</div></td></tr><tr class="tbg0" o="id_z1175114"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image13.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:15</div></td><td align=center><div class="ctd">865.73 Kb</div></td><td class="hidd"><div class="hidd">7a2d6741369470145d30a9182490121032ae5736</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476075</div></td><td class="hidd"><div class="hidd">id_z1175114</div></td></tr><tr class="tbg1" o="id_z1082213"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image14.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:20</div></td><td align=center><div class="ctd">890.86 Kb</div></td><td class="hidd"><div class="hidd">7a2d6741369470145d30a9182490121032ae5736</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476080</div></td><td class="hidd"><div class="hidd">id_z1082213</div></td></tr><tr class="tbg0" o="id_z5060273"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image15.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:25</div></td><td align=center><div class="ctd">1.53 Mb</div></td><td class="hidd"><div class="hidd">7a2d6741369470145d30a9182490121032ae5736</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476085</div></td><td class="hidd"><div class="hidd">id_z5060273</div></td></tr><tr class="tbg1" o="id_z2002586"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image16.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:21</div></td><td align=center><div class="ctd">546.03 Kb</div></td><td class="hidd"><div class="hidd">7a2d6741369470145d30a9182490121032ae5736</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476081</div></td><td class="hidd"><div class="hidd">id_z2002586</div></td></tr><tr class="tbg0" o="id_z4354131"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image2.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:23</div></td><td align=center><div class="ctd">401.14 Kb</div></td><td class="hidd"><div class="hidd">7a2d6741369470145d30a9182490121032ae5736</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476083</div></td><td class="hidd"><div class="hidd">id_z4354131</div></td></tr><tr class="tbg1" o="id_z5999444"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image5.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:28</div></td><td align=center><div class="ctd">438.46 Kb</div></td><td class="hidd"><div class="hidd">5cd988b689a6305827874064da76cfba367ab2f1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476088</div></td><td class="hidd"><div class="hidd">id_z5999444</div></td></tr><tr class="tbg0" o="id_z5528019"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image6.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:29</div></td><td align=center><div class="ctd">1.05 Mb</div></td><td class="hidd"><div class="hidd">5cd988b689a6305827874064da76cfba367ab2f1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476089</div></td><td class="hidd"><div class="hidd">id_z5528019</div></td></tr><tr class="tbg1" o="id_z5747900"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image7.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:30</div></td><td align=center><div class="ctd">494.21 Kb</div></td><td class="hidd"><div class="hidd">5cd988b689a6305827874064da76cfba367ab2f1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476090</div></td><td class="hidd"><div class="hidd">id_z5747900</div></td></tr><tr class="tbg0" o="id_z1392736"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image8.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:32</div></td><td align=center><div class="ctd">1.25 Mb</div></td><td class="hidd"><div class="hidd">5cd988b689a6305827874064da76cfba367ab2f1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476092</div></td><td class="hidd"><div class="hidd">id_z1392736</div></td></tr><tr class="tbg1" o="id_z2522637"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/gallery/image9.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:34</div></td><td align=center><div class="ctd">1.14 Mb</div></td><td class="hidd"><div class="hidd">5cd988b689a6305827874064da76cfba367ab2f1</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476094</div></td><td class="hidd"><div class="hidd">id_z2522637</div></td></tr><tr class="tbg0" o="id_z2501358"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/pages/portfolio/it_musical.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:21:36</div></td><td align=center><div class="ctd">334.29 Kb</div></td><td class="hidd"><div class="hidd">f5c2d84e62ad7e9bc395f08227c096a9ff0db725</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476096</div></td><td class="hidd"><div class="hidd">id_z2501358</div></td></tr><tr class="tbg1" o="id_z1347446"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/images/sampledata/icetheme/module_positions.jpg</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 15:20:20</div></td><td align=center><div class="ctd">577.90 Kb</div></td><td class="hidd"><div class="hidd">cf5741a0cbd00dd2d85e5d4267025bd2ab8da0a9</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507476020</div></td><td class="hidd"><div class="hidd">id_z1347446</div></td></tr><tr class="tbg0" o="id_z1967408"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s01</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:15</div></td><td align=center><div class="ctd">400.24 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467495</div></td><td class="hidd"><div class="hidd">id_z1967408</div></td></tr><tr class="tbg1" o="id_z6275710"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s02</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:16</div></td><td align=center><div class="ctd">400.77 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467496</div></td><td class="hidd"><div class="hidd">id_z6275710</div></td></tr><tr class="tbg0" o="id_z7690195"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s03</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:17</div></td><td align=center><div class="ctd">370.05 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467497</div></td><td class="hidd"><div class="hidd">id_z7690195</div></td></tr><tr class="tbg1" o="id_z8978038"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s04</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:17</div></td><td align=center><div class="ctd">323.08 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467497</div></td><td class="hidd"><div class="hidd">id_z8978038</div></td></tr><tr class="tbg0" o="id_z5021306"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s05</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:18</div></td><td align=center><div class="ctd">373.80 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467498</div></td><td class="hidd"><div class="hidd">id_z5021306</div></td></tr><tr class="tbg1" o="id_z6043996"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s06</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:18</div></td><td align=center><div class="ctd">320.26 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467498</div></td><td class="hidd"><div class="hidd">id_z6043996</div></td></tr><tr class="tbg0" o="id_z8414990"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.s07</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:22</div></td><td align=center><div class="ctd">300.31 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467502</div></td><td class="hidd"><div class="hidd">id_z8414990</div></td></tr><tr class="tbg1" o="id_z7309465"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/installation2/sql/site.sql</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:02</div></td><td align=center><div class="ctd">08/10/2017 12:58:22</div></td><td align=center><div class="ctd">350.57 Kb</div></td><td class="hidd"><div class="hidd">a6580e0b4bfff2e3551ea1d8646c34bbbc46eba8</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507467502</div></td><td class="hidd"><div class="hidd">id_z7309465</div></td></tr><tr class="tbg0" o="id_z4483710"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/logs/1.error.php</a></div></td><td align=center><div class="ctd">28/02/2019 11:00:10</div></td><td align=center><div class="ctd">28/02/2019 10:59:43</div></td><td align=center><div class="ctd">644.38 Kb</div></td><td class="hidd"><div class="hidd">9870644b9d7571ee96eeaeda2c8d7c5858b10f92</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1551351583</div></td><td class="hidd"><div class="hidd">id_z4483710</div></td></tr><tr class="tbg1" o="id_z8382475"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/com_akeeba/fonts/Ionicon/ionicons.svg</a></div></td><td align=center><div class="ctd">27/12/2018 15:21:37</div></td><td align=center><div class="ctd">27/12/2018 15:21:37</div></td><td align=center><div class="ctd">326.01 Kb</div></td><td class="hidd"><div class="hidd">56b240a08f13b118949666d0dba6a1d6656bfc55</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545924097</div></td><td class="hidd"><div class="hidd">id_z8382475</div></td></tr><tr class="tbg0" o="id_z2292400"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/com_iproperty/pictures/it_thecity51b19cd6d20d6.pdf</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:37:18</div></td><td align=center><div class="ctd">1.33 Mb</div></td><td class="hidd"><div class="hidd">cd26b5c1ced55aa663d77f4ff3f8b88acedd5786</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477038</div></td><td class="hidd"><div class="hidd">id_z2292400</div></td></tr><tr class="tbg1" o="id_z1231057"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/editors/codemirror/lib/codemirror.js</a></div></td><td align=center><div class="ctd">13/03/2019 14:49:17</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">365.72 Kb</div></td><td class="hidd"><div class="hidd">1881b921084cd5a707434754290d45b006486bac</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_z1231057</div></td></tr><tr class="tbg0" o="id_z3485163"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/editors/tinymce/tinymce.min.js</a></div></td><td align=center><div class="ctd">13/03/2019 14:49:18</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">396.03 Kb</div></td><td class="hidd"><div class="hidd">47100fff816928e1c1946e85904dc9862464b3a2</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_z3485163</div></td></tr><tr class="tbg1" o="id_z5552902"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/foundry/2.1/scripts_/foundry.js</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:42:31</div></td><td align=center><div class="ctd">413.07 Kb</div></td><td class="hidd"><div class="hidd">719aeb76620684ce17cb1cb5440ae2a831353167</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477351</div></td><td class="hidd"><div class="hidd">id_z5552902</div></td></tr><tr class="tbg0" o="id_z6872707"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/foundry/2.1/scripts_/ui.js</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">08/10/2017 15:42:43</div></td><td align=center><div class="ctd">435.78 Kb</div></td><td class="hidd"><div class="hidd">2d655cf9e62655a374bacdfcd2a6d6f6d7b6d26c</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1507477363</div></td><td class="hidd"><div class="hidd">id_z6872707</div></td></tr><tr class="tbg1" o="id_z5357454"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/kunena/attachments/29/IMG_21122018_160517_0.png</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">22/12/2018 15:12:06</div></td><td align=center><div class="ctd">687.26 Kb</div></td><td class="hidd"><div class="hidd">33fd1eb44bb41f0a297d44869e7839bc93042b73</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545491526</div></td><td class="hidd"><div class="hidd">id_z5357454</div></td></tr><tr class="tbg0" o="id_z1647638"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/media/system/js/mootools-more-uncompressed.js</a></div></td><td align=center><div class="ctd">13/03/2019 14:49:18</div></td><td align=center><div class="ctd">11/03/2019 18:35:32</div></td><td align=center><div class="ctd">340.69 Kb</div></td><td class="hidd"><div class="hidd">134f20138b90cd4b0e7a3dafea4ee87b594323f9</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552329332</div></td><td class="hidd"><div class="hidd">id_z1647638</div></td></tr><tr class="tbg1" o="id_z7613946"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/plugins/editors/acyeditor/acyeditor/ckeditor/ckeditor.js</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:03</div></td><td align=center><div class="ctd">02/09/2018 21:22:31</div></td><td align=center><div class="ctd">448.90 Kb</div></td><td class="hidd"><div class="hidd">c0199a6c608c575f31f50f3bfe7cc9e65c072283</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1535923351</div></td><td class="hidd"><div class="hidd">id_z7613946</div></td></tr><tr class="tbg0" o="id_z5013387"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/tmp/Joomla_3.9.4-Stable-Update_Package.zip</a></div></td><td align=center><div class="ctd">13/03/2019 14:47:22</div></td><td align=center><div class="ctd">13/03/2019 14:47:22</div></td><td align=center><div class="ctd">11.73 Mb</div></td><td class="hidd"><div class="hidd">9870644b9d7571ee96eeaeda2c8d7c5858b10f92</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1552488442</div></td><td class="hidd"><div class="hidd">id_z5013387</div></td></tr><tr class="tbg1" o="id_z1822752"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/archive_best_net_casinos_13072018.tgz</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:07</div></td><td align=center><div class="ctd">13/07/2018 18:16:37</div></td><td align=center><div class="ctd">633.32 Mb</div></td><td class="hidd"><div class="hidd">adec3208ca96d5179d9cdb433a3ca7923a93d2ca</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1531505797</div></td><td class="hidd"><div class="hidd">id_z1822752</div></td></tr><tr class="tbg0" o="id_z7696159"><td><div class="it"><a class="it">/home/admin/web/bestnetentcasinos.info/public_html/admin_sinos.sql</a></div></td><td align=center><div class="ctd">27/12/2018 14:50:07</div></td><td align=center><div class="ctd">26/12/2018 17:50:48</div></td><td align=center><div class="ctd">17.12 Mb</div></td><td class="hidd"><div class="hidd">adec3208ca96d5179d9cdb433a3ca7923a93d2ca</div></td><td class="hidd"><div class="hidd">x</div></td><td class="hidd"><div class="hidd">1545846648</div></td><td class="hidd"><div class="hidd">id_z7696159</div></td></tr></tbody></table></div><div class=clear style="margin: 20px 0 0 0"></div></div>
+ 
+	<div class="footer">
+	   <div class="disclaimer"><span class="vir">[!]</span> Отказ от гарантий: невозможно гарантировать обнаружение всех вредоносных скриптов. Поэтому разработчик сканера не несет ответственности за возможные последствия работы сканера AI-Bolit или неоправданные ожидания пользователей относительно функциональности и возможностей.
+   </div>
+   <div class="thanx">
+      Замечания и предложения по работе скрипта, а также не обнаруженные вредоносные скрипты вы можете присылать на <a href="mailto:ai@revisium.com">ai@revisium.com</a>.<br/>
+      Также будем чрезвычайно благодарны за любые упоминания сканера AI-Bolit на вашем сайте, в блоге, среди друзей, знакомых и клиентов. <br/>Ссылку можно поставить на страницу <a href="https://revisium.com/ai/">https://revisium.com/ai/</a>.<br/> 
+     <p>Получить консультацию или задать вопросы можно по email <a href="mailto:ai@revisium.com">ai@revisium.com</a>.</p> 
+	</div>
+	</div>
+	
+<script language="javascript">
+
+function hsig(id) {
+  var divs = document.getElementsByTagName("tr");
+  for(var i = 0; i < divs.length; i++){
+     
+     if (divs[i].getAttribute('o') == id) {
+        divs[i].innerHTML = '';
+     }
+  }
+
+  return false;
+}
+
+
+$(document).ready(function(){
+    $('#table_crit').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+		"paging": true,
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending": ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		}
+
+     } );
+
+});
+
+$(document).ready(function(){
+    $('#table_vir').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+       "iDisplayLength": 500,
+		"oLanguage": {
+			"sLengthMenu": "Отображать по _MENU_ записей",
+			"sZeroRecords": "Ничего не найдено",
+			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			"sInfoEmpty": "Нет файлов",
+			"sInfoFiltered": "(всего записей _MAX_)",
+			"sSearch":       "Поиск:",
+			"sUrl":          "",
+			"oPaginate": {
+				"sFirst": "Первая",
+				"sPrevious": "Предыдущая",
+				"sNext": "Следующая",
+				"sLast": "Последняя"
+			},
+			"oAria": {
+				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			}
+		},
+
+     } );
+
+});
+
+if ($('#table_warn0')) {
+    $('#table_warn0').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+if ($('#table_warn1')) {
+    $('#table_warn1').dataTable({
+       "aLengthMenu": [[100 , 500, -1], [100, 500, "All"]],
+		"paging": true,
+       "aoColumns": [
+                                     {"iDataSort": 7, "width":"70%"},
+                                     {"iDataSort": 5},
+                                     {"iDataSort": 6},
+                                     {"bSortable": true},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false},
+                                     {"bVisible": false}
+                     ],
+			         "iDisplayLength": 500,
+			  		"oLanguage": {
+			  			"sLengthMenu": "Отображать по _MENU_ записей",
+			  			"sZeroRecords": "Ничего не найдено",
+			  			"sInfo": "Отображается c _START_ по _END_ из _TOTAL_ файлов",
+			  			"sInfoEmpty": "Нет файлов",
+			  			"sInfoFiltered": "(всего записей _MAX_)",
+			  			"sSearch":       "Поиск:",
+			  			"sUrl":          "",
+			  			"oPaginate": {
+			  				"sFirst": "Первая",
+			  				"sPrevious": "Предыдущая",
+			  				"sNext": "Следующая",
+			  				"sLast": "Последняя"
+			  			},
+			  			"oAria": {
+			  				"sSortAscending":  ": активировать для сортировки столбца по возрастанию",
+			  				"sSortDescending": ": активировать для сортировки столбцов по убыванию"	
+			  			}
+		}
+
+     } );
+}
+
+
+</script>
+<!-- [][326797]  -->
+ </body>
+</html>

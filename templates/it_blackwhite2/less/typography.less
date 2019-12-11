@@ -1,0 +1,325 @@
+/***********************************************************************************************/
+/* Bootstrap Reset */
+/***********************************************************************************************/
+[class^="icon-"], [class*=" icon-"] {
+	background-image: url("../images/glyphicons-halflings.png");
+}
+
+.icon-white,
+.nav-pills > .active > a > [class^="icon-"],
+.nav-pills > .active > a > [class*=" icon-"],
+.nav-list > .active > a > [class^="icon-"],
+.nav-list > .active > a > [class*=" icon-"],
+.navbar-inverse .nav > .active > a > [class^="icon-"],
+.navbar-inverse .nav > .active > a > [class*=" icon-"],
+.dropdown-menu > li > a:hover > [class^="icon-"],
+.dropdown-menu > li > a:focus > [class^="icon-"],
+.dropdown-menu > li > a:hover > [class*=" icon-"],
+.dropdown-menu > li > a:focus > [class*=" icon-"],
+.dropdown-menu > .active > a > [class^="icon-"],
+.dropdown-menu > .active > a > [class*=" icon-"],
+.dropdown-submenu:hover > a > [class^="icon-"],
+.dropdown-submenu:focus > a > [class^="icon-"],
+.dropdown-submenu:hover > a > [class*=" icon-"],
+.dropdown-submenu:focus > a > [class*=" icon-"] {
+	background-image: url("../images/glyphicons-halflings-white.png");
+}
+
+
+
+
+/***********************************************************************************************/
+/* GENERAL TYPOGRAPHY STYLES */
+/***********************************************************************************************/
+body {
+	background:#fff;
+	color: @text_color;
+	font-family:@text_font;
+	line-height:24px;
+}
+
+p { 
+	margin-bottom:18px;
+}
+
+p.ice-headline,
+h1,
+h2,
+h3 {
+	font-family: @heading_font;
+	color:@heading_color;
+	font-weight: normal;
+}
+
+.icebtn,
+p.readmore a.btn {
+	background:@bg_primary;
+	color: #fff;
+	border-radius: 0;
+	box-shadow: none;
+	border: none;
+	text-shadow:none;
+	.transition();
+	
+	&:hover {
+		background-color:lighten(@bg_primary,10%);
+		color:#fff;
+	}
+}
+
+
+
+/* Tooltips */
+
+.tooltip {
+	font-size:15px;
+	
+	&.bottom .tooltip-arrow { 
+		border-bottom-color:@bg_primary;
+	}
+	
+	&.bottom .tooltip-arrow {
+		 border-bottom-color:@bg_primary;
+	}
+	
+	&.top .tooltip-arrow    { 
+		border-top-color:@bg_primary;
+	}
+	
+	&.left .tooltip-arrow   { 
+		border-left-color:@bg_primary;
+	}
+	
+	&.right .tooltip-arrow  { 
+		border-right-color:@bg_primary;
+	}
+
+	.tooltip-inner {
+		text-shadow: 1px 1px 1px rgba(0,0,0,.25);
+		background:@bg_primary;
+	}
+	
+}	
+		
+
+p.ice-headline {
+	font-size: 3em;
+	text-align: center;}
+
+p.ice-subheadline {
+	font-size: 1.1em;
+	text-align: center;
+	margin-top: -3px;
+	margin-bottom: 18px;
+	color: #888;}	
+
+span.notice-typo {
+	color: #888;}
+
+ul.ice-check li, 
+ul.ice-arrow li, 
+ul.ice-cross li,
+ul.ice-light li, 
+ul.ice-star li, 
+ul.ice-note li,
+ul.ice-check2 li,
+ul.ice-help li,
+ul.ice-info li {
+	list-style-type:none;
+	background-repeat: no-repeat; 
+	background-position: center left;
+	padding: 4px 0 3px 28px}
+	
+	ul.ice-check li {
+		background-image:url(../images/typo_check.png);}
+	ul.ice-arrow li { 
+		background-image:url(../images/typo_arrow.png);}
+	ul.ice-cross li { 
+		background-image:url(../images/typo_cross.png);}
+	ul.ice-light li { 
+		background-image:url(../images/typo_light.png);}
+	ul.ice-star li { 
+		background-image:url(../images/typo_star.png);}
+	ul.ice-note li { 
+		background-image:url(../images/typo_note.png);}	
+	ul.ice-check2 li { 
+		background-image:url(../images/typo_check2.png);}
+	ul.ice-help li { 
+		background-image:url(../images/typo_help.png);}
+	ul.ice-info li { 
+		background-image:url(../images/typo_info.png);}
+
+
+
+ blockquote {
+	border:none;
+	text-align:left;
+	position:relative;
+	margin: 40px 85px;
+	padding:0;
+	font-size: 20px;
+	line-height: 34px;
+	font-family:"Coming Soon",Courier, monospace;}
+	
+	 blockquote p {
+		 margin-bottom: 0;
+		font-size:inherit;
+		font-weight: inherit;
+		line-height: inherit;}
+	
+
+	
+	blockquote:before {
+		font-family:Georgia, "Times New Roman", Times, serif;
+		color:#ccc;
+		content:open-quote;
+		font-size: 100px;
+		position: absolute;
+		top: 25px;
+		left: -70px;}
+						
+	blockquote:after {
+		font-family:Georgia, "Times New Roman", Times, serif;
+		color:#ccc;
+		content:close-quote;
+		font-size: 100px;
+		position: absolute;
+		bottom: -35px;
+		right: -70px;}	
+
+	
+.highlight {
+	font-style: italic;
+	color: #444;
+	background: #FFC;
+	padding: 0 .15em!important;
+	font-weight: normal!important;}
+
+.dropcap {
+	color: #555;
+	display: block;
+	float: left;
+	font: 6em/75% Georgia,"Times New Roman",Times,serif;
+	padding: 5px 12px 0 0;}
+
+pre {
+	border-radius:0;
+	padding-left: 32px;
+	border: 1px solid #9A9A9A;
+	border-left: 4px solid #33353A;
+	background: #FFFEF4;}
+
+.IceBlockTextLeft {
+	float: left;
+	text-align: left;
+	display: block;
+	font-size: 1.25em;
+	font-style: italic;
+	line-height: 1.7em;
+	padding: 30px;
+	width: 38%;}
+
+.IceBlockTextRight {
+	float: right;
+	text-align: right;
+	display: block;
+	font-size: 1.25em;
+	font-style: italic;
+	line-height: 1.7em;
+	padding: 30px;
+	width: 38%;}
+	
+	
+.ice-block1 {
+	padding: 10px;
+	border: 1px dashed #999;}
+	
+.ice-block2 {
+	padding: 10px;
+	background: #fff;
+	border: 1px dotted #999;}	
+
+.ice-block3 {
+	padding: 10px;
+	background: #FFFEF4;
+	border: 1px solid #EAE8CC;}	
+		
+.ice-block4 {
+	padding: 10px;
+	background: #222;
+	color: #ccc;
+	border: 1px solid #222;}
+	
+.ice-block5 {
+	padding: 10px;
+	background: #eee;
+	border: 1px solid #ccc;}	
+
+.ice-block6 {
+	padding: 10px;
+	background: #CF8080;
+	color: #fff;
+	border: 1px solid #CF8080;}
+
+
+div.success,
+p.success, 
+div.notice, 
+p.notice, 
+div.error,
+p.error {
+	padding: .6em 1em 0.6em 3.4em;
+	border: 1px solid #fff;
+	margin-bottom: 2em;
+}
+	
+	div.notice, p.notice {
+		color: #514721;
+		background: #FFF6BF url(../images/typo_note.png) no-repeat 10px center;
+		border: 1px solid #FFDE24;
+	}
+
+	div.success, p.success {
+		color: #264409;
+		background: #E6EFC2 url(../images/typo_success.png) no-repeat 10px center;
+		border: 1px solid #CEE086;
+	}
+		
+	div.error, p.error {
+		color: #8A1F11;
+		background: #FBE3E4 url(../images/typo_error.png) no-repeat 10px center;
+		border: 1px solid #F5B7B8;
+	}
+
+
+
+/***********************************************************************************************/
+/* @FONT-FACE */
+/***********************************************************************************************/
+@font-face {
+    font-family: 'caviar_dreamsregular';
+    src: url('../css/fonts/CaviarDreams-webfont.eot');
+    src: url('../css/fonts/CaviarDreams-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/CaviarDreams-webfont.woff') format('woff'),
+         url('../css/fonts/CaviarDreams-webfont.ttf') format('truetype'),
+         url('../css/fonts/CaviarDreams-webfont.svg#caviar_dreamsregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'journalregular';
+    src: url('../css/fonts/journal-webfont.eot');
+    src: url('../css/fonts/journal-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../css/fonts/journal-webfont.woff') format('woff'),
+         url('../css/fonts/journal-webfont.ttf') format('truetype'),
+         url('../css/fonts/journal-webfont.svg#journalregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+

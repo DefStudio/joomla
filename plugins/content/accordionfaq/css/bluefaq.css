@@ -1,0 +1,98 @@
+/* bluefaq faq layout */
+.bluefaq.round3 .accordionfaqheader.selected,
+.bluefaq.round3.selected .accordionfaqitem
+{
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	-khtml-border-radius: 3px;
+	border-radius: 3px;
+}
+.bluefaq.round5 .accordionfaqheader.selected,
+.bluefaq.round5.selected .accordionfaqitem
+{
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+	border-radius: 5px;
+}
+.bluefaq.round7 .accordionfaqheader.selected,
+.bluefaq.round7.selected .accordionfaqitem
+{
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	-khtml-border-radius: 7px;
+	border-radius: 7px;
+}
+.bluefaq.round9 .accordionfaqheader.selected,
+.bluefaq.round9.selected .accordionfaqitem
+{
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+	border-radius: 9px;
+}
+.bluefaq.contentbackground div.accordionfaqitem
+{
+	background-color: #F0F8FF;	/* aliceblue */
+}
+.bluefaq.contentborder div.accordionfaqitem
+{
+	border: 1px solid navy;
+}
+.bluefaq .accordionfaqheader a,
+.bluefaq .accordionfaqheader a:hover,
+.bluefaq .accordionfaqheader a:active,
+.bluefaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.bluefaq .accordionfaqheader,
+.bluefaq .accordionfaqheader a
+{
+	color: black;
+}
+.bluefaq.headerbackground .accordionfaqheader,
+.bluefaq.headerbackground .accordionfaqheader a
+{
+	background-color: #B0C4DE;	/* lightsteelblue */
+}
+.bluefaq.headerborder .accordionfaqheader
+{
+	border:1px solid navy;
+}
+.bluefaq .accordionfaqheader:hover,
+.bluefaq .accordionfaqheader:hover a,
+.bluefaq .accordionfaqheader.selected,
+.bluefaq .accordionfaqheader.selected a
+{
+	color: white !important;
+	background-color: black !important;
+}
+.bluefaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/04.png);
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	width: 16px;
+	height: 16px;
+}
+.bluefaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/02.png);
+	background-position: 50% 50%;
+}
+.bluefaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white.gif);
+}
+.bluefaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-white-l.gif);
+}
+.bluefaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.bluefaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-white.gif);
+}

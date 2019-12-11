@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.4.8" method="upgrade">
+<name>Eyesite</name>
+<creationDate>10 June 2017</creationDate>
+<author>Les Arbres Design</author>
+<copyright>Les Arbres Design 2009-2017</copyright>
+<license>GNU/GPL</license>
+<authorUrl>www.lesarbresdesign.info</authorUrl>
+<version>5.02</version>
+<description>Eyesite monitors your Joomla file system and informs you of any changes</description>
+
+<scriptfile>install.php</scriptfile>
+
+<files folder="site">
+	<filename>eyesite.php</filename>
+	<filename>index.html</filename>
+</files>
+
+<administration>
+	<menu>Eyesite</menu>
+	<submenu>
+		<menu>COM_EYESITE_STATUS</menu>
+		<menu task="history_list">COM_EYESITE_HISTORY</menu>
+		<menu task="configure">COM_EYESITE_CONFIGURATION</menu>
+		<menu task="about">COM_EYESITE_ABOUT</menu>
+	</submenu>
+
+	<files folder="admin">
+		<filename>eyesite.php</filename>
+		<filename>controller.php</filename>
+		<filename>config.xml</filename>
+		<filename>index.html</filename>
+		<folder>assets</folder>
+		<folder>helpers</folder>
+		<folder>language</folder>
+		<folder>models</folder>
+		<folder>views</folder>
+	</files>
+
+</administration>
+
+<updateservers>
+    <server type="extension" priority="2" name="Eyesite Component"><![CDATA[http://www.lesarbresdesign.info/jupdate?product=eyesite]]></server>
+</updateservers>
+
+</extension>

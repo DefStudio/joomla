@@ -1,0 +1,150 @@
+/* flickfaq faq layout */
+.flickfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.flickfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #dddddd;
+}
+.flickfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.flickfaq div.accordionfaqitem,
+.flickfaq div.accordionfaqitem *
+{
+	color: #444444;
+}
+.flickfaq.contentbackground div.accordionfaqitem
+{
+	background: #ffffff url(../images/ui-bg_flat_75_ffffff_40x100.png) 50% 50% repeat-x;
+	color: #444444;
+}
+.flickfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.flickfaq .accordionfaqheader,
+.flickfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.flickfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #dddddd;
+}
+.flickfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #0073ea;
+}
+.flickfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #dddddd;
+}
+.flickfaq .accordionfaqheader a,
+.flickfaq .accordionfaqheader a:hover,
+.flickfaq .accordionfaqheader a:active,
+.flickfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.flickfaq .accordionfaqheader,
+.flickfaq .accordionfaqheader a,
+.flickfaq .accordionfaqheader:hover,
+.flickfaq .accordionfaqheader:hover a
+{
+	color: #0073ea;
+}
+.flickfaq.headerbackground .accordionfaqheader:hover,
+.flickfaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #ffffff;
+}
+.flickfaq .accordionfaqheader.selected,
+.flickfaq .accordionfaqheader.selected a
+{
+	color: #ff0084;
+}
+.flickfaq.headerbackground .accordionfaqheader,
+.flickfaq.headerbackground .accordionfaqheader a
+{
+	background: #f6f6f6 url(../images/ui-bg_highlight-soft_100_f6f6f6_1x100.png) 50% 50% repeat-x;
+}
+.flickfaq.headerbackground .accordionfaqheader:hover,
+.flickfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #0073ea url(../images/ui-bg_highlight-soft_25_0073ea_1x100.png) 50% 50% repeat-x;
+}
+.flickfaq.headerbackground .accordionfaqheader.selected,
+.flickfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #ffffff url(../images/ui-bg_glass_65_ffffff_1x400.png) 50% 50% repeat-x;
+	color: #ff0084;
+}
+.flickfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.flickfaq .accordionfaqheader:hover,
+.flickfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.flickfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.flickfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.flickfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.flickfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.flickfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_666666_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.flickfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_454545_256x240.png);
+	background-position: -32px -16px;
+}
+.flickfaq.rtl.defaulticon span.accordionfaqicon,
+.flickfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon,
+.flickfaq.rtl.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.flickfaq.headerbackground.defaulticon span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_666666_256x240.png);
+}
+.flickfaq.headerbackground.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_ffffff_256x240.png);
+	background-position: -32px -16px;
+}
+.flickfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.flickfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.flickfaq.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.flickfaq.rtl.headerbackground.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_454545_256x240.png);
+	background-position: -64px -16px;
+}

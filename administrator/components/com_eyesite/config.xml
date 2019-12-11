@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<config>  
+	<fieldset name="basic" label="JOPTIONS">
+		<field name="emailto" type="hidden" size="1" default="" label="" />
+		<field name="extensions" type="hidden" size="1" default="" label="" />
+		<field name="incdirs" type="hidden" size="1" default="" label="" />
+		<field name="excdirs" type="hidden" size="1" default="" label="" />
+		<field name="excfiles" type="hidden" size="1" default="" label="" />
+		<field name="days_to_keep" type="hidden" size="1" default="" label="" />
+		<field name="auto_accept" type="hidden" size="1" default="" label="" />
+		<field name="purchase_id" type="hidden" size="1" default="" label="" />
+	</fieldset>
+    
+	<fieldset name="permissions" label="JCONFIG_PERMISSIONS_LABEL" description="JCONFIG_PERMISSIONS_DESC">
+		<field name="rules" type="rules" label="JCONFIG_PERMISSIONS_LABEL" filter="rules" component="com_eyesite" section="component">
+			<action name="core.admin" title="JACTION_ADMIN" description="JACTION_ADMIN_COMPONENT_DESC" />
+			<action name="core.manage" title="JACTION_MANAGE" description="JACTION_MANAGE_COMPONENT_DESC" />
+		</field>
+	</fieldset>
+</config>

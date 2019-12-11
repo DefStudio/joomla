@@ -1,0 +1,142 @@
+/* eggplantfaq faq layout */
+.eggplantfaq div.accordionfaqitem
+{
+	margin-top: 0px !important;
+}
+.eggplantfaq.contentborder div.accordionfaqitem
+{
+	border-width: 1px 1px 1px 1px;
+	border-style: solid;
+	border-color: #7e7783;
+}
+.eggplantfaq.contentborder.headerborder div.accordionfaqitem
+{
+	border-width: 0px 1px 1px 1px;
+}
+.eggplantfaq div.accordionfaqitem,
+.eggplantfaq div.accordionfaqitem *
+{
+	color: #555555;
+}
+.eggplantfaq.contentbackground div.accordionfaqitem,
+.eggplantfaq.contentbackground div.accordionfaqitem *
+{
+	color: #ffffff;
+}
+.eggplantfaq.contentbackground div.accordionfaqitem
+{
+	background: #3d3644 url(../images/ui-bg_gloss-wave_30_3d3644_500x100.png) 50% top repeat-x;
+}
+.eggplantfaq .accordionfaqheader
+{
+	margin: 0px 0px 1px !important;
+	padding-top: 4px;
+	padding-bottom: 4px;
+}
+.eggplantfaq .accordionfaqheader,
+.eggplantfaq .accordionfaqheader a
+{
+	font-size: 100%;
+	font-weight: bold;
+}
+.eggplantfaq.headerborder .accordionfaqheader
+{
+	border: 1px solid #dcd9de;
+}
+.eggplantfaq.headerborder .accordionfaqheader:hover
+{
+	border: 1px solid #d1c5d8;
+}
+.eggplantfaq.headerborder .accordionfaqheader.selected
+{
+	border: 1px solid #7e7783;
+}
+.eggplantfaq .accordionfaqheader a,
+.eggplantfaq .accordionfaqheader a:hover,
+.eggplantfaq .accordionfaqheader a:active,
+.eggplantfaq .accordionfaqheader a:focus
+{
+	text-decoration: none;
+	background-color: transparent;
+}
+.eggplantfaq .accordionfaqheader,
+.eggplantfaq .accordionfaqheader a,
+.eggplantfaq .accordionfaqheader:hover,
+.eggplantfaq .accordionfaqheader:hover a
+{
+	color: #665874;
+}
+.eggplantfaq.headerbackground .accordionfaqheader:hover,
+.eggplantfaq.headerbackground .accordionfaqheader:hover a
+{
+	color: #734d99;
+}
+.eggplantfaq .accordionfaqheader.selected,
+.eggplantfaq .accordionfaqheader.selected a
+{
+	color: #555555;
+}
+.eggplantfaq.headerbackground .accordionfaqheader,
+.eggplantfaq.headerbackground .accordionfaqheader a
+{
+	background: #dcd9de url(../images/ui-bg_highlight-soft_100_dcd9de_1x100.png) 50% 50% repeat-x;
+}
+.eggplantfaq.headerbackground .accordionfaqheader:hover,
+.eggplantfaq.headerbackground .accordionfaqheader:hover a
+{
+	background: #eae6ea url(../images/ui-bg_highlight-soft_100_eae6ea_1x100.png) 50% 50% repeat-x;
+}
+.eggplantfaq.headerbackground .accordionfaqheader.selected,
+.eggplantfaq.headerbackground .accordionfaqheader.selected a
+{
+	background: #5f5964 url(../images/ui-bg_highlight-soft_45_5f5964_1x100.png) 50% 50% repeat-x;
+	color: #ffffff;
+}
+.eggplantfaq .accordionfaqheader.selected
+{
+	margin-bottom: -1px !important;
+}
+.eggplantfaq .accordionfaqheader:hover,
+.eggplantfaq .accordionfaqheader.selected
+{
+	background-color: transparent;
+}
+.eggplantfaq.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black.gif);
+}
+.eggplantfaq.rtl.arrow .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/collapsed-black-l.gif);
+}
+.eggplantfaq.arrow .accordionfaqheader.selected span.accordionfaqicon,
+.eggplantfaq.rtl.arrow .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/expanded-black.gif);
+}
+.eggplantfaq.defaulticon span.accordionfaqicon
+{
+	background-attachment: scroll;
+	background-image: url(../images/ui-icons_8d78a5_256x240.png);
+	background-repeat: no-repeat;
+	background-position: -32px -16px;
+	width: 16px;
+	height: 16px;
+	overflow: hidden;
+}
+.eggplantfaq.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_734d99_256x240.png);
+	background-position: -32px -16px;
+}
+.eggplantfaq.rtl.defaulticon span.accordionfaqicon,
+.eggplantfaq.rtl.defaulticon .accordionfaqheader:hover span.accordionfaqicon
+{
+	background-position: -96px -16px;
+}
+.eggplantfaq.defaulticon .accordionfaqheader.selected span.accordionfaqicon,
+.eggplantfaq.rtl.defaulticon .accordionfaqheader.selected span.accordionfaqicon
+{
+	background-image: url(../images/ui-icons_454545_256x240.png);
+	background-position: -64px -16px;
+}

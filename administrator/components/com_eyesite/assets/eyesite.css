@@ -1,0 +1,23 @@
+.icon-eyesite { background:url(eyesite-32.png) no-repeat; 
+                vertical-align:middle; height:20px !important; width:32px !important; margin-right:4px !important;}
+
+/* Scan status */
+
+div.eyesite_ajax_data  {min-height:50px;}
+div.eyesite_changes    {background:url(yellow_spot_16.png)  no-repeat left top; min-height:18px; padding-left:24px;}
+div.eyesite_no_changes {background:url(tick_spot_16.png)    no-repeat left top; min-height:18px; padding-left:24px;}
+div.eyesite_scanning   {background:url(info-16.png)         no-repeat left top; min-height:18px; padding-left:24px; font-weight:bold;}
+
+input, textarea, select  {margin-bottom:0 !important; width:auto !important;}
+div.config_row           {margin-top:12px;}
+div.config_row label     {display:inline-block; width:45%; margin-right:10px;}
+
+@media (max-width: 1000px) {div.config_row label {display:block; width:95%;}}
+
+td img                   {max-width:none !important;}
+
+div.form-group {margin-bottom:5px; }
+div.form-group > label {width:9em; vertical-align:top; margin-right:5px; margin-top:5px;}
+.form-inline input	{width:auto !important;}
+
+.tooltip {font-size:13px !important; font-weight:bold; opacity:1 !important;}
